@@ -8,4 +8,15 @@ python-pptx>=0.6.23
 json-repair>=0.30
 pandas>=2.2
 pytest>=8.2
+
+# --- A1 Ürün Turu Stüdyosu -------------------------------------------------
+# playwright: tarayıcıyı sürer ve videoyu kaydeder. İlk kurulumdan sonra
+#   ayrıca `playwright install chromium` çalıştırılmalıdır (tarayıcı indirir).
+# Pillow: ajana gönderilen ekran görüntüsünün KOPYASINA numaralı rozetler
+#   basmak için (Set-of-Mark); bu rozetler videoya asla girmez.
+# boto3: Amazon Polly seslendirmesi. Kimlik bilgisi yoksa video sessiz +
+#   altyazılı üretilir (bkz. services/tour_tts.py).
+# Ayrıca sistemde FFmpeg kurulu olmalıdır (PATH üzerinden çağrılır).
+playwright>=1.55
 Pillow>=10.0
+boto3>=1.34

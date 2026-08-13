@@ -12,9 +12,9 @@ hesaplama + yönetim değerlendirme kartı üretimi, Qwen3/Gemma 4), C1
 (Journey talebi + gerçek aktivite kataloğundan otomatik Journey/öğrenme
 yolu oluşturma, Qwen3/Gemma 4 — insan değerlendirmesi yok), A2 (destek/
 onboarding chatbot, Gemma 4 varyantları — kendi model çifti, yerel
-deterministik retrieval, insan değerlendirmesi yok) ve A1 (AI destekli
-kullanım videosu stüdyosu — storyboard/video üretimi, Qwen3/Gemma 4 —
-insan değerlendirmesi yok).
+deterministik retrieval, insan değerlendirmesi yok) ve A1 (otomatik ürün
+turu stüdyosu — görsel bir ajan çalışan uygulamayı GERÇEKTEN gezip video
+kaydeder; tek sürücü model, insan değerlendirmesi yok).
 
 C1'in veri modeli, yöneticinin paylaştığı gerçek "Client" uygulaması
 Journey/aktivite yapısına dayanır: bir Journey, sıralı GAME/TEST/LEARN
@@ -62,14 +62,48 @@ karıştırılmamalıdır (bkz. `scripts/build_activity_catalog.py` docstring'i)
   geçmişi `session_state.a2_chat_history` listesinde tutulur, her tur
   kendi `comparison_mode` durumunu da saklar. **İnsan değerlendirmesi
   yok.**
-- `app_pages/a1_tutorial_video.py` — A1'in tüm Streamlit mantığı (AI
-  destekli kullanım videosu stüdyosu: proje girdisi → storyboard
-  üretimi → yerel/deterministik video render). Kendi şema/servis/prompt
-  dosyaları vardır (`schemas/a1_*.py`, `services/a1_*.py`,
-  `prompts/a1_*.txt`); B1/B6/C1/A2 mimarisini etkilemez.
+- `app_pages/a1_tour_studio.py` — A1'in tüm Streamlit mantığı (otomatik
+  ürün turu stüdyosu). Yalnızca ARAYÜZDÜR; ağır iş
+  `services/tour_*.py` içindedir. Diğer modüllerden iki yapısal farkı
+  vardır: **iki modelli karşılaştırma YOK** (ajan her adımda tek karar
+  verir, aynı turu iki modelle sürmek karşılaştırılabilir bir şey
+  üretmez) ve **insan değerlendirmesi YOK** (çıktı metin değil video;
+  şeffaflık adım dökümüyle sağlanır).
   `services/module_placeholder.py`, henüz geliştirilmemiş gelecekteki
   modüller için hâlâ kullanılabilir tek satırlık placeholder deseni
   sağlar.
+
+### A1 tur boru hattı (`services/tour_*.py`)
+
+Ajan her adımda ekran görüntüsüne bakıp TEK bir karar verir; önceden
+yazılmış senaryo yoktur. Piksel koordinatı tahmin ettirmek yerine canlı
+DOM'dan çıkarılan gerçek öğe envanterinden seçtirilir — canlı sürme
+korunur, imleç asla boşluğa tıklamaz.
+
+- `tour_app_server.py` — kaydedilecek uygulamayı AYRI bir portta alt
+  süreç olarak başlatır (`/_stcore/health` beklenir). Stüdyo sayfası da
+  bir Streamlit sayfası olduğu için ayrı süreç şarttır.
+- `tour_dom_inspector.py` — canlı DOM'dan etkileşimli öğe envanteri
+  (rol, görünen ad, `st-key`, konum, sidebar mı, **offscreen mı**).
+  Ekran dışı öğeler ELENMEZ; elenirse uzun sayfalarda asıl eylem butonu
+  ajana hiç görünmez.
+- `tour_cursor.py` — videoda görünen yapay imleç (Playwright gerçek
+  imleci kaydetmez) + tıklama dalgası + vurgu çerçevesi.
+- `tour_agent_service.py` — karar katmanı; Streamlit/Playwright'tan
+  bağımsız, sahte `call_model` ile test edilebilir. Set-of-Mark:
+  görüntünün KOPYASINA numaralı rozetler basılır (videoya girmez).
+- `tour_validation.py` — kararın deterministik denetimi. İmza
+  konumsal indeksle DEĞİL öğe kimliğiyle (`st-key`/ad) kurulur; indeksle
+  kurulursa sayfa değiştikçe numaralar kayar ve döngü fark edilmez.
+- `tour_tts.py` — takılabilir seslendirme: `PollyTTS` + `NullTTS`.
+  Polly kimlik bilgisi yoksa ÇÖKMEZ, sessiz+altyazılı videoya düşer.
+- `tour_video_service.py` — FFmpeg: webm→mp4, adım seslerini `adelay`
+  ile kendi zamanına yerleştirip `amix`, libass ile altyazı gömme.
+- `tour_pipeline.py` — uçtan uca orkestrasyon (`run_tour`). Metin
+  girişinde `keyboard.type()` DEĞİL `fill()` kullanılır: Streamlit'in
+  React kontrollü `st.chat_input`'ı sentetik tuş olaylarını değer olarak
+  kaydetmez.
+- `scripts/record_tour.py` — aynı `run_tour`'u CLI'dan çağırır.
 - `services/i18n.py` + `services/i18n_strings/{common,b1,b6,c1,a2,a1}.py`
   — uygulama genelinde TR/EN dil desteğinin tek kaynağı. Dil seçimi
   `st.session_state["app_language"]` üzerinden tüm sayfalar arasında
@@ -174,11 +208,10 @@ karıştırılmamalıdır (bkz. `scripts/build_activity_catalog.py` docstring'i)
   içindeki sabit etiketler de `language` parametresine göre TR/EN seçilir.
 - `schemas/b1_models.py` / `schemas/b6_models.py` / `schemas/c1_models.py`
   / `schemas/a2_models.py` — Pydantic şemaları + yapısal doğrulama.
-- `prompts/{b1,b6,c1,a2}_system.txt` (TR) ve aynı isimlerin `_en.txt`
-  sürümleri (EN) — özelliğe özgü sistem promptları; sayfalar
-  `load_system_prompt(language)` ile doğru dosyayı seçer. A1'in hiçbir
-  prompt dosyası henüz EN'e çevrilmedi (bkz. yukarıdaki i18n kapsam
-  notu) — A1 sayfası EN modunda bile hep TR sistem promptunu kullanır.
+- `prompts/{b1,b6,c1,a2}_system.txt` + `prompts/tour_agent_system.txt`
+  (TR) ve aynı isimlerin `_en.txt` sürümleri (EN) — özelliğe özgü sistem
+  promptları; sayfalar `load_system_prompt(language)` ile doğru dosyayı
+  seçer.
 
 ## Kurallar
 
@@ -206,15 +239,25 @@ python scripts/smoke_test.py    # gerçek Bedrock bağlantı testi
 
 ## Sonraki aşama
 
-**TR/EN i18n — kalan kapsam (bilinçli olarak bu turda YAPILMADI):**
-A1'in 2599 satırlık sayfası ~1000 hardcoded TR string içeriyor; yalnızca
-dış kabuk (başlık/sidebar/dil uyarısı, `services/i18n_strings/a1.py`)
-çevrildi. Sırada: (1) A1'in proje girdisi/storyboard/video bölümlerinin
-UI çevirisi + `a1_storyboard_system_en.txt`, (2) vision/sahne genişletme
-alt akışının 4 prompt dosyası + UI'ı, (3) tüm modüllerdeki ham Pydantic/
-iş kuralı hata mesajlarının çevirisi (bu, şemaların Streamlit'ten
-bağımsız kalması gereken mimarisiyle çelişmeden nasıl yapılacağı ayrıca
-düşünülmeli — ör. hata kodu döndürüp render katmanında çevirmek gibi).
+**A1 — kod değişince videoların otomatik yenilenmesi (KAPSAM DIŞI):**
+Kullanıcı bunun gerçek uygulamaya entegrasyonda gerekeceğini belirtti;
+bu turda yalnızca BAĞLANTI NOKTASI hazırlandı. Her kaydın yanına
+`<modül>_<dil>.meta.json` içinde `source_fingerprint` yazılıyor
+(`tour_pipeline.compute_source_fingerprint`) ve stüdyo sayfası
+"bayat/güncel" rozetini bununla gösteriyor. Eksik olan yalnızca
+TETİKLEME mekanizması (git hook / CI / izleyici) — parmak izi
+karşılaştırması zaten çalışıyor.
+
+**A1 seslendirme:** Polly katmanı yazıldı ve test edildi ama makinede
+`boto3` kurulu DEĞİL ve `.env`'de AWS erişim anahtarı yok; bu yüzden
+videolar şu an sessiz+altyazılı üretiliyor ve neden arayüzde açıkça
+yazıyor. `pip install boto3` + AWS kimlik bilgileri eklenince ek kod
+gerekmeden devreye girer.
+
+**TR/EN i18n — kalan kapsam:** tüm modüllerdeki ham Pydantic/iş kuralı
+hata mesajları hâlâ Türkçedir (şemaların Streamlit'ten bağımsız kalması
+gereken mimarisiyle çelişmeden nasıl çevrileceği ayrıca düşünülmeli —
+ör. hata kodu döndürüp render katmanında çevirmek gibi).
 
 C1'in örnek aktivite kataloğu şu an yalnızca yöneticinin paylaştığı 6
 gerçek aktiviteyi içeriyor (`scripts/build_activity_catalog.py` ile

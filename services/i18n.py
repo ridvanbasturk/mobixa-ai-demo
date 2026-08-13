@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import streamlit as st
 
-from services.i18n_strings.a1 import EN as _A1_EN, TR as _A1_TR
+from services.i18n_strings.a1 import EN as _A1_EN, TR as _A1_TR  # A1 Tur Stüdyosu
 from services.i18n_strings.a2 import EN as _A2_EN, TR as _A2_TR
 from services.i18n_strings.b1 import EN as _B1_EN, TR as _B1_TR
 from services.i18n_strings.b6 import EN as _B6_EN, TR as _B6_TR

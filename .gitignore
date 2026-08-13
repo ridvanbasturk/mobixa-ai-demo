@@ -6,3 +6,6 @@ __pycache__/
 venv/
 outputs/evaluations.csv
 .streamlit/
+
+# A1 tur videoları (büyük ikili dosyalar; yeniden üretilebilir)
+outputs/tour_videos/

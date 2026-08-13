@@ -4,8 +4,6 @@ from services.evaluation_logger import (
     FIELDNAMES,
     log_evaluation,
     save_human_evaluation,
-    save_storyboard_selection,
-    save_video_generation,
 )
 
 
@@ -564,203 +562,96 @@ def test_b1_b6_c1_and_a2_rows_coexist_without_interference(tmp_path):
     assert a2_row["human_answer_key_correct"] == ""
 
 
-def test_log_evaluation_records_a1_storyboard_fields(tmp_path):
+
+def test_log_evaluation_records_a1_tour_fields(tmp_path):
     csv_path = tmp_path / "evaluations.csv"
     run_id = log_evaluation(
         feature="A1",
-        model_id="deepseek.v3.2",
-        input_tokens=200,
-        output_tokens=400,
-        total_tokens=600,
-        latency_ms=900.0,
-        estimated_cost_usd=0.003,
+        model_id="google.gemma-4-31b",
+        input_tokens=1200,
+        output_tokens=80,
+        total_tokens=1280,
+        latency_ms=1500.0,
+        estimated_cost_usd=0.0004,
         json_valid=True,
         schema_valid=True,
-        question_count=6,
+        question_count=1,
         success=True,
         error=None,
-        storyboard_validation_passed=True,
-        storyboard_validation_details="",
-        storyboard_scene_count=6,
-        storyboard_total_duration=36,
-        storyboard_selected=False,
-        selected_storyboard_model="",
+        tour_module="c1",
+        tour_language="tr",
+        tour_step_index=3,
+        tour_action="click",
+        tour_decision_valid=True,
+        tour_decision_error="",
         csv_path=csv_path,
     )
 
     with open(csv_path, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        assert reader.fieldnames == FIELDNAMES
-        rows = list(reader)
+        row = list(csv.DictReader(f))[0]
 
-    row = rows[0]
     assert row["run_id"] == run_id
     assert row["feature"] == "A1"
-    assert row["storyboard_validation_passed"] == "True"
-    assert row["storyboard_scene_count"] == "6"
-    assert row["storyboard_total_duration"] == "36"
-    assert row["storyboard_selected"] == "False"
-    assert row["human_answer_key_correct"] == ""
-    assert row["business_validation_passed"] == ""
+    assert row["tour_module"] == "c1"
+    assert row["tour_language"] == "tr"
+    assert row["tour_step_index"] == "3"
+    assert row["tour_action"] == "click"
+    assert row["tour_decision_valid"] == "True"
 
 
-def test_save_storyboard_selection_updates_matching_row(tmp_path):
-    csv_path = tmp_path / "evaluations.csv"
-    run_id = log_evaluation(
-        feature="A1",
-        model_id="deepseek.v3.2",
-        input_tokens=200,
-        output_tokens=400,
-        total_tokens=600,
-        latency_ms=900.0,
-        estimated_cost_usd=0.003,
-        json_valid=True,
-        schema_valid=True,
-        question_count=6,
-        success=True,
-        error=None,
-        storyboard_validation_passed=True,
-        storyboard_validation_details="",
-        storyboard_scene_count=6,
-        storyboard_total_duration=36,
-        storyboard_selected=False,
-        selected_storyboard_model="",
-        csv_path=csv_path,
-    )
-
-    saved = save_storyboard_selection(run_id, True, "deepseek.v3.2", csv_path=csv_path)
-    assert saved is True
-
-    with open(csv_path, newline="", encoding="utf-8") as f:
-        rows = list(csv.DictReader(f))
-    assert rows[0]["storyboard_selected"] == "True"
-    assert rows[0]["selected_storyboard_model"] == "deepseek.v3.2"
-
-
-def test_save_storyboard_selection_returns_false_when_run_id_missing(tmp_path):
+def test_invalid_tour_decision_is_recorded_not_hidden(tmp_path):
+    # Ajan uydurma bir öğe seçerse bu CSV'ye YAZILIR; sessizce atlanmaz.
     csv_path = tmp_path / "evaluations.csv"
     log_evaluation(
         feature="A1",
-        model_id="deepseek.v3.2",
-        input_tokens=200,
-        output_tokens=400,
-        total_tokens=600,
-        latency_ms=900.0,
-        estimated_cost_usd=0.003,
+        model_id="google.gemma-4-31b",
+        input_tokens=None,
+        output_tokens=None,
+        total_tokens=None,
+        latency_ms=None,
+        estimated_cost_usd=None,
         json_valid=True,
         schema_valid=True,
-        question_count=6,
+        question_count=1,
         success=True,
         error=None,
+        tour_module="a2",
+        tour_language="en",
+        tour_step_index=7,
+        tour_action="click",
+        tour_decision_valid=False,
+        tour_decision_error="Ekranda böyle bir öğe yok: element_index=42",
         csv_path=csv_path,
     )
-
-    saved = save_storyboard_selection("does-not-exist", True, "deepseek.v3.2", csv_path=csv_path)
-    assert saved is False
-
-
-def test_save_video_generation_updates_matching_row(tmp_path):
-    csv_path = tmp_path / "evaluations.csv"
-    run_id = log_evaluation(
-        feature="A1",
-        model_id="qwen.qwen3-32b",
-        input_tokens=200,
-        output_tokens=400,
-        total_tokens=600,
-        latency_ms=900.0,
-        estimated_cost_usd=0.003,
-        json_valid=True,
-        schema_valid=True,
-        question_count=6,
-        success=True,
-        error=None,
-        storyboard_selected=True,
-        selected_storyboard_model="qwen.qwen3-32b",
-        csv_path=csv_path,
-    )
-
-    saved = save_video_generation(
-        run_id,
-        video_generated=True,
-        video_resolution="1280x720",
-        video_fps=24,
-        video_expected_duration=36.0,
-        video_actual_duration=35.2,
-        video_file_size_bytes=524288,
-        video_generation_seconds=12.4,
-        video_encoder="ffmpeg (libx264)",
-        csv_path=csv_path,
-    )
-    assert saved is True
 
     with open(csv_path, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        assert reader.fieldnames == FIELDNAMES
-        rows = list(reader)
+        row = list(csv.DictReader(f))[0]
 
-    row = rows[0]
-    assert row["video_generated"] == "True"
-    assert row["video_resolution"] == "1280x720"
-    assert row["video_fps"] == "24"
-    assert row["video_expected_duration"] == "36.0"
-    assert row["video_actual_duration"] == "35.2"
-    assert row["video_file_size_bytes"] == "524288"
-    assert row["video_generation_seconds"] == "12.4"
-    assert row["video_encoder"] == "ffmpeg (libx264)"
-    # Storyboard alanlarına dokunulmamalı
-    assert row["storyboard_selected"] == "True"
-    assert row["selected_storyboard_model"] == "qwen.qwen3-32b"
-    # Video/ekran görüntüsü baytları CSV'ye asla yazılmaz; şemada bu alanlar hiç yok
-    assert "video_bytes" not in FIELDNAMES
-    assert "screenshot_bytes" not in FIELDNAMES
+    assert row["tour_decision_valid"] == "False"
+    assert "element_index=42" in row["tour_decision_error"]
 
 
-def test_save_video_generation_returns_false_when_run_id_missing(tmp_path):
+def test_tour_fields_blank_for_non_a1_rows(tmp_path):
     csv_path = tmp_path / "evaluations.csv"
     log_evaluation(
-        feature="A1",
-        model_id="qwen.qwen3-32b",
-        input_tokens=200,
-        output_tokens=400,
-        total_tokens=600,
-        latency_ms=900.0,
-        estimated_cost_usd=0.003,
-        json_valid=True,
-        schema_valid=True,
-        question_count=6,
-        success=True,
-        error=None,
-        csv_path=csv_path,
-    )
-
-    saved = save_video_generation(
-        "does-not-exist", video_generated=True, video_resolution="1280x720", csv_path=csv_path
-    )
-    assert saved is False
-
-
-def test_video_fields_blank_for_non_a1_rows(tmp_path):
-    csv_path = tmp_path / "evaluations.csv"
-    run_id = log_evaluation(
-        feature="B1",
+        feature="C1",
         model_id="qwen.qwen3-235b-a22b-2507",
         input_tokens=10,
         output_tokens=20,
         total_tokens=30,
         latency_ms=100.0,
-        estimated_cost_usd=0.001,
+        estimated_cost_usd=0.0001,
         json_valid=True,
         schema_valid=True,
-        question_count=5,
+        question_count=3,
         success=True,
         error=None,
         csv_path=csv_path,
     )
 
     with open(csv_path, newline="", encoding="utf-8") as f:
-        rows = list(csv.DictReader(f))
+        row = list(csv.DictReader(f))[0]
 
-    row = next(r for r in rows if r["run_id"] == run_id)
-    assert row["video_generated"] == ""
-    assert row["video_resolution"] == ""
-    assert row["video_fps"] == ""
+    assert row["tour_module"] == ""
+    assert row["tour_step_index"] == ""
+    assert row["tour_decision_valid"] == ""

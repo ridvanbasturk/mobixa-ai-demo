@@ -16,11 +16,10 @@ yapılır (bu modül URL/istemci oluşturmaz, yalnızca metadata döner).
 SEÇİCİ GEMMA 4 GÖÇÜ — ÖZET (bkz. proje geçmişi için ayrıntılı gerekçe):
   - B1/B6/C1: Plan A = Qwen3 235B (korunur), Plan B = Gemma 4 31B (yeni).
     Qwen3 32B yalnızca teknik yedek (fallback) olarak kalır.
-  - A1 Storyboard: aynı Qwen3 235B / Gemma 4 31B çifti + Qwen3 32B yedek.
-  - A1 Vision: Qwen3 VL 235B (korunur) + Gemma 4 31B (görsel girişle
-    doğrulanmış).
-  - A1 Genişletme (scene expansion): varsayılan TEK aktif model Gemma 4 31B
-    (maliyet için); Qwen3 235B seçilebilir alternatif olarak kalır.
+  - A1 Tur Ajanı (tarayıcıyı süren görsel ajan): birincil sürücü Gemma 4 31B
+    (projede GERÇEK görsel girdiyle doğrulanmış TEK model). Qwen3 VL 235B
+    seçilebilir alternatiftir ama Bedrock kataloğundaki gerçek model kimliği
+    henüz doğrulanmadı (bkz. .env.example: A1_TOUR_MODEL_ALT).
   - A2: TEK istisna — aktif yanıt üretim modelleri YALNIZCA Gemma'dır
     (Plan A = Gemma 4 31B, Plan B = Gemma 4 26B-A4B, ikisi de gerçek çağrıyla
     doğrulanmıştır). Kimi K2.5 ve DeepSeek V3.2 artık aktif değildir
@@ -114,41 +113,26 @@ A2_PLAN_B = PlanInfo(
     subtitle_en="Secondary verified Gemma variant (if configured)",
 )
 
-# A1 (AI Destekli Kullanım Videosu — storyboard üretimi) kendi model
-# çiftini kullanır; B1/B6/C1 veya A2 yapılandırmasının yerine geçmez.
-# Aynı seçici göç deseni: Plan A = Qwen3 235B, Plan B = Gemma 4 31B.
-A1_PLAN_A = PlanInfo(
-    slot_label="Qwen Planı",
-    display_name="Qwen3 235B A22B 2507",
-    subtitle="Storyboard kalite adayı",
-    slot_label_en="Qwen Plan",
-    subtitle_en="Storyboard quality candidate",
-)
-
-A1_PLAN_B = PlanInfo(
-    slot_label="Gemma Planı",
+# A1 Tur Ajanı — tarayıcıyı canlı süren görsel (multimodal) ajan.
+# B1/B6/C1/A2'nin aksine burada bir "iki modeli karşılaştırma" düzeni YOKTUR:
+# ajan her adımda ekran görüntüsüne bakıp tek bir karar verdiği için aynı turu
+# iki modelle paralel sürmek videoyu ikiye böler, karşılaştırılabilir bir şey
+# üretmez. Bu yüzden TEK aktif sürücü vardır; alternatif yalnızca ortam
+# değişkeniyle (A1_TOUR_MODEL_ALT) elle seçilebilir.
+A1_TOUR_DRIVER = PlanInfo(
+    slot_label="Tur Ajanı",
     display_name="Gemma 4 31B",
-    subtitle="Storyboard Gemma karşılaştırma adayı",
-    slot_label_en="Gemma Plan",
-    subtitle_en="Storyboard Gemma comparison candidate",
+    subtitle="Tarayıcıyı süren görsel ajan (gerçek görsel girdiyle doğrulanmış)",
+    slot_label_en="Tour Agent",
+    subtitle_en="Visual agent driving the browser (verified with real visual input)",
 )
 
-# A1 AI Görsel Analiz Modu (vision) kendi çok-modlu model çiftini kullanır;
-# A1_PLAN_A/B (metin tabanlı storyboard üretimi) ile karıştırılmamalıdır.
-A1_VISION_PLAN_A = PlanInfo(
-    slot_label="Qwen Planı",
+A1_TOUR_DRIVER_ALT = PlanInfo(
+    slot_label="Tur Ajanı (alternatif)",
     display_name="Qwen3 VL 235B A22B",
-    subtitle="Birincil görsel analiz adayı",
-    slot_label_en="Qwen Plan",
-    subtitle_en="Primary visual analysis candidate",
-)
-
-A1_VISION_PLAN_B = PlanInfo(
-    slot_label="Gemma Planı",
-    display_name="Gemma 4 31B",
-    subtitle="Gerçek görsel girişle doğrulanmış Gemma alternatifi",
-    slot_label_en="Gemma Plan",
-    subtitle_en="Gemma alternative verified with real visual input",
+    subtitle="Seçilebilir görsel alternatif — model kimliği henüz doğrulanmadı",
+    slot_label_en="Tour Agent (alternative)",
+    subtitle_en="Optional visual alternative — model id not verified yet",
 )
 
 
@@ -226,8 +210,6 @@ MODEL_ROUTE_REGISTRY: Dict[str, ModelRouteInfo] = {
             "b1_primary_text",
             "b6_primary_text",
             "c1_primary_text",
-            "a1_storyboard_primary_text",
-            "a1_expansion_alternative",
             "comparison_with_gemma",
         ),
     ),
@@ -243,7 +225,6 @@ MODEL_ROUTE_REGISTRY: Dict[str, ModelRouteInfo] = {
             "fallback_b1",
             "fallback_b6",
             "fallback_c1",
-            "fallback_a1_storyboard",
             "fallback_a2_emergency",
         ),
     ),
@@ -253,9 +234,13 @@ MODEL_ROUTE_REGISTRY: Dict[str, ModelRouteInfo] = {
         mantle_route=MANTLE_ROUTE_STANDARD,
         provider="Alibaba (Qwen)",
         family="qwen3-vl",
-        migration_status=MIGRATION_STATUS_ACTIVE,
+        # Kataloğa kayıtlı ve görsel destekli, ancak Bedrock'taki GERÇEK model
+        # kimliği bu projede hiç doğrulanmadı (.env.example'da uzun süre
+        # placeholder kaldı). Bu yüzden aktif bir role atanmaz; tur ajanının
+        # alternatifi olarak yalnızca A1_TOUR_MODEL_ALT ile elle seçilebilir.
+        migration_status=MIGRATION_STATUS_VERIFIED_AVAILABLE,
         supports_vision=True,
-        active_roles=("a1_vision_primary",),
+        active_roles=(),
     ),
     # --- Aktif Gemma 4 modelleri -------------------------------------------
     "google.gemma-4-31b": ModelRouteInfo(
@@ -272,9 +257,7 @@ MODEL_ROUTE_REGISTRY: Dict[str, ModelRouteInfo] = {
             "b1_comparison_gemma",
             "b6_comparison_gemma",
             "c1_comparison_gemma",
-            "a1_storyboard_comparison_gemma",
-            "a1_vision_comparison",
-            "a1_expansion_primary",
+            "a1_tour_driver_primary",
             "a2_primary",
         ),
     ),

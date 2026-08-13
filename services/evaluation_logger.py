@@ -51,32 +51,13 @@ FIELDNAMES = [
     "grounding_validation_details",
     "model_escalation_recommended",
     "final_needs_escalation",
-    "storyboard_validation_passed",
-    "storyboard_validation_details",
-    "storyboard_scene_count",
-    "storyboard_total_duration",
-    "storyboard_selected",
-    "selected_storyboard_model",
-    "video_generated",
-    "video_resolution",
-    "video_fps",
-    "video_expected_duration",
-    "video_actual_duration",
-    "video_file_size_bytes",
-    "video_generation_seconds",
-    "video_encoder",
-    "vision_matched_screen_id",
-    "vision_screen_match_score",
-    "vision_target_element_id",
-    "vision_target_match_score",
-    "vision_grounding_source_ids",
-    "vision_grounding_warnings",
-    "expanded_scene_count",
-    "unique_screenshot_count",
-    "repeated_screenshot_count",
-    "estimated_total_duration",
-    "scene_expansion_applied",
-    "scene_expansion_warnings",
+    # --- A1 tur ajanı (tarayıcıyı süren görsel ajan) --------------------------
+    "tour_module",
+    "tour_language",
+    "tour_step_index",
+    "tour_action",
+    "tour_decision_valid",
+    "tour_decision_error",
 ]
 
 
@@ -132,24 +113,12 @@ def log_evaluation(
     grounding_validation_details: Optional[str] = None,
     model_escalation_recommended: Optional[bool] = None,
     final_needs_escalation: Optional[bool] = None,
-    storyboard_validation_passed: Optional[bool] = None,
-    storyboard_validation_details: Optional[str] = None,
-    storyboard_scene_count: Optional[int] = None,
-    storyboard_total_duration: Optional[int] = None,
-    storyboard_selected: Optional[bool] = None,
-    selected_storyboard_model: Optional[str] = None,
-    vision_matched_screen_id: Optional[str] = None,
-    vision_screen_match_score: Optional[float] = None,
-    vision_target_element_id: Optional[str] = None,
-    vision_target_match_score: Optional[float] = None,
-    vision_grounding_source_ids: Optional[str] = None,
-    vision_grounding_warnings: Optional[str] = None,
-    expanded_scene_count: Optional[int] = None,
-    unique_screenshot_count: Optional[int] = None,
-    repeated_screenshot_count: Optional[int] = None,
-    estimated_total_duration: Optional[float] = None,
-    scene_expansion_applied: Optional[bool] = None,
-    scene_expansion_warnings: Optional[str] = None,
+    tour_module: Optional[str] = None,
+    tour_language: Optional[str] = None,
+    tour_step_index: Optional[int] = None,
+    tour_action: Optional[str] = None,
+    tour_decision_valid: Optional[bool] = None,
+    tour_decision_error: Optional[str] = None,
     csv_path: Path = CSV_PATH,
 ) -> str:
     """Bir model çağrısının teknik ölçümlerini CSV'ye ekler.
@@ -160,9 +129,9 @@ def log_evaluation(
     özellikler tarafından kullanılır; retrieved_source_ids/cited_source_ids/
     grounding_validation_*/*_escalation alanları yalnızca A2 gibi kaynak
     tabanlı (RAG benzeri) doğrulama yapan özellikler tarafından kullanılır;
-    storyboard_*/video_*/vision_* alanları yalnızca A1 tarafından kullanılır
-    (vision_* alanları Faz 4B'nin bilgi tabanı eşleştirme sonuçlarıdır;
-    ekran görüntüsü baytı veya tam prompt içeriği ASLA burada tutulmaz).
+    tour_* alanları yalnızca A1 tur ajanı tarafından kullanılır — ajanın her
+    adımı ayrı bir satır olarak kaydedilir (ekran görüntüsü baytı veya tam
+    prompt içeriği ASLA burada tutulmaz).
     Diğer özellikler için None bırakılır ve CSV'de boş yazılır.
 
     Döndürülen run_id, aynı satıra sonradan insan değerlendirmesi eklemek
@@ -217,34 +186,12 @@ def log_evaluation(
                     "" if model_escalation_recommended is None else model_escalation_recommended
                 ),
                 "final_needs_escalation": "" if final_needs_escalation is None else final_needs_escalation,
-                "storyboard_validation_passed": (
-                    "" if storyboard_validation_passed is None else storyboard_validation_passed
-                ),
-                "storyboard_validation_details": storyboard_validation_details or "",
-                "storyboard_scene_count": "" if storyboard_scene_count is None else storyboard_scene_count,
-                "storyboard_total_duration": "" if storyboard_total_duration is None else storyboard_total_duration,
-                "storyboard_selected": "" if storyboard_selected is None else storyboard_selected,
-                "selected_storyboard_model": selected_storyboard_model or "",
-                "vision_matched_screen_id": vision_matched_screen_id or "",
-                "vision_screen_match_score": (
-                    "" if vision_screen_match_score is None else vision_screen_match_score
-                ),
-                "vision_target_element_id": vision_target_element_id or "",
-                "vision_target_match_score": (
-                    "" if vision_target_match_score is None else vision_target_match_score
-                ),
-                "vision_grounding_source_ids": vision_grounding_source_ids or "",
-                "vision_grounding_warnings": vision_grounding_warnings or "",
-                "expanded_scene_count": "" if expanded_scene_count is None else expanded_scene_count,
-                "unique_screenshot_count": "" if unique_screenshot_count is None else unique_screenshot_count,
-                "repeated_screenshot_count": (
-                    "" if repeated_screenshot_count is None else repeated_screenshot_count
-                ),
-                "estimated_total_duration": (
-                    "" if estimated_total_duration is None else round(estimated_total_duration, 2)
-                ),
-                "scene_expansion_applied": "" if scene_expansion_applied is None else scene_expansion_applied,
-                "scene_expansion_warnings": scene_expansion_warnings or "",
+                "tour_module": tour_module or "",
+                "tour_language": tour_language or "",
+                "tour_step_index": "" if tour_step_index is None else tour_step_index,
+                "tour_action": tour_action or "",
+                "tour_decision_valid": "" if tour_decision_valid is None else tour_decision_valid,
+                "tour_decision_error": tour_decision_error or "",
             }
         )
 
@@ -295,102 +242,6 @@ def save_human_evaluation(
                 row["human_actionability"] = actionability
             if causality_issue is not None:
                 row["human_causality_issue"] = causality_issue
-            found = True
-
-    if not found:
-        return False
-
-    with open(csv_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES, extrasaction="ignore")
-        writer.writeheader()
-        for row in rows:
-            writer.writerow({field: row.get(field, "") for field in FIELDNAMES})
-
-    return True
-
-
-def save_storyboard_selection(
-    run_id: str,
-    storyboard_selected: bool,
-    selected_storyboard_model: Optional[str] = None,
-    csv_path: Path = CSV_PATH,
-) -> bool:
-    """run_id ile eşleşen A1 satırına storyboard seçim bilgisini yazar.
-
-    save_human_evaluation ile aynı bul-ve-güncelle desenini kullanır; insan
-    değerlendirmesi alanlarına dokunmaz. Eşleşen bir satır bulunamazsa
-    dosyayı değiştirmeden False döner.
-    """
-    _migrate_csv_if_needed(csv_path)
-    if not csv_path.exists():
-        return False
-
-    with open(csv_path, "r", newline="", encoding="utf-8") as f:
-        rows = list(csv.DictReader(f))
-
-    found = False
-    for row in rows:
-        if row.get("run_id") == run_id:
-            row["storyboard_selected"] = storyboard_selected
-            row["selected_storyboard_model"] = selected_storyboard_model or ""
-            found = True
-
-    if not found:
-        return False
-
-    with open(csv_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES, extrasaction="ignore")
-        writer.writeheader()
-        for row in rows:
-            writer.writerow({field: row.get(field, "") for field in FIELDNAMES})
-
-    return True
-
-
-def save_video_generation(
-    run_id: str,
-    video_generated: bool,
-    video_resolution: Optional[str] = None,
-    video_fps: Optional[int] = None,
-    video_expected_duration: Optional[float] = None,
-    video_actual_duration: Optional[float] = None,
-    video_file_size_bytes: Optional[int] = None,
-    video_generation_seconds: Optional[float] = None,
-    video_encoder: Optional[str] = None,
-    csv_path: Path = CSV_PATH,
-) -> bool:
-    """run_id ile eşleşen A1 satırına video üretim bilgisini yazar.
-
-    save_storyboard_selection ile aynı bul-ve-güncelle desenini kullanır;
-    seçili storyboard'un ait olduğu run_id'ye video metaverisini ekler. Video
-    dosyasının kendisi (MP4 baytları) veya ekran görüntüsü baytları ASLA
-    CSV'ye yazılmaz — yalnızca sayısal/metin metaveri. Eşleşen bir satır
-    bulunamazsa dosyayı değiştirmeden False döner.
-    """
-    _migrate_csv_if_needed(csv_path)
-    if not csv_path.exists():
-        return False
-
-    with open(csv_path, "r", newline="", encoding="utf-8") as f:
-        rows = list(csv.DictReader(f))
-
-    found = False
-    for row in rows:
-        if row.get("run_id") == run_id:
-            row["video_generated"] = video_generated
-            row["video_resolution"] = video_resolution or ""
-            row["video_fps"] = "" if video_fps is None else video_fps
-            row["video_expected_duration"] = (
-                "" if video_expected_duration is None else round(video_expected_duration, 2)
-            )
-            row["video_actual_duration"] = (
-                "" if video_actual_duration is None else round(video_actual_duration, 2)
-            )
-            row["video_file_size_bytes"] = "" if video_file_size_bytes is None else video_file_size_bytes
-            row["video_generation_seconds"] = (
-                "" if video_generation_seconds is None else round(video_generation_seconds, 2)
-            )
-            row["video_encoder"] = video_encoder or ""
             found = True
 
     if not found:

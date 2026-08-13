@@ -1,7 +1,8 @@
 """Mobixa AI Demo — giriş noktası ve modül navigasyonu.
 
-B1, B6, C1, A2 aktiftir. A1 Faz 1 (proje girdi hazırlığı) aktiftir;
-storyboard/video üretimi sonraki fazlarda eklenecektir.
+B1, B6, C1, A2 içerik/analiz modülleridir. A1 ise diğer modülleri konu alan
+otomatik ürün turu videolarını üreten stüdyodur (tarayıcıyı gerçekten süren
+görsel bir ajan tarafından kaydedilir).
 """
 import streamlit as st
 
@@ -12,7 +13,7 @@ pages = [
     st.Page("app_pages/b6_report_insights.py", title="B6 — Rapor Değerlendirmesi"),
     st.Page("app_pages/c1_learning_path.py", title="C1 — Öğrenme Yolu"),
     st.Page("app_pages/a2_support_chatbot.py", title="A2 — Destek Chatbot'u"),
-    st.Page("app_pages/a1_tutorial_video.py", title="A1 — Kullanım Videosu Stüdyosu"),
+    st.Page("app_pages/a1_tour_studio.py", title="A1 — Ürün Turu Stüdyosu"),
 ]
 
 navigation = st.navigation(pages)

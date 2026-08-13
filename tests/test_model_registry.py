@@ -109,18 +109,24 @@ def test_qwen3_32b_remains_active_fallback_role():
     assert any("fallback" in role for role in info.active_roles)
 
 
-def test_qwen3_vl_remains_active():
+def test_qwen3_vl_is_available_but_not_assigned_a_role():
+    # Görsel destekli ve kayıtlı, ama Bedrock'taki gerçek model kimliği bu
+    # projede hiç doğrulanmadı — bu yüzden aktif bir role atanmaz, yalnızca
+    # A1_TOUR_MODEL_ALT ile elle seçilebilir. legacy_disabled DEĞİLDİR.
     info = resolve_model_route("qwen.qwen3-vl-235b-a22b-instruct")
-    assert info.migration_status == MIGRATION_STATUS_ACTIVE
+    assert info.migration_status == MIGRATION_STATUS_VERIFIED_AVAILABLE
     assert info.supports_vision is True
-    assert "a1_vision_primary" in info.active_roles
+    assert not info.is_legacy_disabled
+    assert info.active_roles == ()
 
 
 def test_gemma_4_31b_has_wide_active_roles():
     info = resolve_model_route("google.gemma-4-31b")
     assert info.migration_status == MIGRATION_STATUS_ACTIVE
     assert "a2_primary" in info.active_roles
-    assert "a1_expansion_primary" in info.active_roles
+    # A1 tur ajanının birincil sürücüsü: projede gerçek görsel girdiyle
+    # doğrulanmış TEK model.
+    assert "a1_tour_driver_primary" in info.active_roles
 
 
 def test_gemma_4_26b_a4b_active_as_a2_secondary():
