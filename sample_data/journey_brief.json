@@ -1,0 +1,11 @@
+{
+  "journey_name": "Satış ve İSG Oryantasyonu",
+  "journey_type": "Private",
+  "audience_description": "Yeni işe başlayan satış temsilcileri",
+  "goal_description": "Temel iş güvenliği bilincini ve satış kapama becerilerini pekiştirmek, sonunda bir sınavla ölçmek",
+  "required_topics": ["İş Güvenliği (İSG)", "Satış Kapama"],
+  "excluded_activity_ids": ["17200"],
+  "min_activities": 2,
+  "max_activities": 4,
+  "must_end_with_test": true
+}

@@ -1,0 +1,18 @@
+{
+  "activityId": "SAMPLE-107",
+  "activityType": "GAME",
+  "activityTypeId": 1,
+  "activitySubType": "DEEPLEARN",
+  "activitySubTypeId": 10,
+  "timeLimit": 0,
+  "title": "[Örnek Veri] Finansal Okuryazarlık Oyunu",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/desert.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı, yalnızca test/demo amaçlıdır.",
+  "questions": {
+    "92130": [
+      {"questionId": 900601, "category": "Finans", "duration": 20},
+      {"questionId": 900602, "category": "Finans", "duration": 20},
+      {"questionId": 900603, "category": "Finans", "duration": 25}
+    ]
+  }
+}

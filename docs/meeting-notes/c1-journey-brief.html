@@ -1,0 +1,544 @@
+<title>C1 — Toplantı Notu</title>
+<style>
+  :root {
+    --paper: #eef0ed;
+    --paper-raised: #ffffff;
+    --ink: #182420;
+    --ink-soft: #4b5751;
+    --accent: #2f6f5e;
+    --accent-soft: #dce8e3;
+    --accent-ink: #1c4438;
+    --line: #cdd4cd;
+    --done: #2f6f5e;
+    --done-soft: #dce8e3;
+    --pending: #a4671f;
+    --pending-soft: #f3e3d0;
+    --manager: #52616c;
+    --manager-soft: #e3e7ea;
+    --shadow: 0 1px 2px rgba(24, 36, 32, 0.06), 0 8px 24px -12px rgba(24, 36, 32, 0.18);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #12140f;
+      --paper-raised: #1a1d16;
+      --ink: #e7ece8;
+      --ink-soft: #a9b3ac;
+      --accent: #74cbb0;
+      --accent-soft: #1d332b;
+      --accent-ink: #a9e6d2;
+      --line: #313830;
+      --done: #74cbb0;
+      --done-soft: #1d332b;
+      --pending: #e3a75f;
+      --pending-soft: #3a2e1c;
+      --manager: #9fb0bb;
+      --manager-soft: #232a2f;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #12140f;
+    --paper-raised: #1a1d16;
+    --ink: #e7ece8;
+    --ink-soft: #a9b3ac;
+    --accent: #74cbb0;
+    --accent-soft: #1d332b;
+    --accent-ink: #a9e6d2;
+    --line: #313830;
+    --done: #74cbb0;
+    --done-soft: #1d332b;
+    --pending: #e3a75f;
+    --pending-soft: #3a2e1c;
+    --manager: #9fb0bb;
+    --manager-soft: #232a2f;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.5);
+  }
+  :root[data-theme="light"] {
+    --paper: #eef0ed;
+    --paper-raised: #ffffff;
+    --ink: #182420;
+    --ink-soft: #4b5751;
+    --accent: #2f6f5e;
+    --accent-soft: #dce8e3;
+    --accent-ink: #1c4438;
+    --line: #cdd4cd;
+    --done: #2f6f5e;
+    --done-soft: #dce8e3;
+    --pending: #a4671f;
+    --pending-soft: #f3e3d0;
+    --manager: #52616c;
+    --manager-soft: #e3e7ea;
+    --shadow: 0 1px 2px rgba(24, 36, 32, 0.06), 0 8px 24px -12px rgba(24, 36, 32, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    margin: 0;
+    padding: 3.5rem 1.5rem 6rem;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .sheet {
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+
+  header.brief-head {
+    margin-bottom: 2.75rem;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 0.9rem;
+  }
+
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 2.15rem;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.6rem;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+
+  .subhead {
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+    max-width: 40rem;
+    margin: 0 0 1.4rem;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.6rem;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 0.9rem;
+  }
+  .meta-row strong { color: var(--ink); font-weight: 600; }
+
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem 0 3rem;
+  }
+  .stat {
+    background: var(--paper-raised);
+    padding: 1rem 1.1rem;
+  }
+  .stat .num {
+    font-variant-numeric: tabular-nums;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-ink);
+    display: block;
+  }
+  :root[data-theme="dark"] .stat .num,
+  @media (prefers-color-scheme: dark) { .stat .num { color: var(--accent); } }
+  .stat .label {
+    font-size: 0.76rem;
+    color: var(--ink-soft);
+    margin-top: 0.2rem;
+    display: block;
+  }
+
+  section.block { margin-bottom: 3.25rem; }
+
+  h2.section-title {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+  }
+
+  .section-note {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    margin: -1rem 0 1.6rem;
+  }
+
+  /* Route: checkpoints connected by a vertical line, echoing the Journey
+     activity list shown in the shared screenshots (numbered circle -> line
+     -> next circle). */
+  .route { position: relative; }
+  .checkpoint {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2.25rem 1fr;
+    gap: 0 1.1rem;
+    padding-bottom: 1.9rem;
+  }
+  .checkpoint:last-child { padding-bottom: 0; }
+  .checkpoint::before {
+    content: "";
+    position: absolute;
+    left: 1.05rem;
+    top: 2.15rem;
+    bottom: -0.1rem;
+    width: 2px;
+    background: var(--line);
+  }
+  .checkpoint:last-child::before { display: none; }
+
+  .node {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    z-index: 1;
+    border: 2px solid var(--line);
+    background: var(--paper-raised);
+    color: var(--ink-soft);
+  }
+  .checkpoint[data-status="done"] .node {
+    border-color: var(--done);
+    background: var(--done-soft);
+    color: var(--accent-ink);
+  }
+  :root[data-theme="dark"] .checkpoint[data-status="done"] .node,
+  @media (prefers-color-scheme: dark) {
+    .checkpoint[data-status="done"] .node { color: var(--done); }
+  }
+  .checkpoint[data-status="pending"] .node {
+    border-color: var(--pending);
+    background: var(--pending-soft);
+    color: var(--pending);
+  }
+  .checkpoint[data-status="manager"] .node {
+    border-color: var(--manager);
+    background: var(--manager-soft);
+    color: var(--manager);
+  }
+
+  .cp-body { padding-top: 0.05rem; }
+  .cp-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+  .cp-title {
+    font-weight: 650;
+    font-size: 1rem;
+    color: var(--ink);
+  }
+  .pill {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.55rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .checkpoint[data-status="done"] .pill { background: var(--done-soft); color: var(--accent-ink); }
+  :root[data-theme="dark"] .checkpoint[data-status="done"] .pill,
+  @media (prefers-color-scheme: dark) { .checkpoint[data-status="done"] .pill { color: var(--done); } }
+  .checkpoint[data-status="pending"] .pill { background: var(--pending-soft); color: var(--pending); }
+  .checkpoint[data-status="manager"] .pill { background: var(--manager-soft); color: var(--manager); }
+
+  .cp-detail {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    margin: 0.35rem 0 0;
+    max-width: 34rem;
+  }
+  .cp-detail code {
+    font-size: 0.85em;
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    padding: 0.05rem 0.35rem;
+    border-radius: 4px;
+  }
+  :root[data-theme="dark"] .cp-detail code,
+  @media (prefers-color-scheme: dark) { .cp-detail code { color: var(--done); } }
+
+  ol.demo-steps {
+    list-style: none;
+    counter-reset: step;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  ol.demo-steps li {
+    counter-increment: step;
+    display: grid;
+    grid-template-columns: 1.9rem 1fr;
+    gap: 0.9rem;
+    align-items: start;
+  }
+  ol.demo-steps li::before {
+    content: counter(step);
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    font-size: 0.82rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--paper-raised);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ol.demo-steps .step-text { padding-top: 0.15rem; font-size: 0.94rem; }
+  ol.demo-steps .step-text strong { color: var(--ink); }
+
+  .callout {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--manager);
+    border-radius: 8px;
+    padding: 1.1rem 1.3rem;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    box-shadow: var(--shadow);
+  }
+  .callout strong { color: var(--ink); }
+  .callout ul { margin: 0.6rem 0 0; padding-left: 1.15rem; }
+  .callout li { margin-bottom: 0.35rem; }
+
+  footer.brief-foot {
+    margin-top: 3.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 30rem) {
+    h1 { font-size: 1.65rem; }
+    .checkpoint { grid-template-columns: 1.9rem 1fr; }
+    .node { width: 1.9rem; height: 1.9rem; font-size: 0.75rem; }
+    .checkpoint::before { left: 0.88rem; top: 1.85rem; }
+  }
+</style>
+
+<div class="sheet">
+
+  <header class="brief-head">
+    <p class="eyebrow">Toplantı Notu · C1 Modülü</p>
+    <h1>Journey'i YZ ile otomatik oluşturma — istenen tamam mı?</h1>
+    <p class="subhead">
+      Mehmet Bey'in Slack'te paylaştığı Journey/aktivite yapısına ve
+      "Böyle bir Journey'in YZ yardımıyla otomatik oluşturulması" isteğine
+      karşılık ne yapıldığının özeti. Toplantıda sırayla anlatılabilecek
+      şekilde hazırlandı.
+    </p>
+    <div class="meta-row">
+      <span><strong>Kapsam:</strong> C1 — Otomatik Journey Oluşturma</span>
+      <span><strong>Durum:</strong> Ana istek tamam, 2 kalem yöneticiden bekleniyor</span>
+      <span><strong>Test:</strong> 539/539 yeşil</span>
+    </div>
+  </header>
+
+  <div class="stat-strip">
+    <div class="stat"><span class="num">6 + 8</span><span class="label">gerçek + örnek aktivite katalogda</span></div>
+    <div class="stat"><span class="num">2</span><span class="label">model paralel karşılaştırılıyor</span></div>
+    <div class="stat"><span class="num">6</span><span class="label">deterministik iş kuralı kontrolü</span></div>
+    <div class="stat"><span class="num">TR / EN</span><span class="label">dil desteği (4/5 modülde tam)</span></div>
+  </div>
+
+  <section class="block">
+    <h2 class="section-title">İstenenler tek tek</h2>
+    <p class="section-note">Her madde, paylaşılan ekran görüntülerindeki bir talebe karşılık geliyor.</p>
+
+    <div class="route">
+
+      <div class="checkpoint" data-status="done">
+        <div class="node">✓</div>
+        <div class="cp-body">
+          <div class="cp-top">
+            <span class="cp-title">Journey / aktivite veri modelini anlama</span>
+            <span class="pill">Tamam</span>
+          </div>
+          <p class="cp-detail">
+            Client uygulamasındaki Journey listesi (ID, tip, durum, aktivite
+            sayısı), S3'teki journey → aktivite klasör yapısı ve gerçek
+            aktivite JSON şeması (<code>activityId</code>,
+            <code>activityType</code>, <code>activitySubType</code>,
+            <code>questions</code>) tamamen bu veri modeline göre inşa edildi.
+          </p>
+        </div>
+      </div>
+
+      <div class="checkpoint" data-status="done">
+        <div class="node">✓</div>
+        <div class="cp-body">
+          <div class="cp-top">
+            <span class="cp-title">Ana istek: Journey'in YZ ile otomatik önerilmesi</span>
+            <span class="pill">Tamam</span>
+          </div>
+          <p class="cp-detail">
+            C1 modülü baştan tasarlandı. Girdi: bir <strong>Journey talebi</strong>
+            (hedef kitle, amaç, zorunlu konular, min/maks aktivite sayısı,
+            sınavla bitme zorunluluğu) + <strong>aktivite kataloğu</strong>.
+            İki model (Qwen3 235B, Gemma 4 31B) birbirinden bağımsız olarak
+            sıralı bir Journey öneriyor; sonuçlar yan yana karşılaştırılıyor.
+          </p>
+        </div>
+      </div>
+
+      <div class="checkpoint" data-status="done">
+        <div class="node">✓</div>
+        <div class="cp-body">
+          <div class="cp-top">
+            <span class="cp-title">Öneri gerçekten güvenilir mi — deterministik kontrol</span>
+            <span class="pill">Tamam</span>
+          </div>
+          <p class="cp-detail">
+            Model çıktısı Python tarafında 6 kuralla denetleniyor: katalogda
+            olmayan/hariç tutulması gereken aktivite seçilmiş mi, süre
+            katalogla eşleşiyor mu, aktivite sayısı sınırda mı, zorunlu
+            konular kapsanıyor mu, ve istenirse Journey bir sınavla bitiyor mu.
+            Model hata yapsa bile bu gizlenmiyor, ekranda gösteriliyor.
+          </p>
+        </div>
+      </div>
+
+      <div class="checkpoint" data-status="pending">
+        <div class="node">!</div>
+        <div class="cp-body">
+          <div class="cp-top">
+            <span class="cp-title">Kataloğun kapsamı: şu an yalnızca 6 gerçek aktivite</span>
+            <span class="pill">Kısmi</span>
+          </div>
+          <p class="cp-detail">
+            Paylaşılan 6 JSON'dan gerçek bir katalog otomatik türetildi
+            (<code>scripts/build_activity_catalog.py</code>) — tekrar
+            çalıştırılabilir. Gerçek sistemde muhtemelen yüzlerce aktivite
+            var; daha fazla JSON export paylaşıldıkça katalog büyür.
+          </p>
+        </div>
+      </div>
+
+      <div class="checkpoint" data-status="manager">
+        <div class="node">?</div>
+        <div class="cp-body">
+          <div class="cp-top">
+            <span class="cp-title">LEARN tipi aktivitenin gerçek şeması</span>
+            <span class="pill">Yöneticiden bekleniyor</span>
+          </div>
+          <p class="cp-detail">
+            Öğrenme kartı (LEARN) aktiviteleri S3'te değil DB'de tutulduğu
+            için hiç örneği paylaşılmadı. Demo kataloğundaki LEARN satırları
+            "[Örnek Veri]" etiketiyle açıkça işaretli, tahminidir — gerçek
+            şema geldiğinde birebir değiştirilir.
+          </p>
+        </div>
+      </div>
+
+      <div class="checkpoint" data-status="manager">
+        <div class="node">?</div>
+        <div class="cp-body">
+          <div class="cp-top">
+            <span class="cp-title">Chatbot wiki dokümanı (A2, ayrı konu)</span>
+            <span class="pill">Mehmet Bey hazırlıyor</span>
+          </div>
+          <p class="cp-detail">
+            Mehmet Bey TR+Eng wiki dokümanını kendisi hazırlayacağını
+            söyledi; bu arada A2 kurulumunun bir test dokümanıyla ilerlemesi
+            istendi — bu adım zaten tamamlanmış durumda, gerçek doküman
+            geldiğinde içerik değiştirmek kolay.
+          </p>
+        </div>
+      </div>
+
+      <div class="checkpoint" data-status="done">
+        <div class="node">✓</div>
+        <div class="cp-body">
+          <div class="cp-top">
+            <span class="cp-title">Ek: uygulama genelinde TR/EN dil desteği</span>
+            <span class="pill">Tamam (B1/B6/C1/A2)</span>
+          </div>
+          <p class="cp-detail">
+            Gerçek Client uygulamasındaki dil butonuna benzer şekilde,
+            sağ üstte bir TR/EN seçici eklendi; seçim tüm sayfalarda
+            korunuyor. Arayüz metinleri, model promptları ve beklenen
+            çıktı dili birlikte değişiyor. A1 (video stüdyosu) çok büyük
+            olduğu için şimdilik yalnızca dış kabuğu çevrildi.
+          </p>
+        </div>
+      </div>
+
+      <div class="checkpoint" data-status="done">
+        <div class="node">✓</div>
+        <div class="cp-body">
+          <div class="cp-top">
+            <span class="cp-title">Ek: Gemma modelinde API hatası düzeltildi</span>
+            <span class="pill">Tamam</span>
+          </div>
+          <p class="cp-detail">
+            Gemma modeli özel bir API rotası kullandığı için standart
+            <code>max_tokens</code> parametresini reddediyordu (HTTP 400).
+            Düzeltildi ve bir daha sessizce geri gelmemesi için otomatik
+            teste bağlandı.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="section-title">Toplantıda canlı nasıl gösterilir</h2>
+    <ol class="demo-steps">
+      <li><span class="step-text"><strong>Uygulamayı aç:</strong> <code>streamlit run app.py</code>, soldan <strong>C1 — Öğrenme Yolu</strong> sayfasına geç.</span></li>
+      <li><span class="step-text"><strong>Örnek veriyi göster:</strong> "Örnek veriyi kullan" seçili haldeyken Journey talebini (hedef kitle, zorunlu konular, min/maks aktivite) ve gerçek aktivite kataloğunu önizlemede göster.</span></li>
+      <li><span class="step-text"><strong>Üret:</strong> "İki Modelle Journey Üret" butonuna bas; iki modelin bağımsız önerilerini, süre/maliyet karşılaştırmasını ve iş kuralı doğrulamasının geçtiğini göster.</span></li>
+      <li><span class="step-text"><strong>Dil değiştir:</strong> Sağ üstteki TR/EN seçiciyle İngilizce'ye geç, aynı akışın İngilizce çalıştığını göster.</span></li>
+      <li><span class="step-text"><strong>Sınırı açıkça söyle:</strong> Kataloğun şu an 6 gerçek + 8 örnek aktiviteyle sınırlı olduğunu, LEARN şeması geldiğinde katalogların gerçek veriyle büyüyeceğini belirt.</span></li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <div class="callout">
+      <strong>Özetle Mehmet Bey'e söylenecek cümle:</strong>
+      "İstediğiniz otomatik Journey oluşturma özelliği çalışıyor ve test
+      edilebilir durumda; tek eksik, sizin elinizdeki iki veri kaynağı —
+      LEARN aktivitelerinin gerçek şeması ve daha fazla aktivite export'u.
+      Bunlar geldiğinde sistem mimarisi değişmeden, yalnızca katalog
+      büyüyerek gerçek veriye geçilecek."
+      <ul>
+        <li>Kod tarafında bekleyen bir iş yok — mimari geldiğinde ölçeklenmeye hazır.</li>
+        <li>Wiki dokümanı Mehmet Bey'in kendi işi; A2 tarafı zaten test dokümanıyla kuruldu.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="brief-foot">
+    Mobixa AI Demo · C1 modülü toplantı özeti · bu sayfa yalnızca sunum
+    hazırlığı içindir, uygulamanın kendisi değildir.
+  </footer>
+
+</div>

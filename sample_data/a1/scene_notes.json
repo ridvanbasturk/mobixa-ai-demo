@@ -1,0 +1,62 @@
+{
+  "title": "Yeni Öğrenme Yolculuğu Oluşturma",
+  "target_audience": "Trainer",
+  "tone": "Kurumsal",
+  "working_mode": "safe",
+  "screens": [
+    {
+      "image_id": "screen_01",
+      "original_file_name": "screen_01_dashboard.png",
+      "scene_label": "Ana panel",
+      "note": "Ana panelden sol menüdeki Öğrenme Yolculukları bölümüne gidilir.",
+      "order": 1,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "image_id": "screen_02",
+      "original_file_name": "screen_02_journeys.png",
+      "scene_label": "Öğrenme yolculukları",
+      "note": "Öğrenme Yolculukları sayfasında Yeni Yolculuk Oluştur butonuna tıklanır.",
+      "order": 2,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "image_id": "screen_03",
+      "original_file_name": "screen_03_create_journey.png",
+      "scene_label": "Yolculuk bilgileri",
+      "note": "Yolculuk adı ve açıklaması girilir.",
+      "order": 3,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "image_id": "screen_04",
+      "original_file_name": "screen_04_add_activity.png",
+      "scene_label": "Aktivite ekleme",
+      "note": "Yolculuğa aktivite eklenir.",
+      "order": 4,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "image_id": "screen_05",
+      "original_file_name": "screen_05_assign_users.png",
+      "scene_label": "Kullanıcı atama",
+      "note": "Yolculuk ilgili kullanıcı veya gruba atanır.",
+      "order": 5,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "image_id": "screen_06",
+      "original_file_name": "screen_06_publish.png",
+      "scene_label": "Kaydetme ve yayınlama",
+      "note": "Son olarak yolculuk kaydedilir veya yayınlanır.",
+      "order": 6,
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

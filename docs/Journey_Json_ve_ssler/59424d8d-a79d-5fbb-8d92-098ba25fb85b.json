@@ -1,0 +1,1615 @@
+{
+    "activityId": 17199,
+    "activityType": "TEST",
+    "activityTypeId": 2,
+    "activitySubType": "EXAM",
+    "activitySubTypeId": 1,
+    "timeLimit": 35,
+    "title": "Final Sınavı_3",
+    "icon": "https://cdn-test.mobixa.ai/mobileIcons/Questions Answers.webp",
+    "questionCount": 35,
+    "questions": {
+        "93120": [
+            {
+                "questionId": 5184,
+                "description": "\"AHT bir hedef değil, tahmindir.\"",
+                "htmlDescription": "<p>\"AHT bir hedef değil, tahmindir.\"</p>",
+                "duration": 20,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 93120,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 13311,
+                        "description": "DOĞRU",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13312,
+                        "description": "YANLIŞ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "85000": [
+            {
+                "questionId": 37754,
+                "description": "Başarılı olmak için;",
+                "htmlDescription": "<p>Başarılı olmak i&ccedil;in;</p>",
+                "duration": 50,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "LİDERLİK",
+                "categoryId": 85610,
+                "orjCategoryId": 85000,
+                "expectedAnswerCount": 3,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 170499,
+                        "description": "Önce imkansıza değil, mümkün olana odaklanırım",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 170500,
+                        "description": "Asla pes etmem",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 170502,
+                        "description": "Bulunduğum şartları değiştirmek hoşuma gitmez",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 170498,
+                        "description": "Öğrenmeyi bırakmam",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 170504,
+                        "description": "Hep yapamayacağım şeyleri aklıma getiririm",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4648,
+                "description": "Belirli şartlar altında kişisel veya grup amaçlarını gerçekleştirecek faaliyetleri yürütür",
+                "htmlDescription": "Belirli şartlar altında kişisel veya grup amaçlarını gerçekleştirecek faaliyetleri yürütür",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "LİDERLİK",
+                "categoryId": 85110,
+                "orjCategoryId": 85000,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 10609,
+                        "description": "Lider",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10608,
+                        "description": "Motivasyon",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10610,
+                        "description": "Strateji",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10611,
+                        "description": "Ekip",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 5348,
+                "description": "Bir amaca ulaşma hedefiyle, grup eylemlerini etkileme süreci",
+                "htmlDescription": "<p>Bir amaca ulaşma hedefiyle, grup eylemlerini etkileme s&uuml;reci</p>",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "LİDERLİK",
+                "categoryId": 85310,
+                "orjCategoryId": 85000,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 14102,
+                        "description": "Liderlik",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 14103,
+                        "description": "Katılım",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 14100,
+                        "description": "Politika",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 14101,
+                        "description": "Yöneticilik ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 9928,
+                "description": "Bir amacı gerçekleştirmek için belli miktardaki çabayı harcama isteği",
+                "htmlDescription": "Bir amacı gerçekleştirmek için belli miktardaki çabayı harcama isteği",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "LİDERLİK",
+                "categoryId": 85310,
+                "orjCategoryId": 85000,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 34047,
+                        "description": "Mükemmellik",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 34040,
+                        "description": "Performans",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 34036,
+                        "description": "Paylaşım",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 34041,
+                        "description": "Eğitim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 34035,
+                        "description": "Motivasyon",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 28421,
+                "description": "Bir ekibe liderlik ettiğini düşün.\r\nLiderlerin özelliklerinden hangisi sana en yakın özellik olurdu?",
+                "htmlDescription": "<p>Bir ekibe liderlik ettiğini d&uuml;ş&uuml;n.</p>\r\n<p><span style=\"color: #f1c40f;\">Liderlerin &ouml;zelliklerinden hangisi sana en yakın &ouml;zellik olurdu?</span></p>",
+                "duration": 45,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002198-4d6e95a9-80ce-4c3c-badc-8beca34f724c.webp",
+                "category": "LİDERLİK",
+                "categoryId": 85110,
+                "orjCategoryId": 85000,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 130180,
+                        "description": "Başarısızlıkta ekip üyelerini suçlar",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 130182,
+                        "description": "Kendini geliştirmeye gerek görmez",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 130183,
+                        "description": "Kendi yerine geçebilecek potansiyeldeki elemanı başka ekiplere kaydırır",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 130184,
+                        "description": "Üst yönetime övgü yağdırır",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 130173,
+                        "description": "Bilgili ve birikimlidir. Konuya hakimdir",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4716,
+                "description": "Bir birimde çalışan görevlilerin düzenli bir biçimde yer değiştirmesi",
+                "htmlDescription": "Bir birimde çalışan görevlilerin düzenli bir biçimde yer değiştirmesi",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "LİDERLİK",
+                "categoryId": 85530,
+                "orjCategoryId": 85000,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 10911,
+                        "description": "İş zenginleştirme",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11049,
+                        "description": "Oryantasyon",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10912,
+                        "description": "Etkinlik",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10910,
+                        "description": "İş genişletme",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10909,
+                        "description": "Rotasyon",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "85200": [
+            {
+                "questionId": 4488,
+                "description": "Başkalarının aracılığıyla amaca ulaşma ve başkalarına iş gördürme faaliyeti",
+                "htmlDescription": "Başkalarının aracılığıyla amaca ulaşma ve başkalarına iş gördürme faaliyeti",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Delegasyon",
+                "categoryId": 85210,
+                "orjCategoryId": 85200,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 9955,
+                        "description": "Liderlik",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9954,
+                        "description": "Planlama",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9952,
+                        "description": "Yönetim",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9953,
+                        "description": "Denetim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4493,
+                "description": "İşleri küçük birimlere ayırmak ve bu birimleri ayrı görevlilere atamak",
+                "htmlDescription": "İşleri küçük birimlere ayırmak ve bu birimleri ayrı görevlilere atamak",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Delegasyon",
+                "categoryId": 85210,
+                "orjCategoryId": 85200,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 9973,
+                        "description": "Kapasite",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9971,
+                        "description": "Uzmanlaşma",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9972,
+                        "description": "İş bölümü",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9970,
+                        "description": "Örgütleme",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 10883,
+                "description": "Kurumdan kaynaklanan ve zaman kaybına neden olan bir faktör",
+                "htmlDescription": "<p>Kurumdan kaynaklanan ve zaman kaybına neden olan bir fakt&ouml;r</p>",
+                "duration": 35,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Delegasyon",
+                "categoryId": 85210,
+                "orjCategoryId": 85200,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 40228,
+                        "description": "Hayır diyememek",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40225,
+                        "description": "Görev tanımlarının kötü yapılması",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40226,
+                        "description": "Önyargılar",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40227,
+                        "description": "Disiplinsizlik",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "84230": [
+            {
+                "questionId": 30216,
+                "description": "Bir birimde çalışan görevlilerin düzenli bir biçimde yer değiştirmesi",
+                "htmlDescription": "<p>Bir birimde &ccedil;alışan g&ouml;revlilerin d&uuml;zenli bir bi&ccedil;imde yer değiştirmesi</p>",
+                "duration": 40,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 84230,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 138893,
+                        "description": "İş değiştirme",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 138894,
+                        "description": "İş zenginleştirme",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 138892,
+                        "description": "İş genişletme",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 138891,
+                        "description": "Oryantasyon",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 138890,
+                        "description": "Rotasyon",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4750,
+                "description": "Teori ve metodlar kullanarak veriyi anlamlı ve kullanışlı olarak raporlayan birim",
+                "htmlDescription": "<p>Teori ve metodlar kullanarak veriyi anlamlı ve kullanışlı olarak raporlayan birim</p>",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 84230,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 11110,
+                        "description": "Teftiş",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11632,
+                        "description": "Bilgi Teknolojileri",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11112,
+                        "description": "Operasyon",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11109,
+                        "description": "İş zekası",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11111,
+                        "description": "İnsan Kaynakları",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "93730": [
+            {
+                "questionId": 56138,
+                "description": "Bireysel Emeklilik Sistemi'nde katılımcının birikimleri sadece Türk Lirası cinsinden değerlendirilir ve başka para birimlerinde yatırım yapılamaz",
+                "htmlDescription": "Bireysel Emeklilik Sistemi'nde katılımcının birikimleri sadece Türk Lirası cinsinden değerlendirilir ve başka para birimlerinde yatırım yapılamaz",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 93730,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 247372,
+                        "description": "DOĞRU",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 247373,
+                        "description": "YANLIŞ",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 33572,
+                "description": "Emeklilik yatırım fonu birim pay değerinin yanlış hesaplanması halinde emeklilik şirketinin sorumluluğu?",
+                "htmlDescription": "Emeklilik yatırım fonu birim pay değerinin yanlış hesaplanması halinde emeklilik şirketinin sorumluluğu?",
+                "duration": 240,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 93730,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 153523,
+                        "description": "Emeklilik şirketi bundan doğan zararı tazmin etmekle yükümlüdür.",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 153524,
+                        "description": "Katılımcının zararı emeklilik şirketi ile portföy yönetim şirketi tarafından müştereken ödenir.",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 153522,
+                        "description": "Emeklilik şirketleri katılımcının muhtemel zararları için bir fon oluşturmak zorundadırlar.",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 153521,
+                        "description": "Emeklilik şirketi zararın emeklilik yatırım fonu hesaplarından tazmini için tedbir alır.",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 33654,
+                "description": "Emeklilik yatırım fonunun birim pay değeri nasıl hesaplanır?",
+                "htmlDescription": "Emeklilik yatırım fonunun birim pay değeri nasıl hesaplanır?",
+                "duration": 240,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 93730,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 153849,
+                        "description": "Fon varlıkları toplamının, toplam pay sayısına bölünmesiyle elde edilir.",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 153851,
+                        "description": "Bileşik faiz oranı kullanılarak tahakkuk eden faizin, önceki pay değerine eklenmesi suretiyle elde edilir.",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 153852,
+                        "description": "Fon net varlık değerinin, toplam pay sayısına bölünmesiyle elde edilir.",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 153850,
+                        "description": "Fon net varlık değerinin, dolaşımdaki pay sayısına bölünmesiyle elde edilir.",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 33592,
+                "description": "Hangisi birim pay değerlerinin hesaplanmayabileceği olağanüstü durumlardan değildir?",
+                "htmlDescription": "Hangisi birim pay değerlerinin hesaplanmayabileceği olağanüstü durumlardan değildir?",
+                "duration": 240,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 93730,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 153602,
+                        "description": "Doğal afetler",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 153601,
+                        "description": "Savaş",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 153604,
+                        "description": "Emeklilik şirketinin iflası",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 153603,
+                        "description": "Ekonomik kriz",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "87130": [
+            {
+                "questionId": 4582,
+                "description": "\"Birim üretim\" ve \"kar\"\n faktörlerinin dahil olduğu performans ölçüsü",
+                "htmlDescription": "\"Birim üretim\" ve \"kar\"\n faktörlerinin dahil olduğu performans ölçüsü",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 87130,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 10324,
+                        "description": "Zaman",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10327,
+                        "description": "Tepki",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10326,
+                        "description": "Etki",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10325,
+                        "description": "Çıktılar",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "92130": [
+            {
+                "questionId": 15604,
+                "description": "Bir ülkenin ulusal parasını tamamen veya kısmen terk edip, yabancı para birimini işlemlerinde kabul etmeye başlaması",
+                "htmlDescription": "Bir ülkenin ulusal parasını tamamen veya kısmen terk edip, yabancı para birimini işlemlerinde kabul etmeye başlaması",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 92130,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 64861,
+                        "description": "Nominal değer",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 64832,
+                        "description": "Dolarizasyon",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 64836,
+                        "description": "Efektif",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 64805,
+                        "description": "Açık piyasa işlemi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 64797,
+                        "description": "Fonlama",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 15613,
+                "description": "Bir ülkenin veya kuruluşun, kendi ulusal parasından başka bir para birimi üzerinden ihraç ettiği menkul kıymet",
+                "htmlDescription": "Bir ülkenin veya kuruluşun, kendi ulusal parasından başka bir para birimi üzerinden ihraç ettiği menkul kıymet",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 92130,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 65679,
+                        "description": "Nominal değer",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65667,
+                        "description": "Forward",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65698,
+                        "description": "Türev ürünler",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65660,
+                        "description": "Eurobond",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65683,
+                        "description": "Para politikası",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 15618,
+                "description": "Ekonomik birimlerin karar alma süreçlerinde etkili olmayacak ölçüde az ve istikrarlı bir enflasyon oranını ifade eder",
+                "htmlDescription": "Ekonomik birimlerin karar alma süreçlerinde etkili olmayacak ölçüde az ve istikrarlı bir enflasyon oranını ifade eder",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 92130,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 66094,
+                        "description": "Dealer",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 66127,
+                        "description": "Likidite riski",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 66078,
+                        "description": "Arbitraj",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 66115,
+                        "description": "Fiyat istikrarı",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 66130,
+                        "description": "Opsiyon",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 15584,
+                "description": "Faiz oranlarındaki değişimi ifade eden bir ölçüm birimidir. Virgülden sonraki 4üncü haneye karşılık gelir (0.0001)",
+                "htmlDescription": "Faiz oranlarındaki değişimi ifade eden bir ölçüm birimidir. Virgülden sonraki 4üncü haneye karşılık gelir (0.0001)",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 92130,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 62925,
+                        "description": "Açık piyasa işlemi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 62935,
+                        "description": "Birincil piyasa",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 62979,
+                        "description": "Likidite riski",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 62932,
+                        "description": "Baz puan",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 62963,
+                        "description": "Eurodollar",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 15607,
+                "description": "Kaydi forma dönüşmemiş, ekonomik birimlerin fiilen banknot ve bozuk para olarak ellerinde tuttukları para",
+                "htmlDescription": "Kaydi forma dönüşmemiş, ekonomik birimlerin fiilen banknot ve bozuk para olarak ellerinde tuttukları para",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 92130,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 65134,
+                        "description": "Kuponlu İhraç",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65114,
+                        "description": "Efektif",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65126,
+                        "description": "Forfaiting",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65142,
+                        "description": "Para piyasası",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65106,
+                        "description": "Deflatör",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 15606,
+                "description": "Ulusal para biriminin, başka bir ulusal para cinsinden ifadesi",
+                "htmlDescription": "Ulusal para biriminin, başka bir ulusal para cinsinden ifadesi",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 92130,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 64980,
+                        "description": "Döviz kuru",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65016,
+                        "description": "Değişken faizli ihraç",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65030,
+                        "description": "Eurobond",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 65059,
+                        "description": "Revalüasyon",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 64992,
+                        "description": "Açığa satış",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "89310": [
+            {
+                "questionId": 16901,
+                "description": "C programlama dilinde IEnumerable arabirimini uygulayan bir dizideki ya da nesne koleksiyonundaki öğeler için kontrol sağlar",
+                "htmlDescription": "C programlama dilinde IEnumerable arabirimini uygulayan bir dizideki ya da nesne koleksiyonundaki öğeler için kontrol sağlar",
+                "duration": 35,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 89310,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 73993,
+                        "description": "return",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 73984,
+                        "description": "bool",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 73980,
+                        "description": "convert",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 73990,
+                        "description": "for",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 73991,
+                        "description": "foreach",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "89360": [
+            {
+                "questionId": 5022,
+                "description": "Digital verinin miktarını gösteren aşağıdaki birimlerden en büyüğünü seç",
+                "htmlDescription": "Digital verinin miktarını gösteren aşağıdaki birimlerden en büyüğünü seç",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 89360,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12290,
+                        "description": "Gigabayt",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12289,
+                        "description": "Megabayt",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12288,
+                        "description": "Terabayt",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12291,
+                        "description": "Kilobayt",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "89320": [
+            {
+                "questionId": 5616,
+                "description": "Donanımsal hafıza birimi \nBellek <==   ==> İşlemci",
+                "htmlDescription": "Donanımsal hafıza birimi \nBellek <==   ==> İşlemci",
+                "duration": 20,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 89320,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 15348,
+                        "description": "Sol",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 15349,
+                        "description": "Sağ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "81430": [
+            {
+                "questionId": 30248,
+                "description": "Elektirik akımı ölçü birimi?",
+                "htmlDescription": "<p>Elektirik akımı &ouml;l&ccedil;&uuml; birimi?</p>",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 81430,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 139047,
+                        "description": "Amper",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 139046,
+                        "description": "Ohm",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 139050,
+                        "description": "Volt",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 139048,
+                        "description": "Watt",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 139049,
+                        "description": "Debi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 37752,
+                "description": "Elektrik direncinin ölçü birimi?",
+                "htmlDescription": "<p>Elektrik direncinin &ouml;l&ccedil;&uuml; birimi?</p>",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 81430,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 170487,
+                        "description": "Debi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 170485,
+                        "description": "Amper",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 170484,
+                        "description": "Ohm",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 170486,
+                        "description": "Watt",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 170488,
+                        "description": "Volt",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "84310": [
+            {
+                "questionId": 5557,
+                "description": "Empatinin güçlendirilmesi sayesinde şiddetin azaltılmasında en etkili olan sosyal birim;",
+                "htmlDescription": "<p>Empatinin g&uuml;&ccedil;lendirilmesi sayesinde şiddetin azaltılmasında en etkili olan sosyal birim;</p>",
+                "duration": 40,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 84310,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 16745,
+                        "description": "V-kayışı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 15072,
+                        "description": "Üniversite",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 15068,
+                        "description": "Aile",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 15071,
+                        "description": "Spor salonu",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 15069,
+                        "description": "Okul",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "84110": [
+            {
+                "questionId": 10880,
+                "description": "Farklı birimlerden, birbirinin astı ya da üstü olmayan çalışanlar arasındaki bilgi alışverişi",
+                "htmlDescription": "<p>Farklı birimlerden, birbirinin astı ya da &uuml;st&uuml; olmayan &ccedil;alışanlar arasındaki bilgi alışverişi</p>",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 84110,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 40211,
+                        "description": "Çapraz iletişim",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40214,
+                        "description": "Bilgi transferi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40215,
+                        "description": "Doğrudan bilgi aktarımı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40212,
+                        "description": "Yatay iletişim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40213,
+                        "description": "Dikey iletişim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "91110": [
+            {
+                "questionId": 55750,
+                "description": "I-Enerji kullanım veriminin arttırılması\n\nII- Birim taşıma (yolcu ya da yük) başına harcanan enerji miktarının azaltılması\n\nIII-Ulaşımda kullanılan araç sayısını arttırılması\n\nUlaşımda Enerji tasarrufu tedbirleri kapsamında hangileri uygulanmalıdır?",
+                "htmlDescription": "<p style=\"text-align: center;\">I-Enerji kullanım veriminin arttırılması</p>\n<p style=\"text-align: center;\">II- Birim taşıma (yolcu ya da y&uuml;k) başına harcanan enerji miktarının azaltılması</p>\n<p style=\"text-align: center;\">III-Ulaşımda kullanılan ara&ccedil; sayısını arttırılması</p>\n<p style=\"text-align: center;\">Ulaşımda Enerji tasarrufu tedbirleri kapsamında hangileri uygulanmalıdır?</p>",
+                "duration": 40,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 91110,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 245909,
+                        "description": "Yalnız I",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 245912,
+                        "description": "II ve III",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 245910,
+                        "description": "I ve II",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 245911,
+                        "description": "I ve III",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 245913,
+                        "description": "I, II ve III",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "88220": [
+            {
+                "questionId": 15775,
+                "description": "Müşteri ilişkileri ve şikayet yönetimi birimleri kurmak işletmelere birçok fırsat verir.\n\nSeçeneklerden hangileri bu fırsatlardandır?\n",
+                "htmlDescription": "<p>M&uuml;şteri ilişkileri ve şikayet y&ouml;netimi birimleri kurmak işletmelere bir&ccedil;ok fırsat verir.</p>\n<p><span style=\"color: #f1c40f;\">Se&ccedil;eneklerden <span style=\"text-decoration: underline;\">hangileri</span> bu fırsatlardandır? </span></p>",
+                "duration": 60,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 88220,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 3,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 70081,
+                        "description": "Marka tercihinin değişmesine engel olma",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 70083,
+                        "description": "Müşteriyi kaybetme",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141028,
+                        "description": "Ürün ve süreçlerdeki hataları düzeltme fırsatı",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 70082,
+                        "description": "İstenmeyen (negatif) iletişimi engelleme",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141030,
+                        "description": "Daha kolay yeni personel bulma",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 30411,
+                "description": "Müşteri ilişkileri ve şikayet yönetimi birimleri kurmak işletmelere birçok fırsat verir.\n\nSeçeneklerden hangisi bu fırsatlara örnek olarak verilebilir?",
+                "htmlDescription": "<p>M&uuml;şteri ilişkileri ve şikayet y&ouml;netimi birimleri kurmak işletmelere bir&ccedil;ok fırsat verir.</p>\n<p><strong><span style=\"color: #f8cac6;\">Se&ccedil;eneklerden hangisi bu fırsatlara &ouml;rnek olarak verilebilir? </span></strong></p>",
+                "duration": 60,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 88220,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 141036,
+                        "description": "İtibar kaybı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141035,
+                        "description": "Müşteriyi kaybetme",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141039,
+                        "description": "Marka itibarının düşmesine engel olma",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141037,
+                        "description": "Üründeki hataların görülememesi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141040,
+                        "description": "Daha kolay yeni personel bulma",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "84540": [
+            {
+                "questionId": 4479,
+                "description": "Organizasyonlarda farklı hiyerarşik düzeydeki birim veya bölümlerde bireyler arasındaki iletişim",
+                "htmlDescription": "Organizasyonlarda farklı hiyerarşik düzeydeki birim veya bölümlerde bireyler arasındaki iletişim",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 84540,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 9915,
+                        "description": "Çapraz iletişim",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9916,
+                        "description": "Yatay iletişim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9918,
+                        "description": "Kişisel iletişim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9917,
+                        "description": "Dikey iletişim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "84510": [
+            {
+                "questionId": 4478,
+                "description": "Örgütteki tüm birim ve çalışanların, görevler sorumluluklar ve yapılan çalışmalardan haberdar olması",
+                "htmlDescription": "Örgütteki tüm birim ve çalışanların, görevler sorumluluklar ve yapılan çalışmalardan haberdar olması",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "",
+                "categoryId": 84510,
+                "orjCategoryId": null,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 9911,
+                        "description": "Koordinasyon sağlama",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9914,
+                        "description": "İnsan ilişkileri yaklaşımı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9912,
+                        "description": "Koruyucu yönetim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9913,
+                        "description": "Hiyerarşik yetki",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

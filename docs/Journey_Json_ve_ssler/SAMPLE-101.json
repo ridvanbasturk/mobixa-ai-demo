@@ -1,0 +1,17 @@
+{
+  "activityId": "SAMPLE-101",
+  "activityType": "LEARN",
+  "activityTypeId": 3,
+  "activitySubType": "DEEPLEARN",
+  "activitySubTypeId": 10,
+  "timeLimit": 0,
+  "title": "[Örnek Veri] Bilgi Güvenliği Öğrenme Kartı",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/shield.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı. LEARN tipi aktivitelerin gerçek şeması yöneticiden henüz paylaşılmadığı için bu dosyanın alanları GAME/TEST şemasından tahmin edilerek uydurulmuştur.",
+  "questions": {
+    "90200": [
+      {"questionId": 900001, "category": "Bilgi Güvenliği", "duration": 25},
+      {"questionId": 900002, "category": "Bilgi Güvenliği", "duration": 20}
+    ]
+  }
+}

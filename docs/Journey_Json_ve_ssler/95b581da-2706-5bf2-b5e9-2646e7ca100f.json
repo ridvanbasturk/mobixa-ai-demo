@@ -1,0 +1,383 @@
+{
+    "activityId": 17198,
+    "activityType": "TEST",
+    "activityTypeId": 2,
+    "activitySubType": "QUIZ",
+    "activitySubTypeId": 0,
+    "timeLimit": 25,
+    "title": "Deneme testi",
+    "icon": "https://cdn-test.mobixa.ai/mobileIcons/Information.webp",
+    "questionCount": 8,
+    "questions": {
+        "85210": [
+            {
+                "questionId": 10883,
+                "description": "Kurumdan kaynaklanan ve zaman kaybına neden olan bir faktör",
+                "htmlDescription": "<p>Kurumdan kaynaklanan ve zaman kaybına neden olan bir fakt&ouml;r</p>",
+                "duration": 35,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "İş Dağılımı",
+                "categoryId": 85210,
+                "orjCategoryId": 85210,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 40225,
+                        "description": "Görev tanımlarının kötü yapılması",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40226,
+                        "description": "Önyargılar",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40227,
+                        "description": "Disiplinsizlik",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 40228,
+                        "description": "Hayır diyememek",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4488,
+                "description": "Başkalarının aracılığıyla amaca ulaşma ve başkalarına iş gördürme faaliyeti",
+                "htmlDescription": "Başkalarının aracılığıyla amaca ulaşma ve başkalarına iş gördürme faaliyeti",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "İş Dağılımı",
+                "categoryId": 85210,
+                "orjCategoryId": 85210,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 9952,
+                        "description": "Yönetim",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9953,
+                        "description": "Denetim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9954,
+                        "description": "Planlama",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9955,
+                        "description": "Liderlik",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4493,
+                "description": "İşleri küçük birimlere ayırmak ve bu birimleri ayrı görevlilere atamak",
+                "htmlDescription": "İşleri küçük birimlere ayırmak ve bu birimleri ayrı görevlilere atamak",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "İş Dağılımı",
+                "categoryId": 85210,
+                "orjCategoryId": 85210,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 9970,
+                        "description": "Örgütleme",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9971,
+                        "description": "Uzmanlaşma",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9972,
+                        "description": "İş bölümü",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9973,
+                        "description": "Kapasite",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "85410": [
+            {
+                "questionId": 1140,
+                "description": "DOĞRU ELEŞTİRİ ile ilgili yanlış olan",
+                "htmlDescription": "<p>DOĞRU ELEŞTİRİ ile ilgili yanlış olan</p>",
+                "duration": 60,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Yapıcı Eleştiri",
+                "categoryId": 85410,
+                "orjCategoryId": 85410,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 1612,
+                        "description": "Eleştirmek kötülemek değildir",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 1613,
+                        "description": "Eleştiri tartışmaya dönüştürülmemelidir",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 1614,
+                        "description": "Kişiler herkesin içinde rahatlıkla eleştirilebilir",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 1615,
+                        "description": "Eleştiriken \"sonuç odaklı\" hareket edilir",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4463,
+                "description": "Eleştiri yaparken ....",
+                "htmlDescription": "<p>Eleştiri yaparken ....</p>",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Yapıcı Eleştiri",
+                "categoryId": 85410,
+                "orjCategoryId": 85410,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 9848,
+                        "description": "Başkalarının yanında eleştirmeliyiz",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9849,
+                        "description": "Kişiyi değil davranışı eleştirmeliyiz",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9850,
+                        "description": "Genelleme yapmalıyız",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 9851,
+                        "description": "Eski hataları gündeme getirmeliyiz",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1139,
+                "description": "DOĞRU ELEŞTİRİ'nin kurallarına uygun olanlar",
+                "htmlDescription": "<p>DOĞRU ELEŞTİRİ'nin kurallarına uygun olanlar</p>",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Yapıcı Eleştiri",
+                "categoryId": 85410,
+                "orjCategoryId": 85410,
+                "expectedAnswerCount": 3,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 1608,
+                        "description": "Eleştiri, sadece kişinin yaptığı hata ile sınırlı kalmalı",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 1609,
+                        "description": "Eleştirmeden önce \"özeleştiri\" yapılmalı",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 1610,
+                        "description": "Karşı taraf mutlaka sonuna kadar dinlenmeli",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 1611,
+                        "description": "Eleştiri aldığınızda, konu hemen değiştirilmeli",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "85400": [
+            {
+                "questionId": 1157,
+                "description": "İletişimde GERİBİLDİRİM...",
+                "htmlDescription": "<p>İletişimde GERİBİLDİRİM...</p>",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Geribildirim",
+                "categoryId": 85420,
+                "orjCategoryId": 85400,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 1676,
+                        "description": "Karşıdakinin, gönderilen mesajı alıp almadığını kontrol için söylenen kısa özetlerdir",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 1677,
+                        "description": "Kişinin arkasından yapılan konuşmadır",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 1678,
+                        "description": "Bildirilen şeylerin geriye dönüşünü kontrol etmektir",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 77961,
+                        "description": "Söylenen herşeye olumlu cevap vermektir",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 78446,
+                "description": "zdfhxfghcfgj zdrhsxth ?",
+                "htmlDescription": "<p>zdfhxfghcfgj <span style=\"color: rgb(220, 38, 38);\">zdrhsxth</span> ?</p>",
+                "duration": null,
+                "mediaType": null,
+                "mediaUrl": null,
+                "category": "Geribildirim",
+                "categoryId": 85430,
+                "orjCategoryId": 85400,
+                "expectedAnswerCount": 3,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 321472,
+                        "description": "zdfxfgh",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": null
+                    },
+                    {
+                        "questionAnswerId": 321479,
+                        "description": "xfgnxfg",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": null
+                    },
+                    {
+                        "questionAnswerId": 321473,
+                        "description": "zdfbxfg",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": null
+                    },
+                    {
+                        "questionAnswerId": 321474,
+                        "description": "xdfhdfth",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": null
+                    },
+                    {
+                        "questionAnswerId": 321475,
+                        "description": "xfgxfgh",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": null
+                    },
+                    {
+                        "questionAnswerId": 321476,
+                        "description": "xdfbxfgnx",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": null
+                    },
+                    {
+                        "questionAnswerId": 321477,
+                        "description": "zdgfxfgj",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": null
+                    },
+                    {
+                        "questionAnswerId": 321478,
+                        "description": "xfgnxfgn",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": null
+                    }
+                ]
+            }
+        ]
+    }
+}

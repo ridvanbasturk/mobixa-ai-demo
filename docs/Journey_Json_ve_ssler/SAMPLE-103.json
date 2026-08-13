@@ -1,0 +1,18 @@
+{
+  "activityId": "SAMPLE-103",
+  "activityType": "GAME",
+  "activityTypeId": 1,
+  "activitySubType": "DEEPLEARN",
+  "activitySubTypeId": 10,
+  "timeLimit": 0,
+  "title": "[Örnek Veri] Parola Güvenliği Oyunu",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/lock.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı, yalnızca test/demo amaçlıdır.",
+  "questions": {
+    "90200": [
+      {"questionId": 900201, "category": "Bilgi Güvenliği", "duration": 15},
+      {"questionId": 900202, "category": "Bilgi Güvenliği", "duration": 15},
+      {"questionId": 900203, "category": "Bilgi Güvenliği", "duration": 20}
+    ]
+  }
+}

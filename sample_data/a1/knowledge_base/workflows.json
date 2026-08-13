@@ -1,0 +1,60 @@
+[
+  {
+    "workflow_id": "create_journey",
+    "title": "Yeni Öğrenme Yolculuğu Oluşturma",
+    "purpose": "Yeni bir öğrenme yolculuğu oluşturmak, aktiviteleri ve katılımcıları belirlemek ve yayınlama seçeneğini seçmek.",
+    "supported_roles": ["Trainer", "Admin"],
+    "product_version": "3.2.368",
+    "status": "approved",
+    "steps": [
+      {
+        "step_id": "create_journey_01",
+        "order": 1,
+        "screen_id": "dashboard",
+        "target_element_id": "dashboard_new_journey_button",
+        "instruction": "Ana sayfadaki Yolculuk kartında bulunan Yeni Yolculuk Ekle butonuna tıklayın.",
+        "expected_next_screen_id": "journeys_list"
+      },
+      {
+        "step_id": "create_journey_02",
+        "order": 2,
+        "screen_id": "journeys_list",
+        "target_element_id": "journeys_add_button",
+        "instruction": "Yolculuklar listesinde üstteki Yolculuk Ekle butonuna tıklayın.",
+        "expected_next_screen_id": "journey_create_basic"
+      },
+      {
+        "step_id": "create_journey_03",
+        "order": 3,
+        "screen_id": "journey_create_basic",
+        "target_element_id": "basic_next_button",
+        "instruction": "Yolculuk Adı ve tarih bilgilerini girip İleri butonuna tıklayın.",
+        "expected_next_screen_id": "journey_create_activities"
+      },
+      {
+        "step_id": "create_journey_04",
+        "order": 4,
+        "screen_id": "journey_create_activities",
+        "target_element_id": "activities_next_button",
+        "instruction": "Aktivite Seç ile yolculuğa dahil edilecek aktiviteleri belirleyip İleri butonuna tıklayın.",
+        "expected_next_screen_id": "journey_create_participants"
+      },
+      {
+        "step_id": "create_journey_05",
+        "order": 5,
+        "screen_id": "journey_create_participants",
+        "target_element_id": "participants_next_button",
+        "instruction": "Yolculuk erişimini (Herkese Açık, Kullanıcılar veya Gruplar) belirleyip İleri butonuna tıklayın.",
+        "expected_next_screen_id": "journey_create_review"
+      },
+      {
+        "step_id": "create_journey_06",
+        "order": 6,
+        "screen_id": "journey_create_review",
+        "target_element_id": "review_create_ready_button",
+        "instruction": "Yayınlama kontrol listesini gözden geçirip Oluştur ve Hazır Yap veya Oluştur ve hemen başlat seçeneklerinden birine tıklayın.",
+        "expected_next_screen_id": "journeys_list"
+      }
+    ]
+  }
+]

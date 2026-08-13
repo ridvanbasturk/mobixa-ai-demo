@@ -1,0 +1,93 @@
+[
+  {
+    "image_id": "screen_01",
+    "expected_screen_id": "dashboard",
+    "matched_screen_id": null,
+    "screen_match_score": 0.3158,
+    "scene_title": "Yeni yolculuk oluşturma başlangıcı",
+    "narration": "Ana sayfada yer alan Yolculuk kartında, mevcut yolculuk sayısının altında bulunan '+ Yeni Yolculuk Ekle' butonuna tıklayın.",
+    "grounding_source_ids": [
+      "workflow:create_journey:step:1"
+    ],
+    "grounding_warnings": [
+      "Ekran bilgi tabanıyla güvenilir biçimde eşleştirilemedi.",
+      "screen_01: 'click' eylemi için onaylı bir arayüz öğesi eşleşmedi.",
+      "screen_01: Ekran eşleşme skoru düşük (0.32)."
+    ]
+  },
+  {
+    "image_id": "screen_02",
+    "expected_screen_id": "journeys_list",
+    "matched_screen_id": null,
+    "screen_match_score": 0.3147,
+    "scene_title": "Yolculuk listesi ve yeni yolculuk ekleme",
+    "narration": "Yolculuklar sayfasında, sol üst köşede yer alan '+ Yolculuk Ekle' butonuna tıklayarak yeni bir yolculuk oluşturmaya başlayabilirsiniz.",
+    "grounding_source_ids": [
+      "workflow:create_journey:step:2"
+    ],
+    "grounding_warnings": [
+      "Ekran bilgi tabanıyla güvenilir biçimde eşleştirilemedi.",
+      "screen_02: 'click' eylemi için onaylı bir arayüz öğesi eşleşmedi.",
+      "screen_02: Ekran eşleşme skoru düşük (0.31)."
+    ]
+  },
+  {
+    "image_id": "screen_03",
+    "expected_screen_id": "journey_create_basic",
+    "matched_screen_id": "journey_create_basic",
+    "screen_match_score": 0.7108,
+    "scene_title": "Temel Bilgileri Tamamlama",
+    "narration": "Temel Bilgiler adımında gerekli bilgileri girdikten sonra, İleri butonuna tıklayarak yolculuğun aktivitelerini tanımlamaya geçin.",
+    "grounding_source_ids": [
+      "screen:journey_create_basic",
+      "workflow:create_journey:step:3"
+    ],
+    "grounding_warnings": [
+      "screen_03: 'click' eylemi için onaylı bir arayüz öğesi eşleşmedi."
+    ]
+  },
+  {
+    "image_id": "screen_04",
+    "expected_screen_id": "journey_create_activities",
+    "matched_screen_id": "journey_create_activities",
+    "screen_match_score": 0.6854,
+    "scene_title": "Aktiviteleri seçip ilerleme",
+    "narration": "Aktivite seçimini tamamladıktan sonra, Yolculuk Ekle akışında İleri butonuna tıklayarak Katılımcılar adımına geçin.",
+    "grounding_source_ids": [
+      "screen:journey_create_activities",
+      "element:activities_next_button",
+      "workflow:create_journey:step:4"
+    ],
+    "grounding_warnings": []
+  },
+  {
+    "image_id": "screen_05",
+    "expected_screen_id": "journey_create_participants",
+    "matched_screen_id": null,
+    "screen_match_score": 0.6403,
+    "scene_title": "Katılımcıları seçme ve ileriye geçme",
+    "narration": "Katılımcılar adımında, eklenecek kullanıcıları seçtikten sonra ekranın alt kısmındaki İleri butonuna tıklayın.",
+    "grounding_source_ids": [
+      "workflow:create_journey:step:5"
+    ],
+    "grounding_warnings": [
+      "Ekran bilgi tabanıyla güvenilir biçimde eşleştirilemedi.",
+      "screen_05: 'click' eylemi için onaylı bir arayüz öğesi eşleşmedi.",
+      "screen_05: Ekran eşleşme skoru düşük (0.64)."
+    ]
+  },
+  {
+    "image_id": "screen_06",
+    "expected_screen_id": "journey_create_review",
+    "matched_screen_id": "journey_create_review",
+    "screen_match_score": 0.8139,
+    "scene_title": "Yolculuk Oluşturma ve Başlatma",
+    "narration": "Yolculuk Ekle ekranında, Özet ve Yayınlama adımında yer alan Oluştur ve hemen başlat butonuna tıklayarak yolculuğu hemen başlatın.",
+    "grounding_source_ids": [
+      "screen:journey_create_review",
+      "element:review_create_start_button",
+      "workflow:create_journey:step:6"
+    ],
+    "grounding_warnings": []
+  }
+]

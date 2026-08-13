@@ -1,0 +1,41 @@
+Bilgi Güvenliği Temelleri
+
+Bilgi güvenliği, kurum içindeki verilerin gizliliğini, bütünlüğünü ve
+erişilebilirliğini korumayı amaçlayan uygulamalar bütünüdür. Bu üç
+temel ilkeye kısaca CIA üçgeni (Confidentiality, Integrity,
+Availability) denir.
+
+Gizlilik (Confidentiality), yalnızca yetkili kişilerin ilgili verilere
+erişebilmesini ifade eder. Bunu sağlamak için şifreleme, erişim
+kontrol listeleri ve güçlü kimlik doğrulama yöntemleri kullanılır.
+
+Bütünlük (Integrity), verinin yetkisiz kişiler tarafından
+değiştirilmediğinin garanti edilmesidir. Sağlama toplamları (checksum)
+ve dijital imzalar bütünlüğü doğrulamak için kullanılan yöntemlerdir.
+
+Erişilebilirlik (Availability), verinin ve sistemlerin ihtiyaç
+duyulduğunda yetkili kullanıcılar tarafından erişilebilir olmasıdır.
+Yedekleme sistemleri ve felaket kurtarma planları erişilebilirliği
+desteklemek için kullanılır.
+
+Güçlü parola politikası, çalışanların en az 12 karakter uzunluğunda,
+büyük-küçük harf, rakam ve özel karakter içeren parolalar
+kullanmasını gerektirir. Parolalar 90 günde bir değiştirilmelidir.
+
+Çok faktörlü kimlik doğrulama (MFA), kullanıcı adı ve parolaya ek
+olarak ikinci bir doğrulama adımı (örneğin telefon uygulaması veya
+SMS kodu) gerektirerek hesap güvenliğini artırır.
+
+Kimlik avı (phishing), saldırganların kullanıcıları kandırarak
+hassas bilgilerini (parola, kredi kartı numarası vb.) ele geçirmeye
+çalıştığı bir sosyal mühendislik saldırı türüdür. Şüpheli e-postalarda
+genellikle aciliyet hissi yaratan ifadeler, bilinmeyen gönderen
+adresleri ve şüpheli bağlantılar bulunur.
+
+Fidye yazılımı (ransomware), kurbanın dosyalarını şifreleyerek
+erişilemez hale getiren ve şifre çözme karşılığında fidye talep eden
+bir kötü amaçlı yazılım türüdür. Düzenli yedekleme, fidye yazılımı
+saldırılarına karşı en etkili savunma yöntemlerinden biridir.
+
+Çalışanlar şüpheli bir e-posta aldıklarında bağlantılara tıklamamalı,
+ekleri açmamalı ve durumu derhal BT güvenlik ekibine bildirmelidir.

@@ -1,0 +1,18 @@
+{
+  "activityId": "SAMPLE-105",
+  "activityType": "TEST",
+  "activityTypeId": 2,
+  "activitySubType": "QUIZ",
+  "activitySubTypeId": 0,
+  "timeLimit": 15,
+  "title": "[Örnek Veri] Liderlik Quiz",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/Information.webp",
+  "questionCount": 2,
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı, yalnızca test/demo amaçlıdır.",
+  "questions": {
+    "85000": [
+      {"questionId": 900401, "category": "LİDERLİK", "duration": 25},
+      {"questionId": 900402, "category": "LİDERLİK", "duration": 25}
+    ]
+  }
+}

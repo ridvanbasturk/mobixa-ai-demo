@@ -1,0 +1,4076 @@
+{
+    "activityId": 17201,
+    "activityType": "GAME",
+    "activityTypeId": 1,
+    "activitySubType": "DEEPLEARN",
+    "activitySubTypeId": 10,
+    "timeLimit": 0,
+    "title": "Bol Tekrar",
+    "icon": "https://cdn-test.mobixa.ai/mobileIcons/desert.webp",
+    "questions": {
+        "81310": [
+            {
+                "questionId": 1465,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "Ne görüyorsun?",
+                "duration": 10,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002303-c2d48a12-058f-4b75-a837-7848317cc51b.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3000,
+                        "description": "18",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3002,
+                        "description": "lb",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3001,
+                        "description": "28",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2999,
+                        "description": "LO",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2998,
+                        "description": "16",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1480,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002297-74bcd71c-f1d5-4e34-b349-26a6754369ef.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3074,
+                        "description": "Dikdörtgen",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3077,
+                        "description": "Köpek",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3076,
+                        "description": "Üçgen ve Elips",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3075,
+                        "description": "Elips",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3073,
+                        "description": "Kare ve Çember",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1471,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002301-01f8be5a-f7c1-4a35-a433-4f0da6a1e7d0.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3030,
+                        "description": "8",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 14394,
+                        "description": "S",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3032,
+                        "description": "9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3031,
+                        "description": "2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3028,
+                        "description": "5",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3029,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1462,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002305-f7e3c39a-f2e1-4266-866a-1644b9e9149e.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2984,
+                        "description": "19",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2987,
+                        "description": "low",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2986,
+                        "description": "SO",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2985,
+                        "description": "LO",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2983,
+                        "description": "26",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4984,
+                "description": "Resimdeki gri çizgilerle ilgili hangi ifade doğru?",
+                "htmlDescription": "<p>Resimdeki gri &ccedil;izgilerle ilgili hangi ifade doğru?</p>",
+                "duration": 25,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002270-43edd1cd-cd43-4fd7-b263-9f5ae1f7e1ec.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12126,
+                        "description": "Soldaki çizgiler açık tonda",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 130219,
+                        "description": "Sağdaki çizgiler koyu tonlu",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 130218,
+                        "description": "Sağdaki çizgiler açık tonda",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12324,
+                        "description": "Ton farkı yok",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12125,
+                        "description": "Soldaki çizgiler koyu tonda",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1476,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002299-7ca772a3-5102-4bda-830b-ef2ee6dac56a.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3054,
+                        "description": "55",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3057,
+                        "description": "15",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3056,
+                        "description": "76",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3055,
+                        "description": "66",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3053,
+                        "description": "45",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1483,
+                "description": "Hangi renk?",
+                "htmlDescription": "<p>Hangi renk?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002294-b4e5321e-d839-4bcd-b4b9-60a1fedc495c.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3088,
+                        "description": "KIRMIZI",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3092,
+                        "description": "MAVİ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3091,
+                        "description": "GRİ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3090,
+                        "description": "SİYAH",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3089,
+                        "description": "YEŞİL",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1477,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002298-972b5e0d-1311-4bc5-99db-5ad67f919522.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3061,
+                        "description": "98",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3062,
+                        "description": "13",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3060,
+                        "description": "33",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3059,
+                        "description": "88",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3058,
+                        "description": "73",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1468,
+                "description": "Ne görüyosun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yosun?</p>",
+                "duration": 10,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002303-54e5be4e-1289-470a-bf89-6e3f47e29a78.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3013,
+                        "description": "10",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3017,
+                        "description": "88",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3016,
+                        "description": "db",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3015,
+                        "description": "bd",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3014,
+                        "description": "69",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 3821,
+                "description": "Görseldeki sayı",
+                "htmlDescription": "<p>G&ouml;rseldeki sayı</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002285-7c120e4f-15f0-43b3-9c61-96bf052a30d4.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 6639,
+                        "description": "45",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6642,
+                        "description": "8345",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6641,
+                        "description": "2045",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6640,
+                        "description": "73",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6638,
+                        "description": "1436",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 3820,
+                "description": "Görseldeki sayı",
+                "htmlDescription": "<p>G&ouml;rseldeki sayı</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002285-e25c4e88-4ec8-4129-9544-28522b4709e9.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 6634,
+                        "description": "32",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6637,
+                        "description": "35",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6636,
+                        "description": "87",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6635,
+                        "description": "67",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6633,
+                        "description": "8",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1472,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 10,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002301-beb6fe29-c875-4ff7-9f7d-15687887f16c.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3036,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3037,
+                        "description": "0",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3035,
+                        "description": "1",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3034,
+                        "description": "2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3033,
+                        "description": "7",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4960,
+                "description": "Yazının rengi",
+                "htmlDescription": "<p>Yazının rengi</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002275-fa288fd0-537d-4887-b8c9-9c68ee161d26.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12049,
+                        "description": "Sarı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12051,
+                        "description": "Mavi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12050,
+                        "description": "Beyaz",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12048,
+                        "description": "Yeşil",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1488,
+                "description": "\n",
+                "htmlDescription": "",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002293-3ebcec08-ccb4-460c-88cf-d4afffd4eaee.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3113,
+                        "description": "B",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3116,
+                        "description": "E",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3115,
+                        "description": "D",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3114,
+                        "description": "C",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3112,
+                        "description": "A",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4982,
+                "description": "\n",
+                "htmlDescription": "",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002271-ee86512f-6084-41fa-837d-3e21564052da.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12118,
+                        "description": "41",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12120,
+                        "description": "72",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12119,
+                        "description": "43",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12117,
+                        "description": "42",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 30614,
+                "description": "Hangi rakamı görüyorsunuz?",
+                "htmlDescription": "<p>Hangi rakamı g&ouml;r&uuml;yorsunuz?</p>",
+                "duration": 60,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002169-c43538f3-2c7e-41ef-9809-ff29703a8c5f.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 141941,
+                        "description": "4",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141944,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141943,
+                        "description": "9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141942,
+                        "description": "7",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141940,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 3822,
+                "description": "Görseldeki nesne",
+                "htmlDescription": "<p>G&ouml;rseldeki nesne</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002285-997a30d4-2653-4c43-b08d-b770e8ee26d4.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 6644,
+                        "description": "Köpek",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6646,
+                        "description": "Ördek",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6645,
+                        "description": "Şapka",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6643,
+                        "description": "Kuş",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1479,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "Ne görüyorsun?",
+                "duration": 10,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002298-d7bdb18f-f2ea-489f-a387-6e84ce348eb5.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3069,
+                        "description": "H",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3072,
+                        "description": "I",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3071,
+                        "description": "L",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3070,
+                        "description": "U",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3068,
+                        "description": "F",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 30693,
+                "description": "Kaç beyaz ve gri kapı var",
+                "htmlDescription": "<p>Ka&ccedil; beyaz ve gri kapı var</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002168-e7124319-15a4-4160-8939-d9ad78c30eb4.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 142288,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142285,
+                        "description": "4",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142286,
+                        "description": "2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142287,
+                        "description": "3",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142284,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 5381,
+                "description": "Sarı ile kırmızının birleşimi bu renktir",
+                "htmlDescription": "<p>Sarı ile kırmızının birleşimi bu renktir</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002262-2272ac55-4717-40dc-8883-a241ec93e0d9.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 14253,
+                        "description": "Yanlış",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 14252,
+                        "description": "Doğru",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1463,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002305-43d99583-2ec4-4a0b-8f21-a06652f87c4d.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2989,
+                        "description": "LZ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2992,
+                        "description": "19",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2991,
+                        "description": "22",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2990,
+                        "description": "iz",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2988,
+                        "description": "96",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4952,
+                "description": "Yazının rengi",
+                "htmlDescription": "<p>Yazının rengi</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002277-fd5f94ca-933c-40cb-a662-ce8e6ca8e044.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12016,
+                        "description": "Sarı",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12019,
+                        "description": "Yeşil",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12018,
+                        "description": "Mavi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12017,
+                        "description": "Kırmızı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1473,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002300-5429326b-7de6-4bde-ba43-a431368f9113.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3038,
+                        "description": "8",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3042,
+                        "description": "0",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3041,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3040,
+                        "description": "16",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3039,
+                        "description": "10",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 3818,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002286-46ed0244-244d-48f1-b8a7-0c4ac308d8a2.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 6626,
+                        "description": "3",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6628,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6627,
+                        "description": "50",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6625,
+                        "description": "8",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1484,
+                "description": "Hangi renk?",
+                "htmlDescription": "<p>Hangi renk?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002294-67b0c65b-fa9b-4598-b9ec-fcaf182d1865.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3094,
+                        "description": "KIRMIZI",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3097,
+                        "description": "SİYAH",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3096,
+                        "description": "YEŞİL",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3095,
+                        "description": "GRİ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3093,
+                        "description": "MAVİ",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 15755,
+                "description": "Renkler soldan sağa açıktan koyuya doğru mu gidiyor",
+                "htmlDescription": "<p>Renkler soldan sağa a&ccedil;ıktan koyuya doğru mu gidiyor</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002235-3010b743-0706-4056-9cc7-7f05d1344608.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 69905,
+                        "description": "Hem koyu hem de açığa gidiyor",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 69904,
+                        "description": "Hayır",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 69903,
+                        "description": "Evet",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1464,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 10,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002304-964b92ad-72d0-443f-984c-dd966d88c2e8.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2994,
+                        "description": "11",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2997,
+                        "description": "17",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2996,
+                        "description": "42",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2995,
+                        "description": "32",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2993,
+                        "description": "52",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 30613,
+                "description": "Hangi harfi görüyorsunuz?",
+                "htmlDescription": "<p>Hangi harfi g&ouml;r&uuml;yorsunuz?</p>",
+                "duration": 40,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002170-d27394f7-3a69-4c40-bced-7304400e81e5.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 141934,
+                        "description": "A",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141935,
+                        "description": "H",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141939,
+                        "description": "T",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141938,
+                        "description": "N",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141937,
+                        "description": "M",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141936,
+                        "description": "L",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1469,
+                "description": "Hangi sayıları görüyorsun?",
+                "htmlDescription": "<p>Hangi sayıları g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002303-8b909dbd-9175-4d74-be62-cc52268422a9.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3019,
+                        "description": "12 ve 28",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3022,
+                        "description": "12, 28 ve 29",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3021,
+                        "description": "28 ve 29",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3020,
+                        "description": "14 ve 26",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3018,
+                        "description": "12 ve 29",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1481,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p style=\"text-align: center;\">Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 30,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002296-3709b140-3928-4cec-ae37-cb8613e03844.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3081,
+                        "description": "Masa",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3082,
+                        "description": "Dikdörtgen ve Yıldız",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3079,
+                        "description": "Kare ve Üçgen",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3078,
+                        "description": "Daire, Yıldız, Kare",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3080,
+                        "description": "Ördek",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 3819,
+                "description": "Ne görüyorsun ?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun ?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002286-4093cb2d-af9a-4b52-8a89-0ec906092936.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 6629,
+                        "description": "23",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6819,
+                        "description": "33",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6632,
+                        "description": "63",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6631,
+                        "description": "3",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6630,
+                        "description": "82",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4985,
+                "description": "Resimdeki dağınık çizgide olan renkler",
+                "htmlDescription": "<p>Resimdeki dağınık &ccedil;izgide olan renkler</p>",
+                "duration": 30,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002270-38079028-e7c5-4caa-bd20-48e56abc75d3.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12129,
+                        "description": "Mor ve kırmızı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12130,
+                        "description": "Gri ve yeşil",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12128,
+                        "description": "Sadece pembe",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12127,
+                        "description": "Mor ve pembe",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1474,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002300-5553cd31-c015-48d9-9ebe-e96722a7371e.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3044,
+                        "description": "17",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3047,
+                        "description": "21",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3046,
+                        "description": "11",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3045,
+                        "description": "15",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3043,
+                        "description": "12",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1475,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002299-5be27bec-ba48-4322-b62c-10c22ed70ea3.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3049,
+                        "description": "28",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3052,
+                        "description": "16",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3051,
+                        "description": "56",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3050,
+                        "description": "18",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3048,
+                        "description": "12",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1485,
+                "description": "Hangi renk?",
+                "htmlDescription": "<p>Hangi renk?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002293-2b3ff666-ccce-4320-8df5-8629095e2ecc.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3099,
+                        "description": "KIRMIZI",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3102,
+                        "description": "GRİ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3101,
+                        "description": "SARI",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3100,
+                        "description": "MAVİ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3098,
+                        "description": "GREEN",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1461,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002305-ddfc56eb-0cad-42ff-91c9-28a0b0f8cde5.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2976,
+                        "description": "A",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2982,
+                        "description": "0",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2980,
+                        "description": "0",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2979,
+                        "description": "G",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2978,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1470,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002302-33f7df55-b5e8-4c4a-872b-e097e8b58209.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3024,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3027,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3026,
+                        "description": "0",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3025,
+                        "description": "9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3023,
+                        "description": "8",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4949,
+                "description": "Yazının rengi",
+                "htmlDescription": "<p>Yazının rengi</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002278-4a7a1109-6d64-448a-8b4d-0cc4e7353de1.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12004,
+                        "description": "Kırmızı",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12007,
+                        "description": "Mavi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12006,
+                        "description": "Beyaz",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12005,
+                        "description": "Sarı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1478,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002298-d593fa00-d7b1-44a3-b5c6-b01ce7874d53.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3063,
+                        "description": "74",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3067,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3066,
+                        "description": "2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3065,
+                        "description": "8",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3064,
+                        "description": "73",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1482,
+                "description": "Ne görüyorsun?",
+                "htmlDescription": "<p>Ne g&ouml;r&uuml;yorsun?</p>",
+                "duration": 20,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002295-f915bb4d-9b85-439f-89b9-a8dd632ea6c1.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3084,
+                        "description": "Üçgen",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3083,
+                        "description": "Kelebek",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3085,
+                        "description": "Yıldız",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3086,
+                        "description": "Köpek",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3087,
+                        "description": "Ördek",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4953,
+                "description": "Yazının rengi",
+                "htmlDescription": "<p>Yazının rengi</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002277-ea7e1c01-99b4-4d02-ac85-4aa54ae12327.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12021,
+                        "description": "Kırmızı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12023,
+                        "description": "Mavi",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12022,
+                        "description": "Siyah",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12020,
+                        "description": "Beyaz",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4951,
+                "description": "Kelimeyle aynı renkte olan",
+                "htmlDescription": "<p>Kelimeyle aynı renkte olan</p>",
+                "duration": 25,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002278-13710033-9a3c-4465-b9b4-e1a872f26f6f.webp",
+                "category": "Renkler",
+                "categoryId": 81310,
+                "orjCategoryId": 81310,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12015,
+                        "description": "Sarı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12388,
+                        "description": "Turuncu",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12014,
+                        "description": "Mor",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12013,
+                        "description": "Pembe",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12012,
+                        "description": "Mavi",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ],
+        "81320": [
+            {
+                "questionId": 5258,
+                "description": "Futbol toplarının sayısı",
+                "htmlDescription": "Futbol toplarının sayısı",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002263-fa62aa42-5a01-4843-8294-d083755ae490.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 13698,
+                        "description": "Üç",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13780,
+                        "description": "Sekiz",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13754,
+                        "description": "Altı",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13700,
+                        "description": "Beş",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13699,
+                        "description": "Dört",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13696,
+                        "description": "Bir",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4053,
+                "description": "83882\n\n",
+                "htmlDescription": "83882\n\n",
+                "duration": 10,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 8079,
+                        "description": "83882",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55696,
+                        "description": "28838",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55695,
+                        "description": "18388",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55694,
+                        "description": "21009",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55693,
+                        "description": "47729",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8082,
+                        "description": "58778",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8081,
+                        "description": "38887",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8080,
+                        "description": "53887",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4975,
+                "description": "Arabanın park numarası",
+                "htmlDescription": "<p>Arabanın park numarası</p>",
+                "duration": 40,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002272-77ab0c75-dab7-4a1c-96ca-87b7c700a8da.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12095,
+                        "description": "87",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12098,
+                        "description": "90",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12097,
+                        "description": "89",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12096,
+                        "description": "78",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 30691,
+                "description": "Mavi topları say",
+                "htmlDescription": "<p><span style=\"color: #c2e0f4;\"><strong>Mavi</strong></span> topları say</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002169-db141a16-e5bd-4533-b1c6-72c769c87cbc.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 142271,
+                        "description": "5",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142279,
+                        "description": "7",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142278,
+                        "description": "2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142272,
+                        "description": "9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142277,
+                        "description": "1",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142276,
+                        "description": "4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142275,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142274,
+                        "description": "16",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142273,
+                        "description": "3",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4054,
+                "description": "266\n\n",
+                "htmlDescription": "266\n\n",
+                "duration": 10,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 8084,
+                        "description": "286",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8086,
+                        "description": "622",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8085,
+                        "description": "556",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8083,
+                        "description": "266",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1307,
+                "description": "Kırkdörtmilyonaltıyüzellibirbinoniki",
+                "htmlDescription": "<p>Kırkd&ouml;rtmilyonaltıy&uuml;zellibirbinoniki</p>",
+                "duration": 30,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2299,
+                        "description": "44601712",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2298,
+                        "description": "44551112",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2297,
+                        "description": "44655112",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2296,
+                        "description": "44650012",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2295,
+                        "description": "44651012",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4050,
+                "description": "0643\n\n",
+                "htmlDescription": "0643\n\n",
+                "duration": 10,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 8068,
+                        "description": "0663",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8070,
+                        "description": "9645",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8069,
+                        "description": "0915",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8067,
+                        "description": "0643",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1272,
+                "description": "\"HOMURDANMAYANLARDANMIYIZ\"\n\nkelimesindeki ünlü harflerin sayısı",
+                "htmlDescription": "\"HOMURDANMAYANLARDANMIYIZ\"\n\nkelimesindeki ünlü harflerin sayısı",
+                "duration": 15,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2144,
+                        "description": "9",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2145,
+                        "description": "11",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2148,
+                        "description": "8",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2147,
+                        "description": "7",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2146,
+                        "description": "10",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 30611,
+                "description": "\n",
+                "htmlDescription": "",
+                "duration": 150,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002171-d2d41f28-9925-4fe9-8ab3-6f76c8edd41e.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 141926,
+                        "description": "2-5",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141929,
+                        "description": "1-4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141928,
+                        "description": "2-6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141927,
+                        "description": "3-6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141925,
+                        "description": "1-5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4969,
+                "description": "Ok yönünden baktığımızda hangi şekli görürüz",
+                "htmlDescription": "Ok yönünden baktığımızda hangi şekli görürüz",
+                "duration": 60,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002274-37254c8f-50a4-4356-beb9-08ea3a7622ce.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12072,
+                        "description": "A",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12074,
+                        "description": "C",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12073,
+                        "description": "B",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12071,
+                        "description": "D",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 30597,
+                "description": "\n",
+                "htmlDescription": "",
+                "duration": 90,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002178-633af69f-bfd7-4b19-af9b-604d7ac9128d.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 141856,
+                        "description": "16",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141855,
+                        "description": "42",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141854,
+                        "description": "35",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141853,
+                        "description": "21",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141852,
+                        "description": "13",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141851,
+                        "description": "9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4052,
+                "description": "20834\n\n",
+                "htmlDescription": "20834\n\n",
+                "duration": 10,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 8076,
+                        "description": "20534",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55692,
+                        "description": "12844",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55691,
+                        "description": "98832",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55690,
+                        "description": "25466",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55689,
+                        "description": "12054",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55688,
+                        "description": "50384",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55687,
+                        "description": "83420",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8078,
+                        "description": "70454",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8077,
+                        "description": "70654",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8075,
+                        "description": "20834",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 30599,
+                "description": "\n",
+                "htmlDescription": "",
+                "duration": 90,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002177-645f718a-3cda-411c-8db0-bf59fabe37eb.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 141861,
+                        "description": "Kitaplar",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141862,
+                        "description": "Kulak",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141867,
+                        "description": "Portre Resim",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141866,
+                        "description": "Ay",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141865,
+                        "description": "Kalem",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141864,
+                        "description": "Kulaklık",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 141863,
+                        "description": "Anahtar",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4971,
+                "description": "Şekilde kaç adet kare var?",
+                "htmlDescription": "Şekilde kaç adet kare var?",
+                "duration": 40,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002273-236cf0c1-d0de-4470-b757-97578289e02c.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12080,
+                        "description": "11",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12082,
+                        "description": "15",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12081,
+                        "description": "13",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12079,
+                        "description": "17",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4939,
+                "description": "Doktor sana yarım saat arayla alman için 3 hap verdi.\nHapları bitirmen ne kadar sürer?",
+                "htmlDescription": "Doktor sana yarım saat arayla alman için 3 hap verdi.\nHapları bitirmen ne kadar sürer?",
+                "duration": 15,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 11964,
+                        "description": "3 saat",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11963,
+                        "description": "1/2 saat",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11962,
+                        "description": "1,5 saat",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11961,
+                        "description": "1 saat",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 5264,
+                "description": "2374238563583276\n\nyukarıdaki sayı dizisinde bulunmayan sayıları seç",
+                "htmlDescription": "2374238563583276\n\nyukarıdaki sayı dizisinde bulunmayan sayıları seç",
+                "duration": 20,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 2,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 13730,
+                        "description": "1",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13734,
+                        "description": "4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13733,
+                        "description": "7",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13732,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13731,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13729,
+                        "description": "9",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4956,
+                "description": "Şekle üstten baktığında hangisini görürsün?",
+                "htmlDescription": "Şekle üstten baktığında hangisini görürsün?",
+                "duration": 60,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002276-edfe5df1-9644-473d-bf46-9e4dfd62ea70.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 12033,
+                        "description": "A",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12035,
+                        "description": "D",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12034,
+                        "description": "B",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 12032,
+                        "description": "C",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 5450,
+                "description": "\"I\" harflerini say\r\nFINISHED FILES ARE THE RESULT OF YEARS OF SCIENTIFIC FACTS",
+                "htmlDescription": "<p>\"I\" harflerini say</p>\r\n<p>FINISHED FILES ARE THE RESULT OF YEARS OF SCIENTIFIC FACTS</p>",
+                "duration": 20,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 14529,
+                        "description": "4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 14531,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 14530,
+                        "description": "7",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 14528,
+                        "description": "3",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 14527,
+                        "description": "6",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1275,
+                "description": "113422\n\n",
+                "htmlDescription": "113422\n\n",
+                "duration": 10,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2160,
+                        "description": "114322",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13380,
+                        "description": "173522",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13379,
+                        "description": "116593",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13378,
+                        "description": "234765",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13377,
+                        "description": "123244",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2162,
+                        "description": "113412",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2161,
+                        "description": "113421",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2159,
+                        "description": "113422",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4665,
+                "description": "F harflerini say\n\nFINISHED FILES ARE THE RESULT OF YEARS OF SCIENTIFIC FACTS",
+                "htmlDescription": "F harflerini say\n\nFINISHED FILES ARE THE RESULT OF YEARS OF SCIENTIFIC FACTS",
+                "duration": 20,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 10677,
+                        "description": "5",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10709,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10679,
+                        "description": "4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10678,
+                        "description": "3",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10680,
+                        "description": "7",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 3823,
+                "description": "Soldaki disk ok yönünde çevrilirse sağ üstteki çarkın hareket yönü ne olur ?",
+                "htmlDescription": "Soldaki disk ok yönünde çevrilirse sağ üstteki çarkın hareket yönü ne olur ?",
+                "duration": 40,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002284-8ccd9836-8b68-48f6-b05f-63129f18d688.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 6648,
+                        "description": "Önce B sonra A yönünde",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6658,
+                        "description": "Hareket etmez",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6650,
+                        "description": "B yönünde",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6649,
+                        "description": "Önce A sonra B yönünde",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 6647,
+                        "description": "A yönünde",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4051,
+                "description": "67650\n\n",
+                "htmlDescription": "67650\n\n",
+                "duration": 10,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 8072,
+                        "description": "66750",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 20418,
+                        "description": "47670",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 20417,
+                        "description": "87760",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 20416,
+                        "description": "76660",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 20415,
+                        "description": "34500",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 20414,
+                        "description": "50650",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 20413,
+                        "description": "23154",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 20412,
+                        "description": "47780",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8074,
+                        "description": "87650",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8073,
+                        "description": "17456",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8071,
+                        "description": "67650",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4655,
+                "description": "\" 0216 988 01 87 \"\nAynısını bul",
+                "htmlDescription": "\" 0216 988 01 87 \"\nAynısını bul",
+                "duration": 25,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 10638,
+                        "description": "0216 899 01 87",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10640,
+                        "description": "0216 988 01 87",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10639,
+                        "description": "0216 988 01 88",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10637,
+                        "description": "0212 988 01 87",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 16308,
+                "description": "",
+                "htmlDescription": "",
+                "duration": 25,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002234-60eb341c-048b-4e9d-86da-70f520a0bc60.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 72287,
+                        "description": "Sayı dizisinde olmayan sayı 3",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72290,
+                        "description": "Sayı dizisinde olmayan sayı 9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72289,
+                        "description": "Sayı dizisinde olmayan sayı 5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72288,
+                        "description": "Sayı dizisinde olmayan sayı 4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72286,
+                        "description": "Sayı dizisinde olmayan sayı 2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72285,
+                        "description": "Sayı dizisinde olmayan sayı 8",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72284,
+                        "description": "Sayı dizisinde olmayan sayı 7",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72283,
+                        "description": "Sayı dizisinde olmayan sayı 0",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72282,
+                        "description": "Sayı dizisinde olmayan sayı 1",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72281,
+                        "description": "Sayı dizisinde olmayan sayı 6",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1266,
+                "description": "OKUDUĞUN BU CÜMLEDE KAÇ HARF VAR",
+                "htmlDescription": "OKUDUĞUN BU CÜMLEDE KAÇ HARF VAR",
+                "duration": 20,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2120,
+                        "description": "28",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2121,
+                        "description": "29",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2122,
+                        "description": "30",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2119,
+                        "description": "27",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1449,
+                "description": "3545",
+                "htmlDescription": "3545",
+                "duration": 10,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2944,
+                        "description": "3545",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13376,
+                        "description": "8535",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13375,
+                        "description": "7535",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13374,
+                        "description": "9076",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13373,
+                        "description": "2335",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13372,
+                        "description": "6789",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13371,
+                        "description": "8745",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13370,
+                        "description": "3535",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13369,
+                        "description": "2356",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13368,
+                        "description": "3745",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2947,
+                        "description": "3535",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2946,
+                        "description": "4535",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2945,
+                        "description": "3525",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1274,
+                "description": "15023091294\n\n30225961532\n\nİkİ dizideki ortak olmayan 2 sayıyı bul",
+                "htmlDescription": "<p style=\"text-align: center;\">15023091294</p>\n<p style=\"text-align: center;\">30225961532</p>\n<p style=\"text-align: center;\">İkİ dizideki ortak olmayan 2 sayıyı bul</p>",
+                "duration": 15,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 2,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 2155,
+                        "description": "9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55674,
+                        "description": "4",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 23976,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 23975,
+                        "description": "1",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 23974,
+                        "description": "3",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2158,
+                        "description": "0",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2157,
+                        "description": "2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 2154,
+                        "description": "6",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4672,
+                "description": "Farklı olanı seç",
+                "htmlDescription": "Farklı olanı seç",
+                "duration": 15,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 10707,
+                        "description": "Sokak",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10704,
+                        "description": "Aşağı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10705,
+                        "description": "Yukarı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 10706,
+                        "description": "Sağa",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 16307,
+                "description": "",
+                "htmlDescription": "",
+                "duration": 25,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002234-0fdcd658-e0f6-4957-98bf-ee715fbe635b.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 72275,
+                        "description": "Sayı 259 ile bitiyordu",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72280,
+                        "description": "Sayı 418 ile bitiyordu",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72279,
+                        "description": "Sayı 933 ile bitiyordu",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72278,
+                        "description": "Sayı 611 ile bitiyordu",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72277,
+                        "description": "Sayı 729 ile bitiyordu",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72276,
+                        "description": "Sayı 159 ile bitiyordu",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 72274,
+                        "description": "Sayı 593 ile bitiyordu",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 1498,
+                "description": "Mavi topları say",
+                "htmlDescription": "<p><span style=\"color: #c2e0f4;\"><strong>Mavi</strong></span> topları say</p>",
+                "duration": 15,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002291-d2c81df6-a400-4cfd-8f97-276021c0f320.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 3158,
+                        "description": "3",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142270,
+                        "description": "7",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142269,
+                        "description": "2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142268,
+                        "description": "1",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142267,
+                        "description": "4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3156,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 142266,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3159,
+                        "description": "16",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 3157,
+                        "description": "9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4940,
+                "description": "Bazı aylarda 30, bazılarında 31 gün var.\n\nKaç ayda 28 gün var?",
+                "htmlDescription": "Bazı aylarda 30, bazılarında 31 gün var.\n\nKaç ayda 28 gün var?",
+                "duration": 15,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 11966,
+                        "description": "12",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11967,
+                        "description": "1",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11970,
+                        "description": "9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11969,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 11968,
+                        "description": "4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 5251,
+                "description": "POLİS\n\nHangi harf yok?",
+                "htmlDescription": "POLİS\n\nHangi harf yok?",
+                "duration": 15,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 13663,
+                        "description": "Z",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 20427,
+                        "description": "S",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13666,
+                        "description": "L",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13665,
+                        "description": "P",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13664,
+                        "description": "O",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13662,
+                        "description": "İ",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 14330,
+                "description": "70338121544\r\n93655734211\r\nİki sayı dizisinde ortak olmayan 3 sayıyı bul",
+                "htmlDescription": "<p style=\"text-align: center;\">70338121544</p>\r\n<p style=\"text-align: center;\">93655734211</p>\r\n<p style=\"text-align: center;\">İki sayı dizisinde ortak olmayan 3 sayıyı bul</p>",
+                "duration": 15,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 3,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 55675,
+                        "description": "0",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55683,
+                        "description": "8",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55682,
+                        "description": "4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55681,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55680,
+                        "description": "1",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55679,
+                        "description": "3",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55678,
+                        "description": "6",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55677,
+                        "description": "2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 55676,
+                        "description": "9",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 5220,
+                "description": "E harflerini say\n\nFINISHED FILES ARE THE RESULT OF YEARS OF SCIENTIFIC FACTS",
+                "htmlDescription": "E harflerini say\n\nFINISHED FILES ARE THE RESULT OF YEARS OF SCIENTIFIC FACTS",
+                "duration": 20,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 13480,
+                        "description": "5",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13541,
+                        "description": "9",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13540,
+                        "description": "8",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13539,
+                        "description": "2",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13484,
+                        "description": "6",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13483,
+                        "description": "7",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13482,
+                        "description": "4",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 13481,
+                        "description": "3",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 3959,
+                "description": "",
+                "htmlDescription": "",
+                "duration": 10,
+                "mediaType": 1,
+                "mediaUrl": "https://cdn-test.mobixa.ai/00000000-0000-0000-0000-000000000001/images/1480002282-e018db02-1d85-4c0d-8905-1251dd6a38e5.webp",
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 7516,
+                        "description": "3 balık vardı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 7520,
+                        "description": "5 balık vardı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 7519,
+                        "description": "4 balık vardı",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 7518,
+                        "description": "6 balık vardı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 7517,
+                        "description": "2 balık vardı",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            },
+            {
+                "questionId": 4049,
+                "description": "8956\n\n",
+                "htmlDescription": "8956\n\n",
+                "duration": 10,
+                "mediaType": 0,
+                "mediaUrl": null,
+                "category": "Şekiller",
+                "categoryId": 81320,
+                "orjCategoryId": 81320,
+                "expectedAnswerCount": 1,
+                "questionAnswers": [
+                    {
+                        "questionAnswerId": 8064,
+                        "description": "7966",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8066,
+                        "description": "5680",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8065,
+                        "description": "8926",
+                        "isCorrect": false,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    },
+                    {
+                        "questionAnswerId": 8063,
+                        "description": "8956",
+                        "isCorrect": true,
+                        "mediaUrl": null,
+                        "mediaType": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

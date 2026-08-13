@@ -1,0 +1,15 @@
+id,title,activity_type,activity_sub_type,topic,duration_minutes,question_count
+17197,Satış Bombası,GAME,DEEPLEARN,Satış Kapama,293,325
+17198,Deneme testi,TEST,QUIZ,İş Dağılımı,25,8
+17199,Final Sınavı_3,TEST,EXAM,LİDERLİK,35,35
+17200,Tepeye Ulaşmaca,GAME,PEAK,Çevresel Sorumluluk,110,182
+17201,Bol Tekrar,GAME,DEEPLEARN,Renkler,31,78
+17218,İSG,GAME,DEEPLEARN,İş Güvenliği (İSG),111,185
+SAMPLE-101,[Örnek Veri] Bilgi Güvenliği Öğrenme Kartı,LEARN,DEEPLEARN,Bilgi Güvenliği,1,2
+SAMPLE-102,[Örnek Veri] KVKK Öğrenme Kartı,LEARN,DEEPLEARN,KVKK,1,2
+SAMPLE-103,[Örnek Veri] Parola Güvenliği Oyunu,GAME,DEEPLEARN,Bilgi Güvenliği,1,3
+SAMPLE-104,[Örnek Veri] KVKK Senaryo Oyunu,GAME,PEAK,KVKK,1,2
+SAMPLE-105,[Örnek Veri] Liderlik Quiz,TEST,QUIZ,LİDERLİK,15,2
+SAMPLE-106,[Örnek Veri] KVKK Final Sınavı,TEST,EXAM,KVKK,30,2
+SAMPLE-107,[Örnek Veri] Finansal Okuryazarlık Oyunu,GAME,DEEPLEARN,Finans,1,3
+SAMPLE-108,[Örnek Veri] Müşteri İlişkileri Öğrenme Kartı,LEARN,DEEPLEARN,Müşteri İlişkileri,1,2

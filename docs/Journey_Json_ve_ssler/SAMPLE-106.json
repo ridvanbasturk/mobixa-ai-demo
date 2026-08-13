@@ -1,0 +1,18 @@
+{
+  "activityId": "SAMPLE-106",
+  "activityType": "TEST",
+  "activityTypeId": 2,
+  "activitySubType": "EXAM",
+  "activitySubTypeId": 1,
+  "timeLimit": 30,
+  "title": "[Örnek Veri] KVKK Final Sınavı",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/Questions Answers.webp",
+  "questionCount": 2,
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı, yalnızca test/demo amaçlıdır.",
+  "questions": {
+    "90300": [
+      {"questionId": 900501, "category": "KVKK", "duration": 30},
+      {"questionId": 900502, "category": "KVKK", "duration": 30}
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "activityId": "SAMPLE-102",
+  "activityType": "LEARN",
+  "activityTypeId": 3,
+  "activitySubType": "DEEPLEARN",
+  "activitySubTypeId": 10,
+  "timeLimit": 0,
+  "title": "[Örnek Veri] KVKK Öğrenme Kartı",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/document.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı. LEARN tipi aktivitelerin gerçek şeması yöneticiden henüz paylaşılmadığı için bu dosyanın alanları GAME/TEST şemasından tahmin edilerek uydurulmuştur.",
+  "questions": {
+    "90300": [
+      {"questionId": 900101, "category": "KVKK", "duration": 30},
+      {"questionId": 900102, "category": "KVKK", "duration": 25}
+    ]
+  }
+}

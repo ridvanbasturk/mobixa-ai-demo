@@ -1,0 +1,17 @@
+{
+  "activityId": "SAMPLE-104",
+  "activityType": "GAME",
+  "activityTypeId": 1,
+  "activitySubType": "PEAK",
+  "activitySubTypeId": 2,
+  "timeLimit": 0,
+  "title": "[Örnek Veri] KVKK Senaryo Oyunu",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/document2.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı, yalnızca test/demo amaçlıdır.",
+  "questions": {
+    "90300": [
+      {"questionId": 900301, "category": "KVKK", "duration": 20},
+      {"questionId": 900302, "category": "KVKK", "duration": 20}
+    ]
+  }
+}

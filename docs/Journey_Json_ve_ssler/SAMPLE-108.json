@@ -1,0 +1,17 @@
+{
+  "activityId": "SAMPLE-108",
+  "activityType": "LEARN",
+  "activityTypeId": 3,
+  "activitySubType": "DEEPLEARN",
+  "activitySubTypeId": 10,
+  "timeLimit": 0,
+  "title": "[Örnek Veri] Müşteri İlişkileri Öğrenme Kartı",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/book.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı. LEARN tipi aktivitelerin gerçek şeması yöneticiden henüz paylaşılmadığı için bu dosyanın alanları GAME/TEST şemasından tahmin edilerek uydurulmuştur.",
+  "questions": {
+    "88220": [
+      {"questionId": 900701, "category": "Müşteri İlişkileri", "duration": 20},
+      {"questionId": 900702, "category": "Müşteri İlişkileri", "duration": 20}
+    ]
+  }
+}

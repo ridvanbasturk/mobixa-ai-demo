@@ -1,0 +1,222 @@
+[
+  {
+    "id": "KB01",
+    "title": "Password reset",
+    "content": "To reset your password, click the 'Forgot Password' link on the login screen. A reset link will be sent to your registered email address. The link is valid for 30 minutes. If you don't receive the email within 10 minutes, check your spam folder.",
+    "role": ["learner", "trainer"],
+    "product_area": "authentication",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB02",
+    "title": "Accessing assigned training",
+    "content": "You can access training assigned to you from the 'My Trainings' section on the home page. If a training is not assigned, your manager or HR department needs to assign it to you; the system does not assign trainings automatically.",
+    "role": ["learner"],
+    "product_area": "training_access",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB03",
+    "title": "Activity completion rules",
+    "content": "An activity is marked as 'completed' only when all its steps (watching the video, submitting the quiz, or confirming card reading) are finished. Partial progress stays in 'in progress' status and the completion percentage is not updated.",
+    "role": ["learner"],
+    "product_area": "activity_tracking",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB04",
+    "title": "Quiz retry attempts",
+    "content": "There are a total of 3 attempts allowed per quiz. The highest score is saved to the system. After the third attempt, retries are exhausted and trainer approval is required to reopen the quiz.",
+    "role": ["learner"],
+    "product_area": "quiz",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB05",
+    "title": "Technical support channel",
+    "content": "For technical issues, you can email support@mobixa.ai or use the 'Support' button inside the app. The support team responds within 24 hours on business days.",
+    "role": ["learner", "trainer"],
+    "product_area": "support",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB06",
+    "title": "Mobile browser usage",
+    "content": "Mobixa is currently only available through the web browser on mobile devices. There is no information in this wiki about a native iOS or Android app.",
+    "role": ["learner", "trainer"],
+    "product_area": "mobile_access",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB07",
+    "title": "Draft: Enterprise SSO integration (not yet live)",
+    "content": "This item is under review and has not been approved; it must not be used in customer questions.",
+    "role": ["trainer"],
+    "product_area": "authentication",
+    "status": "draft",
+    "version": "0.1",
+    "last_updated": "2026-06-15"
+  },
+  {
+    "id": "KB08",
+    "title": "Two-factor authentication (2FA)",
+    "content": "You can turn on two-factor authentication from Profile > Security. Once enabled, a 6-digit code is emailed to you at every login; the code is valid for 5 minutes. The same screen is used to turn 2FA off, and turning it off does not affect your existing sessions.",
+    "role": ["learner", "trainer"],
+    "product_area": "two_factor_auth",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB09",
+    "title": "Unenrolling from a training",
+    "content": "You can leave a training you self-enrolled in from the '...' menu on the 'My Trainings' page by selecting 'Unenroll'. You cannot unenroll yourself from a mandatory training assigned by a manager; only the manager or HR who made the assignment can remove it.",
+    "role": ["learner"],
+    "product_area": "training_access",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB10",
+    "title": "Downloading your certificate",
+    "content": "Once you complete a training 100%, a 'Download Certificate' button appears next to it under 'My Trainings > Completed'. The certificate is a PDF containing your name, the training title, and the completion date. Certificates cannot be renamed or edited after they are generated.",
+    "role": ["learner"],
+    "product_area": "certificates",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB11",
+    "title": "Points and badges",
+    "content": "You earn points by completing game-type activities and quizzes; badges are automatically added to your profile when you reach certain point thresholds. Points can be viewed under the 'My Achievements' tab in your profile. Points are not retroactively removed and are only reset when the account is closed.",
+    "role": ["learner"],
+    "product_area": "gamification",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB12",
+    "title": "Leaderboard visibility",
+    "content": "By default the leaderboard is only visible to users in the same team/group, not company-wide. You can hide your own name from the list by turning off 'Show me on the leaderboard' under Profile > Privacy; your points are still counted, they just won't be shown.",
+    "role": ["learner"],
+    "product_area": "gamification",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB13",
+    "title": "Notification settings",
+    "content": "You can turn email and in-app notifications on or off separately under Profile > Notifications. 'New training assigned', 'Deadline approaching' and 'Quiz result ready' notifications are managed with separate toggles; use the 'Turn off all notifications' option at the bottom of the page to disable everything at once.",
+    "role": ["learner", "trainer"],
+    "product_area": "notifications",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB14",
+    "title": "Updating profile information",
+    "content": "You can update your first name, last name, and profile picture under Profile > Personal Information. To change your registered email address you must confirm a verification link sent to the new address; you can keep logging in with the old address until the email change is confirmed.",
+    "role": ["learner", "trainer"],
+    "product_area": "profile",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB15",
+    "title": "Video playback issues",
+    "content": "If a video keeps buffering or won't load, first try clearing your browser cache and refreshing the page. If the issue continues, make sure your connection speed is at least 2 Mbps; the player automatically lowers quality based on connection speed, but very slow connections can still buffer.",
+    "role": ["learner"],
+    "product_area": "playback",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB16",
+    "title": "Subtitles and accessibility",
+    "content": "You can turn on Turkish or English subtitles by clicking the 'CC' icon in the video player's bottom bar. Text size can be set to Small/Medium/Large under Profile > Accessibility; this setting applies across the entire app, not just the video player.",
+    "role": ["learner"],
+    "product_area": "accessibility",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB17",
+    "title": "Changing the app language",
+    "content": "The app language can be switched between Turkish and English from the language selector in the top-right corner. Your language choice is saved to your account and remembered automatically on your next login; however, training content you've already completed (videos, quiz questions) stays in its original language and is not retroactively translated.",
+    "role": ["learner", "trainer"],
+    "product_area": "localization",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB18",
+    "title": "Assigning training to a group (trainer)",
+    "content": "Users with the trainer role can bulk-assign training to a group from Admin Panel > Groups. Every user in the group receives an individual notification when the assignment is made. Users added to a group later automatically inherit any training previously assigned to that group.",
+    "role": ["trainer"],
+    "product_area": "group_management",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB19",
+    "title": "Exporting a completion report",
+    "content": "Users with the trainer role can export a training's completion report as CSV or PDF from Admin Panel > Reports. The report includes user name, completion percentage, quiz score, and completion date. For large groups (500+ users) report generation can take a few minutes; the system sends an email notification once it's ready.",
+    "role": ["trainer"],
+    "product_area": "reporting",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB20",
+    "title": "Deadline reminders",
+    "content": "As a training's due date approaches, the system automatically sends reminder notifications 7 days, 3 days, and 1 day before. These reminders can be turned off individually under Profile > Notifications; however, the 'overdue' notification sent for trainings past their due date and still incomplete cannot be turned off.",
+    "role": ["learner"],
+    "product_area": "scheduling",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB21",
+    "title": "Offline mode",
+    "content": "You can download a training's video and quiz content to your device with the 'Download' button and complete it without an internet connection. Downloaded content is kept on the device for at most 14 days; you must reconnect to the internet and sync your progress before this period ends, otherwise offline progress is not saved.",
+    "role": ["learner"],
+    "product_area": "mobile_access",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB22",
+    "title": "Account deletion request (data privacy)",
+    "content": "To request deletion of your account and personal data, create a request under Profile > Privacy > 'Delete My Account' or write to privacy@mobixa.ai. The request is processed within 30 days at the latest under applicable data protection rules; records your organization is legally required to retain (e.g. completed mandatory training certificates) may still be kept by the organization during that period.",
+    "role": ["learner", "trainer"],
+    "product_area": "data_privacy",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  }
+]

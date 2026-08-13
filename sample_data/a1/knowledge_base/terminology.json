@@ -1,0 +1,14 @@
+{
+  "approved_terms": [
+    {
+      "canonical": "öğrenme yolculuğu",
+      "alternatives": ["yolculuk"],
+      "avoid": ["eğitim rotası"]
+    },
+    {
+      "canonical": "aktivite",
+      "alternatives": ["öğrenme aktivitesi"],
+      "avoid": ["içerik öğesi"]
+    }
+  ]
+}

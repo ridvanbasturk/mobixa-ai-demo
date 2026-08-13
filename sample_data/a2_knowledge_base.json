@@ -1,0 +1,222 @@
+[
+  {
+    "id": "KB01",
+    "title": "Şifre sıfırlama",
+    "content": "Şifrenizi sıfırlamak için giriş ekranındaki 'Şifremi Unuttum' bağlantısına tıklayın. Kayıtlı e-posta adresinize bir sıfırlama bağlantısı gönderilir. Bağlantı 30 dakika süreyle geçerlidir. E-postayı 10 dakika içinde almazsanız spam klasörünü kontrol edin.",
+    "role": ["learner", "trainer"],
+    "product_area": "authentication",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB02",
+    "title": "Atanmış eğitime erişim",
+    "content": "Size atanmış eğitimlere ana sayfadaki 'Eğitimlerim' bölümünden erişebilirsiniz. Bir eğitim atanmamışsa yöneticinizin veya İK biriminin size bu eğitimi atamış olması gerekir; sistem kendiliğinden atama yapmaz.",
+    "role": ["learner"],
+    "product_area": "training_access",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB03",
+    "title": "Aktivite tamamlanma kuralları",
+    "content": "Bir aktivite yalnızca tüm adımları (video izleme, quiz gönderimi veya kart okuma onayı) tamamlandığında 'tamamlandı' olarak işaretlenir. Kısmi ilerleme 'devam ediyor' durumunda kalır ve tamamlanma yüzdesi güncellenmez.",
+    "role": ["learner"],
+    "product_area": "activity_tracking",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB04",
+    "title": "Quiz tekrar hakkı",
+    "content": "Bir quiz için toplam 3 deneme hakkı bulunur. En yüksek puan sisteme kaydedilir. Üçüncü denemeden sonra tekrar hakkı biter ve tekrar açılması için eğitmen onayı gerekir.",
+    "role": ["learner"],
+    "product_area": "quiz",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB05",
+    "title": "Teknik destek kanalı",
+    "content": "Teknik sorunlarınız için support@mobixa.ai adresine e-posta gönderebilir veya uygulama içindeki 'Destek' butonunu kullanabilirsiniz. Destek ekibi iş günlerinde 24 saat içinde yanıt verir.",
+    "role": ["learner", "trainer"],
+    "product_area": "support",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB06",
+    "title": "Mobil tarayıcı kullanımı",
+    "content": "Mobixa şu anda yalnızca mobil cihazlardaki web tarayıcısı üzerinden kullanılabilir. Native bir iOS veya Android uygulaması hakkında bu wiki'de bilgi bulunmamaktadır.",
+    "role": ["learner", "trainer"],
+    "product_area": "mobile_access",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-01"
+  },
+  {
+    "id": "KB07",
+    "title": "Taslak: Kurumsal SSO entegrasyonu (henüz yayında değil)",
+    "content": "Bu madde inceleme aşamasındadır ve onaylanmamıştır; müşteri sorularında kullanılmamalıdır.",
+    "role": ["trainer"],
+    "product_area": "authentication",
+    "status": "draft",
+    "version": "0.1",
+    "last_updated": "2026-06-15"
+  },
+  {
+    "id": "KB08",
+    "title": "İki faktörlü kimlik doğrulama (2FA)",
+    "content": "İki faktörlü doğrulamayı Profil > Güvenlik bölümünden açabilirsiniz. Açıldıktan sonra her girişte e-posta adresinize 6 haneli bir kod gönderilir; kod 5 dakika geçerlidir. 2FA'yı kapatmak için de aynı ekran kullanılır, kapatmak mevcut oturumları etkilemez.",
+    "role": ["learner", "trainer"],
+    "product_area": "two_factor_auth",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB09",
+    "title": "Eğitimden kayıt silme (unenrollment)",
+    "content": "Kendi kendinize kaydolduğunuz (self-enrollment) bir eğitimden 'Eğitimlerim' sayfasındaki '...' menüsünden 'Kaydı Sil' seçeneğiyle çıkabilirsiniz. Size bir yönetici tarafından atanmış zorunlu bir eğitimden kendi kendinize çıkamazsınız; bu yalnızca atamayı yapan yönetici veya İK tarafından yapılabilir.",
+    "role": ["learner"],
+    "product_area": "training_access",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB10",
+    "title": "Sertifika indirme",
+    "content": "Bir eğitimi %100 tamamladıktan sonra 'Eğitimlerim > Tamamlananlar' bölümünde eğitimin yanında bir 'Sertifikayı İndir' butonu belirir. Sertifika PDF formatındadır ve adınızı, eğitim adını ve tamamlama tarihini içerir. Sertifikalar üretildikten sonra yeniden adlandırılamaz veya düzenlenemez.",
+    "role": ["learner"],
+    "product_area": "certificates",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB11",
+    "title": "Puan ve rozet sistemi",
+    "content": "Oyun tipi aktiviteleri ve quizleri tamamladıkça puan kazanırsınız; belirli puan eşiklerine ulaştığınızda rozetler otomatik olarak profilinize eklenir. Puanlar profildeki 'Başarılarım' sekmesinden görülebilir. Puanlar geriye dönük olarak silinmez, yalnızca hesap kapatıldığında sıfırlanır.",
+    "role": ["learner"],
+    "product_area": "gamification",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB12",
+    "title": "Liderlik tablosu (leaderboard) gizliliği",
+    "content": "Liderlik tablosu varsayılan olarak yalnızca aynı ekip/grup içindeki kullanıcılara görünür, şirket genelinde herkese açık değildir. Profil > Gizlilik bölümünden 'Liderlik tablosunda görünme' seçeneğini kapatarak kendi adınızı listeden gizleyebilirsiniz; bu durumda puanlarınız hâlâ hesaplanır ama görünmez.",
+    "role": ["learner"],
+    "product_area": "gamification",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB13",
+    "title": "Bildirim ayarları",
+    "content": "E-posta ve uygulama içi bildirimleri Profil > Bildirimler bölümünden ayrı ayrı açıp kapatabilirsiniz. 'Yeni eğitim atandı', 'Teslim tarihi yaklaşıyor' ve 'Quiz sonucu hazır' bildirimleri ayrı anahtarlarla yönetilir; hepsini tek seferde kapatmak için sayfanın en altındaki 'Tüm bildirimleri kapat' seçeneği kullanılabilir.",
+    "role": ["learner", "trainer"],
+    "product_area": "notifications",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB14",
+    "title": "Profil bilgilerini güncelleme",
+    "content": "Ad, soyad ve profil fotoğrafını Profil > Kişisel Bilgiler bölümünden güncelleyebilirsiniz. Kayıtlı e-posta adresinizi değiştirmek için yeni adresinize gönderilen bir doğrulama bağlantısını onaylamanız gerekir; e-posta değişikliği onaylanana kadar eski adresle giriş yapmaya devam edebilirsiniz.",
+    "role": ["learner", "trainer"],
+    "product_area": "profile",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB15",
+    "title": "Video oynatma sorunları",
+    "content": "Video takılıyor veya hiç açılmıyorsa önce tarayıcı önbelleğini temizlemeyi ve sayfayı yenilemeyi deneyin. Sorun devam ederse bağlantı hızınızın en az 2 Mbps olduğundan emin olun; video oynatıcı otomatik olarak bağlantı hızına göre kaliteyi düşürür ama çok düşük bağlantılarda yine de arabellek (buffering) yaşanabilir.",
+    "role": ["learner"],
+    "product_area": "playback",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB16",
+    "title": "Altyazı ve erişilebilirlik",
+    "content": "Video oynatıcıda alt bardaki 'CC' simgesine tıklayarak Türkçe veya İngilizce altyazıyı açabilirsiniz. Metin boyutu Profil > Erişilebilirlik bölümünden 'Küçük/Orta/Büyük' olarak ayarlanabilir; bu ayar uygulamanın tüm ekranlarına uygulanır, yalnızca video oynatıcıyla sınırlı değildir.",
+    "role": ["learner"],
+    "product_area": "accessibility",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB17",
+    "title": "Uygulama dilini değiştirme",
+    "content": "Uygulama dili sağ üst köşedeki dil seçiciden Türkçe/İngilizce olarak değiştirilebilir. Dil seçimi hesabınıza kaydedilir ve bir sonraki girişte otomatik olarak hatırlanır; ancak zaten tamamlanmış eğitim içerikleri (video, quiz soruları) o eğitimin orijinal dilinde kalmaya devam eder, geriye dönük çevrilmez.",
+    "role": ["learner", "trainer"],
+    "product_area": "localization",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB18",
+    "title": "Ekip/grup eğitim ataması (eğitmen)",
+    "content": "Eğitmen rolündeki kullanıcılar, Yönetim Paneli > Gruplar bölümünden bir gruba toplu eğitim atayabilir. Atama yapıldığında gruptaki her kullanıcıya ayrı ayrı bildirim gönderilir. Gruba sonradan eklenen kullanıcılar, o gruba daha önce atanmış eğitimleri otomatik olarak devralır.",
+    "role": ["trainer"],
+    "product_area": "group_management",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB19",
+    "title": "Tamamlama raporu dışa aktarma",
+    "content": "Eğitmen rolündeki kullanıcılar, Yönetim Paneli > Raporlar bölümünden bir eğitimin tamamlanma raporunu CSV veya PDF olarak dışa aktarabilir. Rapor; kullanıcı adı, tamamlanma yüzdesi, quiz puanı ve tamamlanma tarihini içerir. Büyük gruplarda (500+ kullanıcı) rapor oluşturma birkaç dakika sürebilir, sistem hazır olduğunda e-posta ile bildirim gönderir.",
+    "role": ["trainer"],
+    "product_area": "reporting",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB20",
+    "title": "Teslim tarihi hatırlatmaları",
+    "content": "Bir eğitimin teslim tarihi (due date) yaklaştığında sistem otomatik olarak 7 gün, 3 gün ve 1 gün kala hatırlatma bildirimi gönderir. Bu hatırlatmalar Profil > Bildirimler bölümünden ayrı ayrı kapatılabilir; ancak teslim tarihi geçmiş ve hâlâ tamamlanmamış eğitimler için gönderilen 'gecikme' bildirimi kapatılamaz.",
+    "role": ["learner"],
+    "product_area": "scheduling",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB21",
+    "title": "Offline mod",
+    "content": "Bir eğitimin video ve quiz içeriğini 'İndir' butonuyla cihazınıza indirip internet bağlantısı olmadan tamamlayabilirsiniz. İndirilen içerik cihazda en fazla 14 gün saklanır; bu süre dolmadan tekrar internete bağlanıp ilerlemenizi senkronize etmeniz gerekir, aksi halde offline tamamlanan ilerleme kaydedilmez.",
+    "role": ["learner"],
+    "product_area": "mobile_access",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  },
+  {
+    "id": "KB22",
+    "title": "Hesap silme talebi (KVKK)",
+    "content": "Hesabınızın ve kişisel verilerinizin silinmesini talep etmek için Profil > Gizlilik > 'Hesabımı Sil' bölümünden bir talep oluşturabilir veya privacy@mobixa.ai adresine yazabilirsiniz. Talep, KVKK kapsamında en geç 30 gün içinde işleme alınır; kurumunuzun yasal saklama yükümlülüğü olan kayıtlar (ör. tamamlanmış zorunlu eğitim sertifikaları) bu süre boyunca kurum tarafında ayrıca saklanabilir.",
+    "role": ["learner", "trainer"],
+    "product_area": "data_privacy",
+    "status": "approved",
+    "version": "1.0",
+    "last_updated": "2026-07-10"
+  }
+]
