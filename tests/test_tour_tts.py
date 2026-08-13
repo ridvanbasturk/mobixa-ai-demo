@@ -104,12 +104,25 @@ def test_polly_synthesizes_and_writes_audio(monkeypatch, tmp_path):
     assert result.duration_seconds > 3.0  # nefes payı eklenir
 
 
-def test_polly_uses_filiz_standard_for_turkish(monkeypatch, tmp_path):
-    # Polly'de Türkçe YALNIZCA Filiz'tir ve nöral motoru desteklemez.
+def test_polly_uses_burcu_neural_for_turkish(monkeypatch, tmp_path):
+    # Türkçe varsayılan ses NÖRAL "Burcu"dur (yönetici bu sesi seçip onayladı).
+    # Eski "Filiz" yalnızca standart motoru destekleyen daha eski bir sestir.
     client = _FakePollyClient()
     _install_fake_boto3(monkeypatch, client)
     monkeypatch.delenv("POLLY_VOICE_TR", raising=False)
     monkeypatch.delenv("POLLY_ENGINE_TR", raising=False)
+    monkeypatch.setattr(tour_tts, "probe_audio_duration", lambda path: 2.0)
+
+    PollyTTS().synthesize("Merhaba.", "tr", tmp_path / "a.mp3")
+    assert client.calls[0]["VoiceId"] == "Burcu"
+    assert client.calls[0]["Engine"] == "neural"
+
+
+def test_polly_voice_can_be_overridden_by_env(monkeypatch, tmp_path):
+    client = _FakePollyClient()
+    _install_fake_boto3(monkeypatch, client)
+    monkeypatch.setenv("POLLY_VOICE_TR", "Filiz")
+    monkeypatch.setenv("POLLY_ENGINE_TR", "standard")
     monkeypatch.setattr(tour_tts, "probe_audio_duration", lambda path: 2.0)
 
     PollyTTS().synthesize("Merhaba.", "tr", tmp_path / "a.mp3")

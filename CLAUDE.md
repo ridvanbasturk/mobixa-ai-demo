@@ -97,6 +97,10 @@ korunur, imleç asla boşluğa tıklamaz.
   kurulursa sayfa değiştikçe numaralar kayar ve döngü fark edilmez.
 - `tour_tts.py` — takılabilir seslendirme: `PollyTTS` + `NullTTS`.
   Polly kimlik bilgisi yoksa ÇÖKMEZ, sessiz+altyazılı videoya düşer.
+  Türkçe varsayılan ses NÖRAL **Burcu** (yönetici seçip onayladı); eski
+  Filiz yalnızca standard motoru destekler. Polly, Bedrock Mantle'dan AYRI
+  bir servistir — `OPENAI_API_KEY` ile çalışmaz, kendi AWS kimlik
+  bilgilerini ister. Doğrulama: `python scripts/check_polly.py --sample`
 - `tour_video_service.py` — FFmpeg: webm→mp4, adım seslerini `adelay`
   ile kendi zamanına yerleştirip `amix`, libass ile altyazı gömme.
 - `tour_pipeline.py` — uçtan uca orkestrasyon (`run_tour`). Metin
@@ -248,11 +252,11 @@ bu turda yalnızca BAĞLANTI NOKTASI hazırlandı. Her kaydın yanına
 TETİKLEME mekanizması (git hook / CI / izleyici) — parmak izi
 karşılaştırması zaten çalışıyor.
 
-**A1 seslendirme:** Polly katmanı yazıldı ve test edildi ama makinede
-`boto3` kurulu DEĞİL ve `.env`'de AWS erişim anahtarı yok; bu yüzden
-videolar şu an sessiz+altyazılı üretiliyor ve neden arayüzde açıkça
-yazıyor. `pip install boto3` + AWS kimlik bilgileri eklenince ek kod
-gerekmeden devreye girer.
+**A1 seslendirme:** Polly katmanı hazır ve `boto3` kurulu; eksik olan
+yalnızca `.env` içindeki `AWS_ACCESS_KEY_ID`/`AWS_SECRET_ACCESS_KEY`
+(yönetici Polly'ye full access verdiğini söyledi, kimlik bilgisi henüz
+girilmedi). Onlar girilince ek kod gerekmeden devreye girer; kontrol için
+`python scripts/check_polly.py --sample`.
 
 **TR/EN i18n — kalan kapsam:** tüm modüllerdeki ham Pydantic/iş kuralı
 hata mesajları hâlâ Türkçedir (şemaların Streamlit'ten bağımsız kalması

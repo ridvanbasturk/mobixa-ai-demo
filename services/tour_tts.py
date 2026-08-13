@@ -26,6 +26,16 @@ SILENT_SECONDS_PER_WORD = 0.38
 SILENT_MIN_SECONDS = 2.4
 SILENT_MAX_SECONDS = 11.0
 
+# Varsayılan sesler. Türkçe için Polly'nin NÖRAL sesi "Burcu" kullanılır
+# (yönetici bu sesi seçip onayladı). Eski "Filiz" yalnızca standart motoru
+# destekleyen daha eski bir sestir ve varsayılan DEĞİLDİR.
+# İngilizce tarafta "Joanna" da nöral bir kadın sesidir; Burcu ile tonu
+# yakındır. Hepsi ortam değişkenleriyle değiştirilebilir.
+DEFAULT_VOICE_TR = "Burcu"
+DEFAULT_ENGINE_TR = "neural"
+DEFAULT_VOICE_EN = "Joanna"
+DEFAULT_ENGINE_EN = "neural"
+
 
 @dataclass
 class SpeechResult:
@@ -106,13 +116,12 @@ class PollyTTS:
     def _voice_for(self, language: str) -> tuple:
         if language == "en":
             return (
-                os.environ.get("POLLY_VOICE_EN", "Joanna"),
-                os.environ.get("POLLY_ENGINE_EN", "neural"),
+                os.environ.get("POLLY_VOICE_EN", DEFAULT_VOICE_EN),
+                os.environ.get("POLLY_ENGINE_EN", DEFAULT_ENGINE_EN),
             )
-        # Polly'de Türkçe yalnızca Filiz'tir ve nöral motoru yoktur.
         return (
-            os.environ.get("POLLY_VOICE_TR", "Filiz"),
-            os.environ.get("POLLY_ENGINE_TR", "standard"),
+            os.environ.get("POLLY_VOICE_TR", DEFAULT_VOICE_TR),
+            os.environ.get("POLLY_ENGINE_TR", DEFAULT_ENGINE_TR),
         )
 
     def _ensure_client(self):
