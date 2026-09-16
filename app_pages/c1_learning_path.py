@@ -3,9 +3,14 @@
 Bir Journey talebi (brief: hedef kitle, amaç, zorunlu konular, aktivite
 sayısı sınırları) ve mevcut bir aktivite kataloğu Python ile doğrulanır;
 aynı doğrulanmış veriler iki Bedrock modeline (Qwen3, Gemma) gönderilerek
-yalnızca katalogdaki aktivitelerden oluşan, sıralı bir Journey önerilir.
-Model çıktısı ayrıca deterministik iş kurallarına göre denetlenir. TR/EN
-dil desteği `services/i18n.py` üzerinden sağlanır.
+yalnızca katalogdaki aktivitelerden oluşan, sıralı bir Journey OTOMATİK
+OLARAK OLUŞTURULUR — bu bir öneri/tavsiye değildir, insan onayı beklenmez.
+Model çıktısı deterministik iş kurallarına göre denetlenir
+(`validate_business_rules`); yalnızca bu denetimi geçen çıktı "oluşturmaya
+hazır" sayılır ve gerçek sistemin Journey formatına birebir uyan bir
+oluşturma paketi (`build_journey_creation_artifact`) indirilebilir hale
+gelir — denetimi geçemeyen çıktı için oluşturma engellenir. TR/EN dil
+desteği `services/i18n.py` üzerinden sağlanır.
 """
 from __future__ import annotations
 
@@ -33,6 +38,7 @@ from services.cost_calculator import get_display_name, load_model_prices
 from services.evaluation_logger import log_evaluation, read_evaluations_csv
 from services.i18n import LANG_EN, get_language, render_language_switcher, t
 from services.learning_path_service import (
+    build_journey_creation_artifact,
     find_unknown_excluded_ids,
     load_and_validate_catalog,
     load_and_validate_journey_brief,
@@ -256,13 +262,13 @@ def run_model_and_validate(
             schema_error = str(exc)
 
     json_valid = call_result.parsed_json is not None
-    activity_count = len(validated.recommended_activities) if validated else 0
+    activity_count = len(validated.journey_activities) if validated else 0
 
     business_result = None
     if validated:
-        recommended_activities_dicts = [a.model_dump() for a in validated.recommended_activities]
+        journey_activities_dicts = [a.model_dump() for a in validated.journey_activities]
         business_result = validate_business_rules(
-            recommended_activities_dicts, validated.total_minutes, brief, catalog_df
+            journey_activities_dicts, validated.total_minutes, brief, catalog_df
         )
 
     business_passed = business_result["passed"] if business_result else None
@@ -308,7 +314,7 @@ def render_validation_help() -> None:
         st.markdown(t("c1.validation_help.body"))
 
 
-def render_model_card(model_id: str, plan, outcome: dict) -> None:
+def render_model_card(model_id: str, plan, outcome: dict, brief: dict) -> None:
     prices = load_model_prices()
     display_name = get_display_name(model_id, prices)
     call_result = outcome["call_result"]
@@ -374,8 +380,8 @@ def render_model_card(model_id: str, plan, outcome: dict) -> None:
         if business_result:
             enriched_by_id = {e["activity_id"]: e for e in business_result["enriched_path"]}
 
-        st.markdown(f"#### {t('c1.section.recommended_journey')}")
-        for activity in sorted(validated.recommended_activities, key=lambda a: a.order):
+        st.markdown(f"#### {t('c1.section.created_journey')}")
+        for activity in sorted(validated.journey_activities, key=lambda a: a.order):
             enriched = enriched_by_id.get(activity.activity_id, {})
             with st.container(border=True):
                 title = enriched.get("title") or t("c1.activity_unknown_title")
@@ -389,6 +395,22 @@ def render_model_card(model_id: str, plan, outcome: dict) -> None:
                     )
                 )
                 st.write(f"{t('c1.reason_label')} {activity.reason}")
+
+        st.markdown("---")
+        if business_result and business_result["passed"] and brief is not None:
+            st.success(f"**{t('c1.creation.success_title')}**\n\n{t('c1.creation.success_body')}")
+            artifact = build_journey_creation_artifact(
+                brief, validated.model_dump(), business_result, model_id
+            )
+            st.download_button(
+                label=t("c1.creation.download_button"),
+                data=json.dumps(artifact, ensure_ascii=False, indent=2),
+                file_name=f"{model_id.replace('.', '_')}_journey_created.json",
+                mime="application/json",
+                key=f"c1_create_{model_id}_{outcome['run_id']}",
+            )
+        elif business_result:
+            st.error(f"**{t('c1.creation.blocked_title')}**\n\n{t('c1.creation.blocked_body')}")
 
     if call_result.raw_text:
         with st.expander(t("common.raw_output_expander")):
@@ -502,11 +524,11 @@ def render_c1_page() -> None:
         col_a, col_b = st.columns(2)
         with col_a:
             render_model_card(
-                st.session_state.c1_results["settings"]["model_a"], PLAN_A, st.session_state.c1_results["a"]
+                st.session_state.c1_results["settings"]["model_a"], PLAN_A, st.session_state.c1_results["a"], brief
             )
         with col_b:
             render_model_card(
-                st.session_state.c1_results["settings"]["model_b"], PLAN_B, st.session_state.c1_results["b"]
+                st.session_state.c1_results["settings"]["model_b"], PLAN_B, st.session_state.c1_results["b"], brief
             )
     else:
         st.info(t("c1.info.click_to_generate"))

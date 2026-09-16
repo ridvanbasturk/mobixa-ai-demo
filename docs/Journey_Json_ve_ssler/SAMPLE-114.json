@@ -1,0 +1,21 @@
+{
+  "activityId": "SAMPLE-114",
+  "activityType": "GAME",
+  "activityTypeId": 1,
+  "activitySubType": "DEEPLEARN",
+  "activitySubTypeId": 10,
+  "timeLimit": 0,
+  "title": "[Örnek Veri] Satış Kapama Pekiştirme Oyunu",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/Information.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı, yalnızca test/demo amaçlıdır.",
+  "questions": {
+    "88110": [
+      {"questionId": 900551, "category": "Satış Kapama", "duration": 40},
+      {"questionId": 900552, "category": "Satış Kapama", "duration": 40},
+      {"questionId": 900553, "category": "Satış Kapama", "duration": 40},
+      {"questionId": 900554, "category": "Satış Kapama", "duration": 40},
+      {"questionId": 900555, "category": "Satış Kapama", "duration": 40},
+      {"questionId": 900556, "category": "Satış Kapama", "duration": 40}
+    ]
+  }
+}

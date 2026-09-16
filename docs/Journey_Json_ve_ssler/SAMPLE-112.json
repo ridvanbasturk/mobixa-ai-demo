@@ -1,0 +1,19 @@
+{
+  "activityId": "SAMPLE-112",
+  "activityType": "TEST",
+  "activityTypeId": 2,
+  "activitySubType": "QUIZ",
+  "activitySubTypeId": 0,
+  "timeLimit": 15,
+  "title": "[Örnek Veri] Satış Kapama Quiz",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/Information.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı, yalnızca test/demo amaçlıdır.",
+  "questions": {
+    "88110": [
+      {"questionId": 900531, "category": "Satış Kapama", "duration": 25},
+      {"questionId": 900532, "category": "Satış Kapama", "duration": 25},
+      {"questionId": 900533, "category": "Satış Kapama", "duration": 25},
+      {"questionId": 900534, "category": "Satış Kapama", "duration": 25}
+    ]
+  }
+}

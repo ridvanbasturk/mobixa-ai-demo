@@ -1,137 +1,182 @@
-# Mobixa AI Demo — B1 İçerik Üretimi
+# Mobixa AI Demo
 
-Amazon Bedrock üzerindeki iki farklı modeli (Qwen3 Next 80B ve
-DeepSeek V3.2) aynı eğitim içeriği ve aynı prompt ile çalıştırıp
-üretilen çoktan seçmeli soruları ve öğrenme kartlarını yan yana
-karşılaştıran bir Streamlit PoC uygulamasıdır.
+Amazon Bedrock Mantle modellerini kullanan, Türkçe/İngilizce arayüzlü
+yerel Streamlit uygulaması. Beş AI modülünün kaynak kodları, promptları,
+şemaları, örnek verileri ve testleri bu repoda bulunur.
 
-Bu bir production uygulaması değildir — yerel makinede çalışan,
-temiz bir kanıt niteliğinde (Proof of Concept) uygulamadır.
+| Modül | İşlev |
+| --- | --- |
+| B1 | Metin, PDF, DOCX ve PPTX içeriğinden soru ve öğrenme kartı üretimi |
+| B6 | Rapor CSV'sinden metrik hesaplama ve yönetim değerlendirmesi |
+| C1 | Aktivite kataloğundan Journey oluşturma, doğrulama ve oluşturma paketi indirme |
+| A2 | Yerel bilgi tabanına dayalı destek/onboarding chatbot |
+| A1 | Görsel ajanın uygulamayı gezerek otomatik ürün turu videosu üretmesi |
 
-## Kurulum
+B1/B6/C1 için varsayılan model çifti Qwen3/Gemma 4'tür. A2 Gemma
+varyantlarını, A1 tek görsel sürücü modeli kullanır. Model ve servis
+ayarları `.env.example` ve `services/model_registry.py` içindedir.
+Hesabınızın ilgili modellere erişimi olmalıdır.
 
-### 1. Python 3.11 kurulumu
+## Diğer bilgisayarda kurulum
 
-Python 3.11'in sisteminizde kurulu olduğundan emin olun:
+Git ve Python 3.11 kurun. Özel repoyu klonlamak için GitHub hesabınızla
+kimlik doğrulaması gerekir:
 
-```
-python --version
-```
-
-Kurulu değilse [python.org](https://www.python.org/downloads/) üzerinden
-Python 3.11 indirip kurun.
-
-### 2. Sanal ortam oluşturma
-
-```
-python -m venv .venv
-```
-
-Windows'ta etkinleştirme:
-
-```
-.venv\Scripts\activate
+```sh
+git clone https://github.com/ridvanbasturk/mobixa-ai-demo.git
+cd mobixa-ai-demo
 ```
 
-macOS/Linux'ta etkinleştirme:
+### Sanal ortam ve bağımlılıklar
 
+Windows PowerShell:
+
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m playwright install chromium
+Copy-Item .env.example .env
 ```
+
+macOS/Linux:
+
+```sh
+python3.11 -m venv .venv
 source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m playwright install chromium
+cp .env.example .env
 ```
 
-### 3. Bağımlılıkların kurulumu
+Linux'ta Chromium sistem bağımlılıkları eksikse
+`python -m playwright install --with-deps chromium` çalıştırın.
+Windows'ta aşağıdaki `python` komutları için
+`.\.venv\Scripts\python.exe` kullanın; sanal ortamı etkinleştirmek zorunlu değildir.
 
-```
-pip install -r requirements.txt
-```
+### FFmpeg (video üretimi için)
 
-### 4. .env dosyasının oluşturulması
+`ffmpeg` ve `ffprobe` PATH üzerinde erişilebilir olmalıdır.
+FFmpeg dağıtımında `libx264` ve `subtitles`/libass desteği bulunmalıdır.
 
-`.env.example` dosyasını `.env` olarak kopyalayın:
+Windows:
 
-```
-copy .env.example .env      (Windows)
-cp .env.example .env        (macOS/Linux)
-```
-
-`.env` dosyasını açıp `OPENAI_API_KEY` alanına Bedrock Mantle API
-anahtarınızı yazın:
-
-```
-OPENAI_API_KEY=<sizin-anahtarınız>
+```powershell
+winget install --id Gyan.FFmpeg --exact
 ```
 
-`.env` dosyası `.gitignore` içinde olduğu için git'e commit edilmez.
-Anahtarınızı asla kaynak koda veya versiyon kontrolüne eklemeyin.
+macOS (Homebrew):
 
-## Çalıştırma
-
-### Streamlit uygulamasını başlatma
-
-```
-streamlit run app.py
+```sh
+brew install ffmpeg
 ```
 
-Tarayıcıda açılan adresten (varsayılan `http://localhost:8501`)
-uygulamaya erişebilirsiniz.
+Ubuntu/Debian:
 
-### Bağlantı duman testi
-
-```
-python scripts/smoke_test.py
+```sh
+sudo apt-get update
+sudo apt-get install ffmpeg
 ```
 
-Bu script API anahtarının çalışıp çalışmadığını, iki modele de kısa
-birer istek göndererek doğrular. Anahtar değerini hiçbir zaman ekrana
-yazdırmaz.
+Terminali yeniden açıp kurulumu kontrol edin:
 
-### Unit testlerin çalıştırılması
-
-```
-pytest
+```sh
+ffmpeg -version
+ffprobe -version
 ```
 
-Testler gerçek Bedrock çağrısı yapmaz; maliyet formülü, JSON
-ayrıştırma/onarma ve Pydantic doğrulama kurallarını kontrol eder.
+### API ve seslendirme ayarları
 
-## Demo kullanım sırası
+Yeni bilgisayardaki `.env` dosyasına Bedrock Mantle anahtarınızı
+`OPENAI_API_KEY` olarak girin. Mevcut bilgisayarda değiştirdiğiniz model,
+endpoint veya bölge ayarlarını da taşıyın. `.env` GitHub'a yüklenmez;
+anahtarları güvenli bir kanaldan aktarın veya yeniden tanımlayın.
 
-1. Uygulamayı başlatın (`streamlit run app.py`).
-2. Sol panelde API anahtarının bulunduğunu ve model kimliklerini
-   kontrol edin.
-3. Ana ekranda bir içerik kaynağı seçin: metin yapıştırın, bir dosya
-   yükleyin (TXT/PDF/DOCX/PPTX) ya da hazır örnek metni kullanın.
-4. Soru sayısını, zorluk seviyesini ve öğrenme kartı seçeneğini
-   ayarlayın.
-5. "İki Modelle Üret" butonuna tıklayın.
-6. Model A (Qwen3) ve Model B (DeepSeek) sonuçları yan yana iki
-   sütunda görünür: token sayıları, gecikme, tahmini maliyet, JSON
-   geçerliliği, Pydantic doğrulama sonucu, üretilen sorular ve
-   öğrenme kartları.
-7. Her modelin ham çıktısını expander içinde inceleyebilir, JSON
-   çıktısını indirebilirsiniz.
-8. Sol panelden `outputs/evaluations.csv` dosyasını indirerek tüm
-   çağrıların geçmiş kayıtlarını görebilirsiniz.
+Sesli video için Amazon Polly ayrıca AWS kimlik bilgileri ister:
+`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` ve geçici kimlik bilgileri
+kullanılıyorsa `AWS_SESSION_TOKEN`. AWS profiliniz varsa boto3'ün standart
+kimlik bilgisi zinciri de kullanılabilir. Polly, Bedrock API anahtarını
+kullanmaz. Bölge ve ses tercihleri `.env.example` içinde açıklanmıştır.
 
-## Bilinen PoC sınırlamaları
+Polly erişimi olmadığında video sessiz ve altyazılı üretilir.
+Seslendirme erişimini doğrulamak için (gerçek AWS çağrısı yapar):
 
-- Model çağrıları paralel değil, sıralı çalışır (önce Model A, sonra
-  Model B); çağrılar arasında kısa bir bekleme (throttling önlemi)
-  uygulanır.
-- OCR desteği yoktur; taranmış (görsel) PDF'lerden metin çıkarılamaz.
-- Kullanıcı girişi, veritabanı ve Docker/AWS deployment bu aşamada
-  yoktur.
-- Fiyatlandırma bilgisi `config/model_prices.json` içinde sabit
-  tanımlıdır ve Temmuz 2026 us-east-1 Standard fiyatlarına dayalı
-  tahmini değerlerdir; gerçek faturalandırma AWS tarafından belirlenir.
-- Token bilgisi API yanıtında yoksa maliyet hesaplanmaz ve arayüzde
-  "Hesaplanamadı" olarak gösterilir; token uydurulmaz.
-- Tüm test kayıtları tek bir yerel CSV dosyasına yazılır; eşzamanlı
-  çoklu kullanıcı senaryosu için uygun değildir.
+```sh
+python scripts/check_polly.py --sample
+```
 
-## Sonraki aşama
+### Uygulamayı çalıştırma
 
-Bu PoC yalnızca B1 (içerikten soru/öğrenme kartı üretimi) kullanım
-alanını kapsar. Sonraki aşamada B6, C1, A2 ve A1 özellikleri
-eklenecektir. Kod yapısı bu genişlemeye uygun şekilde
-(`services/`, `schemas/`, `prompts/` ayrımıyla) düzenlenmiştir.
+```sh
+python -m streamlit run app.py
+```
+
+Varsayılan adres: `http://localhost:8501`. Sol menüde beş modül bulunur.
+
+## Otomatik video oluşturma
+
+A1 Ürün Turu Stüdyosu ayrı bir yerel Streamlit süreci başlatır.
+Görsel ajan ekran görüntüsü ve DOM öğeleri üzerinden uygulamayı canlı
+gezer. Playwright kaydı, Polly seslendirmesi ve FFmpeg ile altyazılı MP4
+üretimi aynı akışta çalışır. Arayüzden veya CLI'dan başlatılabilir:
+
+```sh
+python scripts/record_tour.py --list
+python scripts/record_tour.py --module c1 --lang tr
+python scripts/record_tour.py --module a2 --lang en --max-steps 12
+python scripts/record_tour.py --module c1 --lang tr --no-voice
+```
+
+Kayıtlar `outputs/tour_videos/` altında MP4, SRT altyazı, adım dökümü ve
+metadata olarak saklanır. Bu üretilmiş dosyalar Git'e dahil değildir;
+eski kayıtları da taşımak için bu klasörü ayrıca aktarın.
+Yerel `outputs/evaluations.csv` geçmişi de Git'e dahil değildir.
+
+Kod değişikliklerinde kayıtların güncelliği kaynak parmak iziyle
+denetlenir. Kod değişince kendiliğinden kayıt başlatan CI/git hook/izleyici
+henüz yoktur; kayıt arayüzden veya yukarıdaki komutlarla tetiklenir.
+Video üretimi ve uygulamadaki AI işlemleri gerçek model çağrıları yapar.
+
+## Testler
+
+```sh
+python -m pytest -q
+```
+
+Birim testler gerçek Bedrock çağrısı yapmaz. İsteğe bağlı bağlantı testi
+`python scripts/smoke_test.py` ile çalıştırılır; bu komut gerçek API
+istekleri gönderir ve `TEXT_MODEL_A`/`TEXT_MODEL_B` ayarlarını kullanır.
+
+## Geliştirmeye devam etme
+
+Bir bilgisayardaki çalışmayı diğerine geçmeden önce gönderin:
+
+```sh
+git add .
+git commit -m "Describe the change"
+git push
+```
+
+Diğer bilgisayarda çalışmaya başlamadan önce:
+
+```sh
+git pull --ff-only
+```
+
+Bağımlılıklar değişmişse `python -m pip install -r requirements.txt`
+komutunu yeniden çalıştırın. Sanal ortam, Chromium ve FFmpeg her
+bilgisayara ayrı kurulur; `.env` ve AWS kimlik bilgileri ayrıca tanımlanır.
+
+## Dosya yapısı ve sınırlar
+
+- `app.py`, `app_pages/`: giriş noktası ve beş modülün arayüzleri.
+- `services/`: model çağrıları, doğrulama, chatbot ve video üretim hattı.
+- `schemas/`, `prompts/`, `config/`: şemalar, TR/EN promptlar ve maliyet ayarları.
+- `sample_data/`, `docs/`: örnek girdiler, aktivite exportları ve proje belgeleri.
+- `scripts/`, `tests/`: CLI araçları ve otomatik testler.
+- `CLAUDE.md`: mimari ve mevcut geliştirme bağlamı.
+
+Bu uygulama yerel bir PoC'dir. C1 oluşturma paketini üretir, gerçek S3/DB'ye
+yazmaz. A2 bilgi tabanındaki örnek içerikler ve katalogdaki `[Örnek Veri]`
+aktiviteleri sentetiktir. OCR, kullanıcı yönetimi ve production deployment
+mevcut kapsamın dışındadır. Python bağımlılıkları minimum sürüm sınırlarıyla
+tanımlıdır; birebir sürüm kilidi bulunmaz.

@@ -1,0 +1,19 @@
+{
+  "activityId": "SAMPLE-110",
+  "activityType": "TEST",
+  "activityTypeId": 2,
+  "activitySubType": "EXAM",
+  "activitySubTypeId": 1,
+  "timeLimit": 20,
+  "title": "[Örnek Veri] İş Güvenliği (İSG) Final Sınavı",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/helmet2.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı, yalnızca test/demo amaçlıdır.",
+  "questions": {
+    "90110": [
+      {"questionId": 900511, "category": "İş Güvenliği (İSG)", "duration": 30},
+      {"questionId": 900512, "category": "İş Güvenliği (İSG)", "duration": 30},
+      {"questionId": 900513, "category": "İş Güvenliği (İSG)", "duration": 30},
+      {"questionId": 900514, "category": "İş Güvenliği (İSG)", "duration": 30}
+    ]
+  }
+}

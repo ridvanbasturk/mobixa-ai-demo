@@ -21,7 +21,7 @@ def _make_data(
         total_minutes = sum(a["estimated_minutes"] for a in activities)
     return {
         "audience_fit_summary": audience_fit_summary,
-        "recommended_activities": activities,
+        "journey_activities": activities,
         "total_minutes": total_minutes,
         "strategy_summary": strategy_summary,
     }
@@ -34,11 +34,11 @@ def test_valid_output_passes():
     ]
     data = _make_data(activities)
     result = validate_c1_output(data)
-    assert len(result.recommended_activities) == 2
+    assert len(result.journey_activities) == 2
     assert result.total_minutes == 9
 
 
-def test_empty_recommended_activities_fails():
+def test_empty_journey_activities_fails():
     data = _make_data([], total_minutes=1)
     with pytest.raises(ValueError):
         validate_c1_output(data)

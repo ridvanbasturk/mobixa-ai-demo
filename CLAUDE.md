@@ -10,7 +10,10 @@ Aktif modüller: B1 (içerikten çoktan seçmeli soru + öğrenme kartı
 üretimi, Qwen3/Gemma 4), B6 (rapor CSV'sinden deterministik metrik
 hesaplama + yönetim değerlendirme kartı üretimi, Qwen3/Gemma 4), C1
 (Journey talebi + gerçek aktivite kataloğundan otomatik Journey/öğrenme
-yolu oluşturma, Qwen3/Gemma 4 — insan değerlendirmesi yok), A2 (destek/
+yolu OLUŞTURMA — bir öneri değil, deterministik iş kuralı doğrulamasını
+geçen çıktı doğrudan "oluşturmaya hazır" sayılır ve gerçek sistemin
+Journey formatına uyan bir oluşturma paketi indirilebilir hale gelir;
+Qwen3/Gemma 4 — insan değerlendirmesi yok), A2 (destek/
 onboarding chatbot, Gemma 4 varyantları — kendi model çifti, yerel
 deterministik retrieval, insan değerlendirmesi yok) ve A1 (otomatik ürün
 turu stüdyosu — görsel bir ajan çalışan uygulamayı GERÇEKTEN gezip video
@@ -24,8 +27,11 @@ activitySubType/timeLimit/questionCount/questions` alanlarını içeren bir
 JSON'u vardır). LEARN tipi aktiviteler S3'te değil DB'de tutulur; gerçek
 şeması henüz paylaşılmadı. `sample_data/activity_catalog.csv`, hem
 yöneticinin paylaştığı 6 gerçek aktiviteyi HEM DE başlığı "[Örnek Veri]"
-ile başlayan 8 sentetik/illüstratif aktiviteyi (test hacmini artırmak ve
-LEARN tipini de örneklemek için, `docs/Journey_Json_ve_ssler/SAMPLE-*.json`
+ile başlayan 14 sentetik/illüstratif aktiviteyi (test hacmini artırmak,
+LEARN tipini örneklemek ve C1 demosunda modelin gerçekten SEÇİM
+yapabilmesi için `sample_data/journey_brief.json`'daki zorunlu konulara
+— İş Güvenliği (İSG) ve Satış Kapama — birden fazla aday aktivite
+eklemek amacıyla, `docs/Journey_Json_ve_ssler/SAMPLE-*.json`
 dosyalarından) içerir — sentetik satırlar UI'da ve JSON dosyalarının
 `_not_real_note` alanında açıkça işaretlidir, gerçek Mobixa verisiyle asla
 karıştırılmamalıdır (bkz. `scripts/build_activity_catalog.py` docstring'i).
@@ -46,8 +52,16 @@ karıştırılmamalıdır (bkz. `scripts/build_activity_catalog.py` docstring'i)
   bölümü yok**. Girdi bir Journey talebi (brief: hedef kitle, amaç,
   zorunlu konular, min/max aktivite sayısı, sınavla bitme zorunluluğu)
   ve bir aktivite kataloğudur; çıktı yalnızca kataloğa dayalı, sıralı
-  bir Journey önerisidir. Deterministik iş kuralı doğrulaması
-  (`validate_business_rules`) sonucu gösterilir.
+  bir Journey'dir — bu bir öneri DEĞİLDİR, sistem promptu modele bunu
+  "oluşturuyorsun" çerçevesiyle verir. Deterministik iş kuralı
+  doğrulaması (`validate_business_rules`) sonucu gösterilir; yalnızca
+  bu denetimi geçen (`business_result["passed"]`) çıktı için
+  `build_journey_creation_artifact` ile gerçek sistemin Journey
+  formatına uyan bir "oluşturma paketi" indirilebilir hale gelir —
+  geçemeyen çıktı için oluşturma UI'da açıkça engellenir (⛔ blocked
+  mesajı). PoC'nin gerçek S3/DB'ye yazma erişimi olmadığından bu paket
+  otomatik olarak canlıya yazılmaz, üretim sisteminin Journey oluşturma
+  akışına verilmeye hazır nihai payload'dır.
 - `app_pages/a2_support_chatbot.py` — A2'nin tüm Streamlit mantığı; 3
   sekme (Chatbot / Bilgi Tabanı / Yetenekler ve Entegrasyonlar). Sohbet
   sekmesi gerçek bir chatbot gibi görünecek şekilde tasarlanmıştır:
@@ -172,6 +186,12 @@ korunur, imleç asla boşluğa tıklamaz.
   sayısı sınırı, zorunlu konu kapsamı, `must_end_with_test` (Journey'in
   bir TEST tipi aktiviteyle bitmesi) kuralı. Model çıktısını gizlemez,
   yalnızca bir doğrulama raporu (errors/warnings) üretir.
+  `build_journey_creation_artifact` bu doğrulamayı geçmiş bir Journey'i
+  gerçek sistemin formatına (Slack'te paylaşılan Journey tablosu +
+  S3'teki sıralı aktivite klasörleri, bkz. `docs/ssler/`) uyan bir
+  oluşturma paketine dönüştürür; doğrulamayı geçemeyen bir çıktı için
+  çağrılırsa `ValueError` fırlatır — "oluşturma" ancak deterministik
+  denetimden geçtiğinde mümkündür, motive edici bir öneri değildir.
 - `scripts/build_activity_catalog.py` — yöneticinin paylaştığı gerçek
   aktivite JSON export'larından (varsayılan girdi dizini:
   `docs/Journey_Json_ve_ssler/`) `sample_data/activity_catalog.csv`
@@ -263,11 +283,15 @@ hata mesajları hâlâ Türkçedir (şemaların Streamlit'ten bağımsız kalmas
 gereken mimarisiyle çelişmeden nasıl çevrileceği ayrıca düşünülmeli —
 ör. hata kodu döndürüp render katmanında çevirmek gibi).
 
-C1'in örnek aktivite kataloğu şu an yalnızca yöneticinin paylaştığı 6
-gerçek aktiviteyi içeriyor (`scripts/build_activity_catalog.py` ile
-türetildi). Yönetici daha fazla aktivite JSON'u (özellikle LEARN tipi,
-hiç örneği yok) paylaştıkça script'i tekrar çalıştırıp kataloğu
-büyütmek yeterli. Yeni bir modül etkinleştirirken ilgili
+C1'in örnek aktivite kataloğu şu an yöneticinin paylaştığı 6 gerçek
+aktiviteyi ve `docs/Journey_Json_ve_ssler/SAMPLE-*.json`'dan türetilen
+14 sentetik/illüstratif aktiviteyi (LEARN dahil) içeriyor
+(`scripts/build_activity_catalog.py` ile türetildi). Yönetici gerçek
+LEARN şemasını veya daha fazla gerçek aktivite JSON'u paylaştıkça,
+o gerçek dosyaları `docs/Journey_Json_ve_ssler/`'e ekleyip script'i
+tekrar çalıştırmak yeterli — sentetik SAMPLE-*.json dosyaları gerçek
+veri geldikçe kademeli olarak gereksiz hale gelecektir. Yeni bir modül
+etkinleştirirken ilgili
 `app_pages/<modül>.py` dosyasını `render_placeholder(...)` çağrısı
 yerine gerçek mantıkla değiştir; yeni bir `prompts/<feature>_system.txt`
 ve `schemas/<feature>_models.py` oluşturmak yeterli olmalı —

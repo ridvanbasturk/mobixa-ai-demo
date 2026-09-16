@@ -1,0 +1,18 @@
+{
+  "activityId": "SAMPLE-109",
+  "activityType": "LEARN",
+  "activityTypeId": 3,
+  "activitySubType": "DEEPLEARN",
+  "activitySubTypeId": 10,
+  "timeLimit": 0,
+  "title": "[Örnek Veri] İş Güvenliği (İSG) Öğrenme Kartı",
+  "icon": "https://cdn-test.mobixa.ai/mobileIcons/helmet2.webp",
+  "_not_real_note": "SENTETİK/İLLÜSTRATİF veri — gerçek Mobixa sisteminden alınmadı. LEARN tipi aktivitelerin gerçek şeması yöneticiden henüz paylaşılmadığı için bu dosyanın alanları GAME/TEST şemasından tahmin edilerek uydurulmuştur.",
+  "questions": {
+    "90110": [
+      {"questionId": 900501, "category": "İş Güvenliği (İSG)", "duration": 20},
+      {"questionId": 900502, "category": "İş Güvenliği (İSG)", "duration": 25},
+      {"questionId": 900503, "category": "İş Güvenliği (İSG)", "duration": 20}
+    ]
+  }
+}

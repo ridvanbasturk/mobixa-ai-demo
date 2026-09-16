@@ -29,7 +29,7 @@ class JourneyActivityItem(BaseModel):
 
 class JourneyOutput(BaseModel):
     audience_fit_summary: str
-    recommended_activities: List[JourneyActivityItem]
+    journey_activities: List[JourneyActivityItem]
     total_minutes: int
     strategy_summary: str
 
@@ -49,14 +49,14 @@ class JourneyOutput(BaseModel):
 
     @model_validator(mode="after")
     def check_activities(self) -> "JourneyOutput":
-        if not self.recommended_activities:
-            raise ValueError("recommended_activities boş olamaz")
+        if not self.journey_activities:
+            raise ValueError("journey_activities boş olamaz")
 
-        activity_ids = [a.activity_id for a in self.recommended_activities]
+        activity_ids = [a.activity_id for a in self.journey_activities]
         if len(activity_ids) != len(set(activity_ids)):
             raise ValueError("Aynı aktivite birden fazla kez seçilemez")
 
-        orders = sorted(a.order for a in self.recommended_activities)
+        orders = sorted(a.order for a in self.journey_activities)
         if len(orders) != len(set(orders)):
             raise ValueError("order değerleri benzersiz olmalı")
         if orders != list(range(1, len(orders) + 1)):

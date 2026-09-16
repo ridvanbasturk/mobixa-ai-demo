@@ -13,3 +13,9 @@ SAMPLE-105,[Örnek Veri] Liderlik Quiz,TEST,QUIZ,LİDERLİK,15,2
 SAMPLE-106,[Örnek Veri] KVKK Final Sınavı,TEST,EXAM,KVKK,30,2
 SAMPLE-107,[Örnek Veri] Finansal Okuryazarlık Oyunu,GAME,DEEPLEARN,Finans,1,3
 SAMPLE-108,[Örnek Veri] Müşteri İlişkileri Öğrenme Kartı,LEARN,DEEPLEARN,Müşteri İlişkileri,1,2
+SAMPLE-109,[Örnek Veri] İş Güvenliği (İSG) Öğrenme Kartı,LEARN,DEEPLEARN,İş Güvenliği (İSG),1,3
+SAMPLE-110,[Örnek Veri] İş Güvenliği (İSG) Final Sınavı,TEST,EXAM,İş Güvenliği (İSG),20,4
+SAMPLE-111,[Örnek Veri] Satış Kapama Öğrenme Kartı,LEARN,DEEPLEARN,Satış Kapama,1,3
+SAMPLE-112,[Örnek Veri] Satış Kapama Quiz,TEST,QUIZ,Satış Kapama,15,4
+SAMPLE-113,[Örnek Veri] İş Güvenliği (İSG) Senaryo Oyunu,GAME,PEAK,İş Güvenliği (İSG),3,6
+SAMPLE-114,[Örnek Veri] Satış Kapama Pekiştirme Oyunu,GAME,DEEPLEARN,Satış Kapama,4,6

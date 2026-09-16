@@ -5,9 +5,11 @@ TR = {
     "c1.page_subtitle": "C1 — Otomatik Journey Oluşturma",
     "c1.page_caption": (
         "Journey talebi (hedef kitle, amaç, zorunlu konular) ve mevcut "
-        "aktivite kataloğu kullanılarak düzenlenebilir bir Journey önerilir. "
-        "Model yalnızca katalogdaki aktiviteleri seçebilir, yeni içerik "
-        "üretmez."
+        "aktivite kataloğu kullanılarak bir Journey OTOMATİK OLARAK "
+        "OLUŞTURULUR — bu bir öneri değildir, insan onayı beklenmez. "
+        "İş kuralı doğrulamasını geçen çıktı doğrudan oluşturmaya hazır "
+        "sayılır. Model yalnızca katalogdaki aktiviteleri seçebilir, yeni "
+        "içerik üretmez."
     ),
     "c1.session_cost_caption": (
         "Bu tutar yalnızca mevcut oturumda yapılan başarılı model çağrılarını "
@@ -57,7 +59,7 @@ TR = {
     "c1.strategy_summary_label": "Strateji özeti:",
     "c1.total_minutes_label": "Toplam süre:",
     "c1.minutes_suffix": "dk",
-    "c1.section.recommended_journey": "Önerilen Journey",
+    "c1.section.created_journey": "Oluşturulan Journey",
     "c1.activity_unknown_title": "Bilinmiyor (katalogda yok)",
     "c1.activity_meta": "Tür: {type} ({sub_type}) · Konu: {topic} · Süre: {minutes} dk",
     "c1.reason_label": "Gerekçe:",
@@ -76,21 +78,36 @@ TR = {
         "min/max sınırları içinde kalması, zorunlu konuların kapsanması "
         "ve (isteniyorsa) Journey'nin bir sınavla bitmesi gibi "
         "deterministik kontrolleri ifade eder.\n\n"
-        "Hiçbir doğrulama katmanı tek başına önerinin en iyi "
-        "pedagojik tavsiye olduğunu garanti etmez."
+        "Hiçbir doğrulama katmanı tek başına oluşturulan Journey'nin en "
+        "iyi pedagojik seçim olduğunu garanti etmez."
     ),
     "c1.user_prompt.brief_label": "JOURNEY TALEBİ (BRIEF):",
     "c1.user_prompt.catalog_label": "AKTİVİTE KATALOĞU:",
     "c1.user_prompt.instruction": "Yukarıdaki kurallara tam olarak uyan, yalnızca kataloğa dayalı bir Journey üret.",
+    "c1.creation.success_title": "✅ Journey oluşturuldu",
+    "c1.creation.success_body": (
+        "İş kuralı doğrulaması geçti — bu Journey oluşturulmaya hazırdır, "
+        "insan onayı beklenmez. Gerçek sistemin Journey formatına uygun "
+        "oluşturma paketini indirebilirsiniz."
+    ),
+    "c1.creation.download_button": "Journey Oluşturma Paketini İndir",
+    "c1.creation.blocked_title": "⛔ Journey oluşturulamadı",
+    "c1.creation.blocked_body": (
+        "İş kuralı doğrulaması başarısız olduğu için bu çıktı otomatik "
+        "olarak oluşturulamaz. Journey ancak yukarıdaki hatalar giderilip "
+        "doğrulamayı geçtiğinde oluşturulur."
+    ),
 }
 
 EN = {
     "c1.page_subtitle": "C1 — Automatic Journey Generation",
     "c1.page_caption": (
-        "An editable Journey is proposed using a Journey brief (audience, "
-        "goal, required topics) and the existing activity catalog. The "
-        "model may only select activities from the catalog, it does not "
-        "generate new content."
+        "A Journey is AUTOMATICALLY CREATED using a Journey brief "
+        "(audience, goal, required topics) and the existing activity "
+        "catalog — this is not a suggestion, no human approval is "
+        "expected. Output that passes business rule validation is "
+        "considered ready to create. The model may only select "
+        "activities from the catalog, it does not generate new content."
     ),
     "c1.session_cost_caption": (
         "This amount only includes successful model calls made in the "
@@ -141,7 +158,7 @@ EN = {
     "c1.strategy_summary_label": "Strategy summary:",
     "c1.total_minutes_label": "Total duration:",
     "c1.minutes_suffix": "min",
-    "c1.section.recommended_journey": "Recommended Journey",
+    "c1.section.created_journey": "Created Journey",
     "c1.activity_unknown_title": "Unknown (not in catalog)",
     "c1.activity_meta": "Type: {type} ({sub_type}) · Topic: {topic} · Duration: {minutes} min",
     "c1.reason_label": "Reason:",
@@ -159,10 +176,23 @@ EN = {
         "activities are not selected, durations match the catalog, the "
         "activity count stays within the min/max bounds, required topics "
         "are covered, and (if requested) the Journey ends with a test.\n\n"
-        "No validation layer alone guarantees the recommendation is the "
+        "No validation layer alone guarantees the created Journey is the "
         "best pedagogical choice."
     ),
     "c1.user_prompt.brief_label": "JOURNEY BRIEF:",
     "c1.user_prompt.catalog_label": "ACTIVITY CATALOG:",
     "c1.user_prompt.instruction": "Generate a Journey that fully complies with the rules above and is based only on the catalog.",
+    "c1.creation.success_title": "✅ Journey created",
+    "c1.creation.success_body": (
+        "Business rule validation passed — this Journey is ready to be "
+        "created, no human approval is expected. You can download the "
+        "creation package matching the real system's Journey format."
+    ),
+    "c1.creation.download_button": "Download Journey Creation Package",
+    "c1.creation.blocked_title": "⛔ Journey could not be created",
+    "c1.creation.blocked_body": (
+        "This output cannot be automatically created because business "
+        "rule validation failed. The Journey will only be created once "
+        "the errors above are resolved and validation passes."
+    ),
 }

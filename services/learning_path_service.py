@@ -160,7 +160,7 @@ def find_unknown_excluded_ids(brief: Dict, catalog_df: pd.DataFrame) -> List[str
 
 
 def validate_business_rules(
-    recommended_activities: List[Dict],
+    journey_activities: List[Dict],
     total_minutes_declared: int,
     brief: Dict,
     catalog_df: pd.DataFrame,
@@ -180,8 +180,8 @@ def validate_business_rules(
     max_activities = brief.get("max_activities")
     must_end_with_test = brief.get("must_end_with_test", False)
 
-    orders = [item["order"] for item in recommended_activities]
-    expected_orders = list(range(1, len(recommended_activities) + 1))
+    orders = [item["order"] for item in journey_activities]
+    expected_orders = list(range(1, len(journey_activities) + 1))
     if sorted(orders) != expected_orders:
         errors.append("Sıra numaraları (order) 1'den başlayarak ardışık olmalı.")
 
@@ -190,7 +190,7 @@ def validate_business_rules(
     duration_sum = 0
     enriched_activities: List[Dict] = []
 
-    for item in recommended_activities:
+    for item in journey_activities:
         activity_id = item["activity_id"]
 
         if activity_id in seen_ids:
@@ -243,7 +243,7 @@ def validate_business_rules(
             f"katalogdan hesaplanan toplam {duration_sum} dk"
         )
 
-    activity_count = len(recommended_activities)
+    activity_count = len(journey_activities)
     if min_activities is not None and activity_count < min_activities:
         errors.append(f"Aktivite sayısı minimum sınırın altında: {activity_count} < {min_activities}")
     if max_activities is not None and activity_count > max_activities:
@@ -271,4 +271,57 @@ def validate_business_rules(
         "required_topics_total": required_topics_total,
         "enriched_path": enriched_activities,
         "total_minutes_calculated": duration_sum,
+    }
+
+
+def build_journey_creation_artifact(
+    brief: Dict,
+    journey_output: Dict,
+    business_result: Dict,
+    model_id: str,
+) -> Dict:
+    """Doğrulamayı geçen bir Journey çıktısını, gerçek sistemin Journey
+    yapısına (Slack'te paylaşılan Journey tablosu + S3'teki sıralı aktivite
+    klasörleri, bkz. `docs/ssler/`) uyan bir oluşturma paketine dönüştürür.
+
+    Bu bir "öneri" çıktısı DEĞİLDİR: yalnızca `validate_business_rules`
+    denetimini geçmiş (`business_result["passed"] is True`) bir Journey
+    için çağrılmalıdır — geçemeyen bir çıktı oluşturulmaya hazır sayılmaz.
+    PoC'nin gerçek S3/DB'ye yazma erişimi olmadığından bu fonksiyon
+    doğrudan bir kayıt OLUŞTURMAZ; üretim sisteminin Journey oluşturma
+    uç noktasına/akışına verilmeye hazır, doğrulanmış nihai payload'ı
+    üretir.
+    """
+    if not business_result.get("passed"):
+        raise ValueError(
+            "İş kuralı doğrulamasını geçemeyen bir Journey, oluşturma paketine dönüştürülemez."
+        )
+
+    activities = [
+        {
+            "order": item["order"],
+            "activity_id": item["activity_id"],
+            "activity_type": item["activity_type"],
+            "activity_sub_type": item["activity_sub_type"],
+            "topic": item["topic"],
+            "duration_minutes": item["duration_minutes"],
+            "reason": item["reason"],
+        }
+        for item in sorted(business_result["enriched_path"], key=lambda a: a["order"])
+    ]
+
+    return {
+        "journey_name": brief["journey_name"],
+        "journey_type": brief["journey_type"],
+        "status": "Ready",
+        "activity_count": len(activities),
+        "total_minutes": journey_output["total_minutes"],
+        "required_topics_covered": business_result["required_topics_covered"],
+        "required_topics_total": business_result["required_topics_total"],
+        "audience_fit_summary": journey_output["audience_fit_summary"],
+        "strategy_summary": journey_output["strategy_summary"],
+        "activities": activities,
+        "created_by": "C1 — Otomatik Journey Oluşturma (AI)",
+        "created_by_model": model_id,
+        "business_validation": "passed",
     }
